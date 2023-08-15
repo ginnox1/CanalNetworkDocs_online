@@ -26,7 +26,7 @@ To use this release, you will need to remove your previous application and insta
 
 1. One click installation 
    
-   Installation is now easy, deploying all needed resources to your machine in one process. Linking to your current version of AutoCAD remains the same, though.
+   Installation is now easy, deplo textying all needed resources to your machine in one process. Linking to your current version of AutoCAD remains the same, though.
 
 2. Automatic Update
    
@@ -42,14 +42,37 @@ To use this release, you will need to remove your previous application and insta
 
 ## Powerful new functions
 
-A number of new functions are included in this version. Some of them may not be available depending on the license you own. 
+A number of new functions are included in this version. 
 
-zone data
+Note: Some of them may not be available depending on the license you own. 
 
-quick plan plot
+### Zone data
+Often engineering design passes through different formations near the ground surface. These formations can have different levels, and estimating the volume of work involved for each zone of formation is required. With iCAD software, the surface a starta information data base is designed and implemented.
 
-BoQ between stations
+Such data can now be included in the CanalNETOWK application workspcae from `Workspace > Zone Data...` menu command. Once included, then all subsequent tasks are automatically handled by the regular workflow.
 
-Capped linings
 
-Construction solutions
+
+### Quick plan plot
+Ploting plan views is greately simplified in this release, allowing fast and rich drawing generation to AutoCAD.
+
+Use the menu command `Explore Outputs > Plot to AutoCAD > Plot Plan ...` or `Ctrl+J`. This tool requires that desired plan view is created in the layout view window, with a gridbox.
+
+### Quantity between Stations
+Users can now compute the estimated work volumes between any two given stations along a canal route. This will generate the earthwork volumes involved with in the specified reach.
+
+
+### Capped Linings
+A new type of canal cross-section is included. Thin lined canals that are capped at the top to provide for protection or other needs can now be fully defined and used along any segment of any canal route in the network system.
+
+### Construction Solutions
+A new endavour is now bring the power of iCAD software tools for use in Consturction supervision works. The key is to leverage all the data and criteria used during the design fully, to serve differnt needs of the construction engineer. It also aims to accomodate data or design changes that are unavoidable during construction.
+
+The tools currently included are:
+
+1. Generation of detailed shop drawings
+1. Revised canal design (using alternate routes, or changed design criteria)
+1. Profilie overlays allowing use of revised profile data for canal routes as obtained from the field.
+1. Use of construciton survey data to create an automatic estimation of executed works
+
+More features will be integrated in time.
