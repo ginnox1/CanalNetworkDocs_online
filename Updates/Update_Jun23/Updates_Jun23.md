@@ -1,6 +1,6 @@
 # CanalNETWORK 2.0
 
-## **Hello, and Wellcome.**
+## Hello, and Wellcome
 
 We are thrilled and excited to bring to you version 2.0 with new and powerful features, including the most demanded fearure to handle drainage canal networks! Also, we have now fully integrated iCAD functions to the interface. This meanse, there is no need to open iCAD along side CanalNETWORK any more.
 
