@@ -8,11 +8,15 @@ This introcution is intended to give basic knowledge about the key problems that
 
 The following topics are discussed:
 
-- Uses and application of the software
+<!--TOC-->
+- [Uses and applicaiton of CanalNETWORK software](#uses-and-applicaiton-of-canalnetwork-software)
+- [Important System Related Notes](#important-system-related-notes)
+- [Data and Software required for use with CanalNETWORK](#data-and-software-required-for-use-with-canalnetwork)
+- [Standard workflow](#standard-workflow)
+- [How to use Online Documentation](#how-to-use-online-documentation)
 
-- Data and software required to run the software product
+<!--/TOC-->
 
-- Basic workflow for tackling the design of irrigation systems design using the software.
 
 Refer to other sections of this documentation to learn more about specific usage and application of the software to tackle day to day design tasks.
 
@@ -39,6 +43,27 @@ CanalNETWORK software for use in:
 * Compact saving and sharing of design data
 
 * ... and more.
+
+## Important System Related Notes
+
+CanalNETWORK application has the following minimum system requitements.
+
+- Machine: Core i7, 9th Gen, X64 (SSD highly Recommended) 
+
+- RAM: 8GB
+
+- GPU: 4GB
+
+- Screen resolution 1080x1980 (FHD). Two monitors recommended for working with AutoCAD side by side.
+
+
+
+Working with different AutoCAD versions is possible.
+
+- iCAD and CanalNETWORK products are fully tested on AutoCAD 2018 version. However, users have applied them using AutoCAD 2020, 2022, 2023 versions. This include Civil3D products, started as AutoCAD apps.
+
+- If there are multiple versions of AutoCAD installed on a machine, CanalNETWORK product links to the current open version, and retains this version through out the session. It will not work with other versions opened after this. To connect with other versions, restart the CanalNETWORK application.
+
 
 ## Data and Software required for use with CanalNETWORK
 
@@ -82,7 +107,7 @@ Note in the above figure that:
   
   Also, farm block data is imported (or auto-estimated) to allow automatic sizing of each route as per the designated duty in the design criteria.
   
-  $Q_i= d_i*A_i$
+  Q~i~ = d~i~ * A~i~
   
   *This is a key milestone in the progress towards longitudinal design task. Back up the network data at this stage for latter use.*
 
@@ -126,25 +151,6 @@ Refer to relevant guide lines on how to proceed with each of the above stages, o
 
 
 
-## Important System Related Notes
-
-CanalNETWORK application has the following minimum system requitements.
-
-- Machine: Core i7, 9th Gen, X64 (SSD highly Recommended) 
-
-- RAM: 8GB
-
-- GPU: 4GB
-
-- Screen resolution 1080x1980 (FHD). Two monitors recommended for working with AutoCAD side by side.
-
-
-
-Working with different AutoCAD versions is possible.
-
-- iCAD and CanalNETWORK products are fully tested on AutoCAD 2018 version. However, users have applied them using AutoCAD 2020, 2022, 2023 versions. This include Civil3D products, started as AutoCAD apps.
-
-- If there are multiple versions of AutoCAD installed on a machine, CanalNETWORK product links to the current open version, and retains this version through out the session. It will not work with other versions opened after this. To connect with other versions, restart the CanalNETWORK application.
 
 
 
