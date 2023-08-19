@@ -29,7 +29,8 @@ Update your version of CanalNETWORK product as follows:
 
 
 
-> :warning: **IMPORTANT:** To use this release, you will need to remove your previous application and install the new release available from your provider. The previous release is no more supported.
+> **Warning**
+To use this release, you will need to remove your previous application and install the new release available from your provider. The previous release is no more supported.
 If you have not yet installed the latest version, you can download the latest version from our website at www.quanomic.co. A direct access link is [here]().
 
 Download the update resources to make your installation uptodate from the linke below.
