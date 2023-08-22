@@ -21,7 +21,7 @@ Happy Designing,
 ## Update Resources
 
 Update your version of CanalNETWORK product as follows:
-1. Download the update resoruces from [Latest iCAD update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
+1. Download the update resoruces from [Latest CanalNETWORK update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
 
 2. Start your product, go to `Help > Updates...` Then choose `Manual` option. This will ask to close the application and re-start. Choose `Exit` to agree, and continue.
 
@@ -29,7 +29,7 @@ Update your version of CanalNETWORK product as follows:
 
 
 
-> :warning: **Important**
+> :warning: **Important**:
 To use this release, you will need to remove your previous application and install the new release available from your provider. The previous release is no more supported.
 If you have not yet installed the latest version, you can download the latest version from our website at www.quanomic.co. A direct access link is [here]().
 
