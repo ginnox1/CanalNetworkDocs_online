@@ -7,7 +7,7 @@ CanalNETWORK is a software product that offers targeted solution to the design, 
 This introcution is intended to give basic knowledge about the key problems that the software solves, and different tools available to solve them. It focuses on key features of the software, and is NOT a comprhensive document containing all the details. 
 
 The following topics are discussed:
-
+# Table of Contents
 <!--TOC-->
 - [Uses and applicaiton of CanalNETWORK software](#uses-and-applicaiton-of-canalnetwork-software)
 - [Important System Related Notes](#important-system-related-notes)
@@ -23,6 +23,7 @@ Refer to other sections of this documentation to learn more about specific usage
 If you have any comments about this document, we will appreciate if you drop us an email at [docs@quanomic.co](info@quanomic.co)
 
 # Uses and applicaiton of CanalNETWORK software
+[Back to ToC](#table-of-contents)
 
 CanalNETWORK software is an all-in-one solution, that allows to design, analyse and document the planning and design of canal irrigation systems. It allows to process data from start to end, allowing production of reach graphic and tabular documents to AutoCAD, as well as other text presentation software.
 
@@ -44,7 +45,8 @@ CanalNETWORK software for use in:
 
 * ... and more.
 
-## Important System Related Notes
+# Important System Related Notes
+[Back to ToC](#table-of-contents)
 
 CanalNETWORK application has the following minimum system requitements.
 
@@ -65,7 +67,8 @@ Working with different AutoCAD versions is possible.
 - If there are multiple versions of AutoCAD installed on a machine, CanalNETWORK product links to the current open version, and retains this version through out the session. It will not work with other versions opened after this. To connect with other versions, restart the CanalNETWORK application.
 
 
-## Data and Software required for use with CanalNETWORK
+# Data and Software required for use with CanalNETWORK
+[Back to ToC](#table-of-contents)
 
 Working with CanalNETWORK software requires the following tools:
 
@@ -83,7 +86,9 @@ CanalNETWORK software handles detailed design task for an system of irrigation c
 
 * a design criteria for the project: that provides detailed values of reference criteria and other governing factors (e.g., duty, slope, limiting velocity...)
 
-## Standard workflow
+# Standard workflow
+[Back to ToC](#table-of-contents)
+
 
 CanalNETOWORK allows for flexible design approaches and processes. However, due to high dependency of tasks on available data, it is recommended to adopt the below discussed workflow. Adopting this workflow is proven to offer optimal progress towards the final products in the shortest possible time.
 
@@ -154,7 +159,8 @@ Refer to relevant guide lines on how to proceed with each of the above stages, o
 
 
 
-## How to use Online Documentation
+# How to use Online Documentation
+[Back to ToC](#table-of-contents)
 
 The online documents available for reference are organized in to chapters that users can get the most out of. The recommended way, especially for those who are learning the software, is to cover the materials sequentially - as outlined below. This is also the structure adopted in the home page of this guide  (here)
 
@@ -174,6 +180,5 @@ Additional technical informaiton is available as below:
 
 1. Surface Modelling in iCAD and CanalNETWORK products
 
-## 
 
 END.
