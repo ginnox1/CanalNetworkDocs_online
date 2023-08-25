@@ -1,8 +1,16 @@
 # Construction Tools
 
 Begining Jun 2023, we have introduced solutions that can assist during supervision works. CanalNETWORK product has significant potential to contribute to construction processes and drive efficiency. Its data models and computational algorithms offer a strong platform to deal with routine bottlenecks encountered during construction supervision. The following are currently available.
+# Table of Contents
+<!--TOC-->
+  - [Generating Shop drawings](#generating-shop-drawings)
+  - [Changing Profile data for Canal Routes](#changing-profile-data-for-canal-routes)
+  - [Alternate canal routes](#alternate-canal-routes)
+  - [Estimating progress](#estimating-progress)
+<!--/TOC-->
 
 ## Generating Shop drawings
+[Back to ToC](#table-of-contents)
 
 Use the guides in the Design Prodduction document of this guide, to generate the following working drawings to construction teams:
 
@@ -19,6 +27,7 @@ Use the guides in the Design Prodduction document of this guide, to generate the
 6. Canal Junctions and structures
 
 ## Changing Profile data for Canal Routes
+[Back to ToC](#table-of-contents)
 
 Often times, topographic data on the ground is different from that used during design. In such instances, revising design of canal routes can be done easily. To succesfully make the review, the data of the new topography for the canal route in question must be available in below format. 
 
@@ -93,10 +102,12 @@ To see the the newly applied profile data, use `Workflow > Routes > Soft Reload 
 New drawings and volume calculations and design reviews are now possible with the new data.
 
 ## Alternate canal routes
+[Back to ToC](#table-of-contents)
 
 [To be included soon]
 
 ## Estimating progress
+[Back to ToC](#table-of-contents)
 
 This tool can estimate the volume of earth works executed under cut and fill conditions for a desired reach in a canal route. Surveying data collected along the canal centerline (representing modified Bed Level or MBedL) and along the canal top level (representing modified Top Level or MTopL) are required. The calculation of volumes are made up on the following assumptions:
 
@@ -175,3 +186,7 @@ BoQ containing executed work volumes can not be generated, using the usual tool 
 This will generate a listing similar to the figure below. It automatically includes earth work and fill information, and estimate percentage as a function of the design quantity available in the design information.
 
 ![fig24](Images/Image%2024.png)
+
+[Back to ToC](#table-of-contents)
+
+END.

@@ -4,7 +4,25 @@ Flow regulating strucrures are a key component of a canal network system. They a
 
 CanalNETWROK and ICAD products currently allow the design of Head Regulator Strucures, Cross-Regulator Strucrtures and Inclinded drops. The design of these structures is handled using a dedicated module in the iCAD environment called CanalStructuresJET. To use this module, the structure must first be positioned in the CanalNETWORK environment. The work of canal structures starts, therefore, by positioning and defining locations for the structures along desired canal routes in the CanalNETWORK environment.
 
-# Defining the Structure
+# Table of Contents
+<!--TOC-->
+<!--TOC-->
+  - [Defining the Structure](#defining-the-structure)
+  - [Designing the Canal Structure](#designing-the-canal-structure)
+  - [Editing Variables](#editing-variables)
+  - [Working with the Module](#working-with-the-module)
+    - [Interactive sizing](#interactive-sizing)
+    - [Changing views](#changing-views)
+    - [Changing Energy Dessipation Mechanism](#changing-energy-dessipation-mechanism)
+  - [Changing Hydraulic and Location conditions](#changing-hydraulic-and-location-conditions)
+    - [Bridge Decks](#bridge-decks)
+    - [Plan View](#plan-view)
+    - [Saving Design Work](#saving-design-work)
+    - [Generating BoQ](#generating-boq)
+    - [Generating Longitudinal Drawings](#generating-longitudinal-drawings)
+<!--/TOC-->
+## Defining the Structure
+[Back to ToC](#table-of-contents)
 
 To define a location for the structure, insert a floating node that represents a control behavior along a resired canal route in the network system. The most common purpose of floating nodes is to use them as any control, to represent a change in hydraulic condition. 
 
@@ -53,6 +71,7 @@ To insert the floating node along a canal route:
 *Dialog promoting invalid action for inclined drop design.*
 
 ## Designing the Canal Structure
+[Back to ToC](#table-of-contents)
 
 Before proceeding to design, make sure to save the modified data of the network to the Network Host object of choice. Failing to do so will make the data unavailable for iCAD.
 
@@ -98,6 +117,7 @@ To start the design process for canal strucrues defined as above, start iCAD if 
   Note: If a pointer is set in CanalNETWORK, iCAD will always choose the structure to work on from the setting. Use *Clear Pointer and Exit*, and click `OK` to clear pointers, to be able to select a different structure.
 
 ## Editing Variables
+[Back to ToC](#table-of-contents)
 
 The iCAD environment is now ready for detailed design work, displaying the section view for the structure (Face-upstream-direction), and differnt annotated settings along with it.
 
@@ -170,10 +190,12 @@ The module allows you to work on your design in transverse view, in longitudinal
    After making the necessary changes, hit `Apply` and the drawing will change to reflect the new settings.
 
 ## Working with the Module
+[Back to ToC](#table-of-contents)
 
 The module offers differnt functionalities for the engineer to design and document a well defined structure. The following are common:
 
 ### Interactive sizing
+[Back to ToC](#table-of-contents)
 
 Click on any bold (green or red) colored graphic element, and you will find an interactive tool to reposition that particular component of the structure. This is available:
 
@@ -188,6 +210,7 @@ Click on any bold (green or red) colored graphic element, and you will find an i
 *Interactive sizing tool showing drag feature for downstream cutoff depth.*
 
 ### Changing views
+[Back to ToC](#table-of-contents)
 
 The module undertakes design works in longitudinal and transverse views. To access these views simply go to `Workflow > Next View`. This menu command will change the view as follows:
 
@@ -200,6 +223,7 @@ A third view is the plan view. In this view, the arrangement of the different co
 Sample views are inclued in following section.
 
 ### Changing Energy Dessipation Mechanism
+[Back to ToC](#table-of-contents)
 
 This is important as the performance of the structure depends largely on the abiilty of the provisions for the structure to efficiently and adquately dessipate any excess energy with in the confines of the structure. Depending on the amount of excess energy reaching and leaving the stilling pool, the user can vary the provissions to come to an acceptable design.
 
@@ -224,6 +248,7 @@ The following schematics show the resulting flow profile and stilling basin arra
 *Schematic of USBR Type IV Energy dessipating mechanism, showing longitudinal section and transverse face-upstream view*
 
 ## Changing Hydraulic and Location conditions
+[Back to ToC](#table-of-contents)
 
 As design continues, it may be necesary to change the position of a structure, or the hydraulic conditions upstream or downstream. If such changes are made to the floating node, or to the canal segments upstream and downstream of the floating node, then these new changes must be applied to the saved data. To do this:
 
@@ -236,6 +261,7 @@ As design continues, it may be necesary to change the position of a structure, o
 Then, opening the structure in iCAD's *CanalStrucutreJET* module will come with the new set of conditions.
 
 ### Bridge Decks
+[Back to ToC](#table-of-contents)
 
 The user has the option to provide a bridge deck for the strucure(s). To do this, go to `Workflow > Bridge Options...` 
 
@@ -266,6 +292,7 @@ After hitting `Apply` all the changes will apply to both the longitudinal and tr
 If no bridge is required after setting values, simply go to `Workflow > Clear Bridge Settings.` This will clear all information on bridge deck as well as from the views.
 
 ### Plan View
+[Back to ToC](#table-of-contents)
 
 The plan view tool provides a complete detaii of the components of the structure - e.g., abutment walls, overflow area, stilling pool - and their arrangements relative to each other. To generate plan view:
 
@@ -298,6 +325,7 @@ The drawing below shows a snapshot from AutoCAD environment, where the parent ca
 ![imapln](Images/Image%20046.png)
 
 ### Saving Design Work
+[Back to ToC](#table-of-contents)
 
 Design work can be saved at any stage during the design process. Simply go to `Session > Save`. This will display a progress dialog, and save the data to the host object. 
 
@@ -306,6 +334,7 @@ Design work can be saved at any stage during the design process. Simply go to `S
 The next time the project is opened, the user has the option to continue from the existing design data, or start afresh.
 
 ### Generating BoQ
+[Back to ToC](#table-of-contents)
 
 BoQ can be easily generated for all structures designed using this module CanalStrucrturesJET. The first task should be to review the BoQ generation settings from `Workflow > Edit BoQ Settings...`.
 
@@ -355,6 +384,7 @@ This will generate the BoQ for all structuers in the host. Notice the difference
 > * The JET dialog will rememeber the last host selection. To change it, click on the value cell, and select a desired host object.
 
 ### Generating Longitudinal Drawings
+[Back to ToC](#table-of-contents)
 
 The user can export the different views of the structure, and along with it the designed elevations, to AutoCAD. The procedures are documented in iCAD product documentation in detail.
 
@@ -385,5 +415,8 @@ The user can export the different views of the structure, and along with it the 
 7. AutoCAD will be in select mode. Pick the diagonal object created in step 6 as a reference object. The drawing will be recreated in AutoCAD environemnt.
    
    ![yert](Images/Image%20033.png)
+
+[Back to ToC](#table-of-contents)
+
 
 END.

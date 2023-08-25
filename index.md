@@ -55,7 +55,7 @@ Available guides and documentation:
 
 [8. Design Production (**NEW**)](DesignProduction/DesignProduction.md)
 
-[9. Construction Tools **(NEW)**](ConstructionTools/ConstructionTools.md)
+[9. Construction Tools **(NEW)**](ConstructionTools/Construction_Tools.md)
 
 ## Technical Information
 

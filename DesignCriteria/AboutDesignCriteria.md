@@ -6,7 +6,43 @@ Design criteria in CanalNETWORK, specifically refer to a list of parameters that
 
 > Note: As parameters in Design Criteria set are constantly refered to in the design process, it is IMPORTANT to spend adequate time to set values. This will save significant time later.
 
+# Table of Contents
+<!--TOC-->
+  - [Contents of Design Criteria Set](#contents-of-design-criteria-set)
+  - [Detail Definition of Design Criteria Parameters](#detail-definition-of-design-criteria-parameters)
+    - [CBL Design Settings](#cbl-design-settings)
+      - [Prefered/ Max Drop Height(m):](#prefered-max-drop-heightm)
+      - [Minimum Drop Height(m):](#minimum-drop-heightm)
+      - [Min. Control Spacing (m):](#min.-control-spacing-m)
+      - [Fit Height](#fit-height)
+      - [FIt Type](#fit-type)
+    - [Command Criteria](#command-criteria)
+      - [Canal Duty (l/sec/ha)](#canal-duty-lsecha)
+      - [Min FSL-OGL @ Controls(m)](#min-fsl-ogl-controlsm)
+      - [FSL-OGL Control type](#fsl-ogl-control-type)
+      - [Min FSL-OGL @Reach(m)](#min-fsl-ogl-reachm)
+      - [Min Drv. Head @Control(m)](#min-drv.-head-controlm)
+      - [Branch Invert Raise (-):](#branch-invert-raise)
+    - [Construction Variables](#construction-variables)
+      - [Canal Lining type, Ltyp(-)](#canal-lining-type-ltyp)
+      - [Lining Thickness, Thk(m)](#lining-thickness-thkm)
+      - [Foundation Thickness, THK(m)](#foundation-thickness-thkm)
+      - [Earth cut shape, Smc(-)](#earth-cut-shape-smc)
+      - [Earth fill shape, Smf(-)](#earth-fill-shape-smf)
+      - [Complex Cut and Fill Shapes](#complex-cut-and-fill-shapes)
+    - [Hydraulic Design](#hydraulic-design)
+      - [Min. Design Discharge(m3/sec)](#min.-design-dischargem3sec)
+      - [Design B to D ratio(-)](#design-b-to-d-ratio)
+      - [Limiting Velocity(m/sec)](#limiting-velocitymsec)
+      - [Max. All. Shear Stress (Kg/m2)](#max.-all.-shear-stress-kgm2)
+      - [Mannings Roughness, N(-)](#mannings-roughness-n)
+      - [Freeboard, FB(m)](#freeboard-fbm)
+      - [Canal Side Slope, m(-)](#canal-side-slope-m)
+      - [Bed Slope, So(m/m)](#bed-slope-somm)
+- [Default Criteria values for different canal Levels](#default-criteria-values-for-different-canal-levels)
+<!--/TOC-->
 ## Contents of Design Criteria Set
+[Back to ToC](#table-of-contents)
 
 The following groups of criteria set are defined and available in the software:
 
@@ -21,6 +57,7 @@ The following groups of criteria set are defined and available in the software:
 These groups of parameters are carefully set for each level of canal that may exist in the project. In a typical project, for instance, MC, SC, TC, QC and FC may exist. For such a project, there are five levels (or generations) of canals, and each level is provided a separate set of values for the above group of parametrs.
 
 ## Detail Definition of Design Criteria Parameters
+[Back to ToC](#table-of-contents)
 
 Before diving in to detail discussion of parametrs and their meaning, it is worth while to understand the concept of controls.
 
@@ -39,12 +76,14 @@ Controls are built on a number of Node, and Segment Assembly parameters. These p
 In essence, therfore, design criteria values constitute the node and geometry parameters of controls in the entire network, depending on the location of the controls. The below sections present a detailed desctiption of each parameter in the design criteria set, and discuss how they impact design or hydraulic behaviour. 
 
 ### CBL Design Settings
+[Back to ToC](#table-of-contents)
 
 These parameters are used to dictate the placement (position) and size of drops when creating canal bed level design information. 
 
 > Note: CanalNETWORK software automatically designs canal bed level information, and ALWAYS uses the values for in this group of Design Criteria parameters.
 
 #### Prefered/ Max Drop Height(m):
+[Back to ToC](#table-of-contents)
 
 There are different ways to set value for this parameter
 
@@ -69,10 +108,12 @@ There are different ways to set value for this parameter
 Note: In each case, the last drop is automatically sized to meet the remaining head loss in the canl reach. The values above do not control the last drop in a reach.
 
 #### Minimum Drop Height(m):
+[Back to ToC](#table-of-contents)
 
 This value specifies the minimum allowed drop height in the canal segment. All drops inserted will observe this limit, except the last drop.
 
 #### Min. Control Spacing (m):
+[Back to ToC](#table-of-contents)
 
 This parameter specifies the minimum allowable spacing between drop structures. CBL generated attempts to ALWAYS maintain the provisions in this parameter when positioning drop structures.
 
@@ -83,6 +124,7 @@ There are two ways to set and use this parameter:
 * two values: in addition to above, the second value specifies a prefered length between drops. This second value is used ONLY if variable drop height specification is used in *Prefered/ Max Drop Height* above.
 
 #### Fit Height
+[Back to ToC](#table-of-contents)
 
 This parameter dictates how canal bed levels are positioned with respect to prevailing OGL along the profile of the canal route. Values impact behaviour of design as follows:
 
@@ -95,6 +137,7 @@ This parameter dictates how canal bed levels are positioned with respect to prev
 > Note: If fitHt is set to -99 (not applicable), the control invert level is automatically calculated and set. Hence, the user can not manually raise or lower the invert levels. To allow this, the user must clear this value and set a proper value. 
 
 #### FIt Type
+[Back to ToC](#table-of-contents)
 
 The setting in this parameter is used to determine where in the reach drops must be located:
 
@@ -109,10 +152,12 @@ The setting in this parameter is used to determine where in the reach drops must
 *Figure showing drop positioning along a canal reach using First and Last options.*
 
 ### Command Criteria
+[Back to ToC](#table-of-contents)
 
 The parameters in this group of Design criteria set the governing hydraulic parameters for the canal network system, inview of desired operational conditions.
 
 #### Canal Duty (l/sec/ha)
+[Back to ToC](#table-of-contents)
 
 This value is derived from cropping pattern and climatic conditions of the irrigaiton area, The values are determined for the different canal levels depednig on expected operational losses. This value is used to size all the canal segments in the network according to the following relation ship:
 
@@ -123,6 +168,7 @@ where Ai is the cummulated area that each segment serves downstream.
 Note: Area served by each canal and its segment is automatically cummulated. However, the either draw farm blocks in AutoCAD and import them to the network workspace, or use AutoEstimate tool to define the area seved by each feeder (lowest level) canal. The software then handles the cummulating of areas upstream toward the first level canal.
 
 #### Min FSL-OGL @ Controls(m)
+[Back to ToC](#table-of-contents)
 
 This value controls the invert level of all the controls along a canal with reference to desired FSL level over prevailing OGL at the control. Two ways are available:
 
@@ -135,10 +181,12 @@ This value controls the invert level of all the controls along a canal with refe
 *Figure showing FSL-OGL conditions at control for a criteria settinhg of 0.50m* 
 
 #### FSL-OGL Control type
+[Back to ToC](#table-of-contents)
 
 This must ALWASYS be set to US Control. It specifies that Min driving head calculations are made with reference to FSL upstream of the control.
 
 #### Min FSL-OGL @Reach(m)
+[Back to ToC](#table-of-contents)
 
 This value can be set to help design process by showing which parts of a canal reach meet this requirement, and which do not.
 
@@ -151,6 +199,7 @@ This value can be set to help design process by showing which parts of a canal r
 *Figure showing FSL-OGL values graphically, showing areas that meet or exceed the MIN FSL-OGL=0.50  Note: The figure is example only, and this criteria may not be required to be set for MC type canals.*
 
 #### Min Drv. Head @Control(m)
+[Back to ToC](#table-of-contents)
 
 This value dictates the head to be maintained at each junciton node (or control structure) when positioning bed levels for branch canals. This value is ALWAYS maintained between FSL of parent canal and FSL of branch canal. However, the final CBL for the branch canal also depends on the *Branch Invert Raise* parameter setting below,
 
@@ -161,6 +210,7 @@ This value dictates the head to be maintained at each junciton node (or control 
  *Figure showing bed level of Branch Canal (SC_2) with respect to parent canal (MC) based on Min Drv Head value of 0.30 (a) Branch Invert Raise= Free, (b) Branch Invert raise= Fixed). It can be seen that in the second figure, the CBL branch level is fixed at the same level as that of the parent canal*.
 
 #### Branch Invert Raise (-):
+[Back to ToC](#table-of-contents)
 
 This value dicates how invert level for branch canals is set with respect to CBL of parent canal at the control location:
 
@@ -169,6 +219,7 @@ This value dicates how invert level for branch canals is set with respect to CBL
 * Free: positions CBL invert of branch canal regardless of parent CBL value at control, rather respects Min Drv Head values (above.)
 
 ### Construction Variables
+[Back to ToC](#table-of-contents)
 
 This group of design criteria parameters dictates the assembly information for canal flow section (Lined or unlined), and their placement with respect to prevailing ground level variation in transverse direction (using cut and fill shape specificaiton). 
 
@@ -177,6 +228,7 @@ The following schematic drawing gives a general overview of possible canal flow 
 ![](ImagesAbout/Image%20020.png)
 
 #### Canal Lining type, Ltyp(-)
+[Back to ToC](#table-of-contents)
 
 Specifies if a canal segment is provided with lining, and the type of lining:
 
@@ -205,14 +257,17 @@ Specifies if a canal segment is provided with lining, and the type of lining:
 *Figure showing capped thin lining and how it is sized*
 
 #### Lining Thickness, Thk(m)
+[Back to ToC](#table-of-contents)
 
 This parameter sets the value representing the thickness of lining to be applied (See above for *Canal Lining Type*). A minimum value of 0.05m and a maxiumum value of 0.30 is allowed.
 
 #### Foundation Thickness, THK(m)
+[Back to ToC](#table-of-contents)
 
 This sets the value for the thickness of the canal lining at the bottom (See above for *Canal Lining Type*). A minimum value of 0.3 and a maximum value of 0.6 are allowed.
 
 #### Earth cut shape, Smc(-)
+[Back to ToC](#table-of-contents)
 
 This parameter specifies how the formation level varies in the transverse direction in cut conditions. The values are supplied in triplets, and upto three triplets are allowed. Each triplet has the specification [w, m, h].
 
@@ -227,6 +282,7 @@ This parameter specifies how the formation level varies in the transverse direct
 > Note: The triplets in both Eatch and FIll shape specification must be of the same size. This means even if double triplet is needed ONLY for the cut shape, the fill shape must also be double triplet. In this case simply repeat the first triplet, then set w to slightly greater than the smallest allowable value (0.05m, say 0.051).
 
 #### Earth fill shape, Smf(-)
+[Back to ToC](#table-of-contents)
 
 This parameter serves the same function as *Earth Cut Shape* parameter above, but in Fill condition.
 
@@ -239,6 +295,7 @@ This parameter serves the same function as *Earth Cut Shape* parameter above, bu
 *Figure showing a canal section in cut using single and double entry specification.*
 
 #### Complex Cut and Fill Shapes
+[Back to ToC](#table-of-contents)
 
 There are a number of ways to create complex cut and fill shapes in canal segments. These can be applied to the design criteria content, or to the contents of each segment.
 
@@ -275,10 +332,12 @@ An other way to create complex cut and fill shapes is to use the `Canal Top Prov
 ![Images27](ImagesAbout/Image%20026.png)
 
 ### Hydraulic Design
+[Back to ToC](#table-of-contents)
 
 This is the last group of parameters in the Design Criteria set. It detemines how canal flow sections are sized and positioned for the diffenernt segments in all of the canal network. For a given canal level, the following parametrs and their uses apply:
 
 #### Min. Design Discharge(m3/sec)
+[Back to ToC](#table-of-contents)
 
 This value overrides canal capcity determined from Duty (above) and area served. The final value used to size the canal segment is tha maximum of:
 
@@ -289,24 +348,24 @@ This value overrides canal capcity determined from Duty (above) and area served.
 This if of typical use in lower level canals, where small areas may result in discharge capacities smaller than practically feasible canal capacities.
 
 #### Design B to D ratio(-)
+[Back to ToC](#table-of-contents)
 
 This setting determines the bottom width to depth ration to be used on the design of flow sections for canal segments. Three values are possible:
 
 * *B/D>0:* indicates to use the specified value as the ratio for the design. A maximum value of 10 is allowed.
 
-* *B/D=0:* indicates to use the build in equation to determine the ratio for design. 
+* *B/D=0:* indicates to use the built in equation B/D= 1.76 Q ^0.75^ to determine the ratio for design. 
 
 * *B/D=-1:* indicates to use built in table for determining the raio for design
 
-The equation is 
 
-<img src="https://render.githubusercontent.com/render/math?math=B/D= 1.76 Q ^{0.75}">
 
 The built in table is represented as a chart as follows. (Source: USBR Recommended values)
 
 ![](ImagesAbout/Image%20019.png)
 
 #### Limiting Velocity(m/sec)
+[Back to ToC](#table-of-contents)
 
 Limiting velocity prescribe the minimum and maximum allowable velocities, consequtively, in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below table on *Default Design Criteria*)
 
@@ -329,6 +388,7 @@ For instance, in the figure, a user chooses values for *Firm Clay Loom* soil typ
 | Steel Lining      | 10          | 10        |
 
 #### Max. All. Shear Stress (Kg/m2)
+[Back to ToC](#table-of-contents)
 
 This variable defines the maxium allowable shear stress for a canal segment in Kg/sq. meter or N/sq.mm (equivalent). As in *Limiting Velocity* value, this is also used to guide design of flow sections.
 
@@ -337,10 +397,12 @@ This variable defines the maxium allowable shear stress for a canal segment in K
 *Figure showing flow seciotn design with interactive update of current velocity and shear stress values, compared to set criteria values. Here, The shear stress limit of 3N/mm2 is exceeded, while velocity is still with in Limits.* 
 
 #### Mannings Roughness, N(-)
+[Back to ToC](#table-of-contents)
 
 The value of mannings roughness coeficient for the canal segment in question.
 
 #### Freeboard, FB(m)
+[Back to ToC](#table-of-contents)
 
 Specifies the free board provision for flow section design in one of two ways:
 
@@ -353,14 +415,17 @@ The table of values for free board estimation are as follows:
 ![](ImagesAbout/Image%20021.png)
 
 #### Canal Side Slope, m(-)
+[Back to ToC](#table-of-contents)
 
 Specifies the side slope of the wetted canal section (H:1V)
 
 #### Bed Slope, So(m/m)
+[Back to ToC](#table-of-contents)
 
 Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1in 50 and the maximum (flattest) slope allowed is 1 in 10,000.
 
 # Default Criteria values for different canal Levels
+[Back to ToC](#table-of-contents)
 
 The following table summarizes default values set to different canal levels upon generation of default design criteria set.
 
@@ -395,5 +460,9 @@ The following table summarizes default values set to different canal levels upon
 | Freeboard, FB(m)               | -1                  | 0.3                   | 0.25                | 0.2                 |
 | Canal Side Slope, m(-)         | 1                   | 1                     | 1                   | 1                   |
 | Bed Slope, So(m/m)             | 5000                | 1000                  | 2000                | 750                 |
+
+
+
+[Back to ToC](#table-of-contents)
 
 END.

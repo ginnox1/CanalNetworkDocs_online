@@ -2,7 +2,32 @@
 
 Refer to the standard workflow for using CanalNETWORK software. One of the input data is a layout map in AutoCAD. This section discusses the task of importing such a layout map from an AutoCAD environment, and processing the connectivity data for the network of canals. Most of the task is handled automatically, while it needs some assistance from the user to resolve some issues that may linger.
 
+# Table of Contents
+<!--TOC-->
+  - [AutoCAD canal layout maps](#autocad-canal-layout-maps)
+  - [Network resolution: Definition](#network-resolution-definition)
+  - [Importing layout map to CanalNETWOK environment](#importing-layout-map-to-canalnetwok-environment)
+    - [Removing Unwanted Routes](#removing-unwanted-routes)
+  - [Node Identification](#node-identification)
+  - [Identifying Connectivity Issues and Resolving them](#identifying-connectivity-issues-and-resolving-them)
+    - [Missing Junction Nodes](#missing-junction-nodes)
+    - [Unresolved EoC nodes](#unresolved-eoc-nodes)
+    - [Mulitple Parent Nodes](#mulitple-parent-nodes)
+  - [Network Preferences](#network-preferences)
+  - [Generating Canal Naming for the Resolved Network](#generating-canal-naming-for-the-resolved-network)
+  - [Defining Canal Naming Style](#defining-canal-naming-style)
+    - [Create Naming](#create-naming)
+  - [Exceptions for Canal Routes](#exceptions-for-canal-routes)
+    - [Setting Exceptions](#setting-exceptions)
+    - [Managing Exceptions](#managing-exceptions)
+    - [Notes on Eceptions](#notes-on-eceptions)
+    - [Rendering Names to AutoCAD](#rendering-names-to-autocad)
+  - [Tips on Network Resolution](#tips-on-network-resolution)
+    - [Swapping Canal Order for Naming](#swapping-canal-order-for-naming)
+<!--/TOC-->
+
 ## AutoCAD canal layout maps
+[Back to ToC](#table-of-contents)
 
 The AutoCAD layout maps must fulfil certain conventions to be used in the CanalNETWORK software environment. The following are essentially assumed to be true in the AutoCAD source drawing:
 
@@ -47,6 +72,7 @@ Best practices for layout drawings include, but are not limited to:
 For this reason, it is highly recommended that the engineer responsible for preparing layout maps must be aware of these guiding rules and assumptions.
 
 ## Network resolution: Definition
+[Back to ToC](#table-of-contents)
 
 Network resolution is a term used to represent the task of analysing the connectivity between each canal route in the canal network system, and ensuring that each canal in the network has ONLY one parent canal.
 
@@ -67,6 +93,7 @@ After a succesful network resolution task, the user can do the following:
 Lets now see how layout maps prepared in AutoCAD are imported to CanalNETWORK environment and analyzed for connectivity.
 
 ## Importing layout map to CanalNETWOK environment
+[Back to ToC](#table-of-contents)
 
 The first step is to import the drawing to the CanalNETWORK environment. There are many ways to do this:
 
@@ -105,6 +132,7 @@ Every time, the routes are generated drawn in the plan view area of the interfac
 Remember, alignmnet routes that are NOT drawing as polyline, and whose length is less than 20M will be filtered out, and hence can not be imported.
 
 ### Removing Unwanted Routes
+[Back to ToC](#table-of-contents)
 
 Unwanted polyline objects may be imported to the plan view area during the process of importing canals. Also, the user may want to remove a canal route and re-import it again. To remove such objects:
 
@@ -121,6 +149,7 @@ Unwanted polyline objects may be imported to the plan view area during the proce
 Once all the canal routes are imported, the next step is Node Identification.
 
 ## Node Identification
+[Back to ToC](#table-of-contents)
 
 The term Node is used to represent a location on a layout map that represents key locations along canal routes. There are three types of nodes.
 
@@ -161,10 +190,12 @@ The process will automatically generate Nodes for the desired routes and display
 Most of these connectivity issues can be identified automatically, as discussed below.
 
 ## Identifying Connectivity Issues and Resolving them
+[Back to ToC](#table-of-contents)
 
 The user may expect two types of isses with the connectivity established from above step.
 
 ### Missing Junction Nodes
+[Back to ToC](#table-of-contents)
 
 Rarely, the algorithm seems to miss nodes where there should be one. Apparently intersecting canals may not have nodes after the NodeID process described above. Such a case is shown below.
 
@@ -189,6 +220,7 @@ Rarely, the algorithm seems to miss nodes where there should be one. Apparently 
    ![fig48](Images/Image%20049.png)
 
 ### Unresolved EoC nodes
+[Back to ToC](#table-of-contents)
 
 The first common issue is locations where End-of-Canal nodes are inserted, instead of a Junction node. This condition misses to understand that there is a branch canal leaving from the end of the parent canal, impairing further work during canal design. It must be resolved.
 
@@ -229,6 +261,7 @@ This will identify all wrongly positioned EoC Nodes in the entire network databa
 *Progress bar and message at end of operation informing the user of how many EoC nodes are succesfully converted.*
 
 ### Mulitple Parent Nodes
+[Back to ToC](#table-of-contents)
 
 The key purpose of node resolution is to ensure that each branch canal has only one parent canal. However, some canal arrangements may mislead the software and assign two routes as parents for a single brnach canal. Again, this ALWAYS happens when the assumptions and conventions listed early in this section are not fully observed during layout preparation in the AutoCAD environment.
 
@@ -279,6 +312,7 @@ The issue is resolved. Repeat the above steps for all other such nodes.
 Before continuing to the next step, Re run the test `Workflow > Nodes > Diagnose Multiple-Parent Nodes...`  to verify all issues are succesfully resolved, or new issues are not created in the process.
 
 ## Network Preferences
+[Back to ToC](#table-of-contents)
 
 Much of the work carried out above, and some that will follow, are dictated by settings in the network preferences variable set. As such, it is important to understand how they are used. The variable set is accessible from `Workspace > Edit Preferences `
 
@@ -320,12 +354,14 @@ The meaning and use of each variable setting is described below.
 Bottom width roundup value also forces minimum allowable width to 0.30m.
 
 ## Generating Canal Naming for the Resolved Network
+[Back to ToC](#table-of-contents)
 
 Generating a naming - cross-referenced - labels for each canal route in the network is a true test of fully resolved network, that guarantees smooth workflow in subsequent network analysis and design tasks.
 
 To create a desired naming for the network of canals just resolved, first a naming style is needed. 
 
 ## Defining Canal Naming Style
+[Back to ToC](#table-of-contents)
 
 There are multiple styles available to generate a canal naming, depending on the project type, scale and user preference. To create a naming style go to `Workspace  > Manage Design Criteria > New Namiing..`.  
 
@@ -366,6 +402,7 @@ This will import the default design criteria set for the network data, which can
 Creating the naming list is completed here. The next step is to attempt to generate canal naming to each route, and resolve any remaining issues in the network.
 
 ### Create Naming
+[Back to ToC](#table-of-contents)
 
 To create names for each route in the canal network, based on the naming style just defined (above):
 
@@ -400,10 +437,12 @@ Use `Ctrl` + `F` keyboard combination to search for such texts in large networks
 > Note: Some times, you may need to change the name of a parent canal. For instance for canal exceptions.  In such cases, the branch canal naming must also change accordingly. Or you may just want to re-create the text.  You can easily achieve this by running `Edit > Route Text > Create New Text` command for the desired route.
 
 ## Exceptions for Canal Routes
+[Back to ToC](#table-of-contents)
 
 In some cases, the automatic assigning of a generation to a canal route may not serve the needs of the project. For instance, a canal may need to be designed as a TC route despite its parent canal is an MC or TC canal. To allow such unusual design requirements, the exceptions method is available. This allows to manually assign a generation or level to a route.
 
 ### Setting Exceptions
+[Back to ToC](#table-of-contents)
 
 To manually override the naming for a canal route:
 
@@ -450,6 +489,7 @@ This completes the exception definition process. Note that canal routes named wi
 ![img62](Images/Image%20062.png)
 
 ### Managing Exceptions
+[Back to ToC](#table-of-contents)
 
 You can manage the exceptions set for the entire project in one place. 
 
@@ -476,6 +516,7 @@ You can manage the exceptions set for the entire project in one place.
 If you want to clear all exceptions set for the entire project, choose `View > Route Exception > Clear All Exceptions...` menu command, and confirm to the dialog box.
 
 ### Notes on Eceptions
+[Back to ToC](#table-of-contents)
 
 When working with route name exceptions, it is important to note the following behaviours.
 
@@ -486,6 +527,7 @@ When working with route name exceptions, it is important to note the following b
 - The naming style should be strictly consistent with the currently defined naming style. If naming style, or its parameters, are changed (which is not recommened), errors in data processing are bound to occur and difficult to resolve easily. 
 
 ### Rendering Names to AutoCAD
+[Back to ToC](#table-of-contents)
 
 The canal namimng generated as described above can be exported to the AutoCAD environment to label each source alignment object of the canal network accordingly. To export naming:
 
@@ -510,6 +552,7 @@ The canal namimng generated as described above can be exported to the AutoCAD en
 ## Tips on Network Resolution
 
 ### Swapping Canal Order for Naming
+[Back to ToC](#table-of-contents)
 
 The order in which canal branches are read in to a node is on first-found first-registered basis. 
 
@@ -536,5 +579,8 @@ This will ensure that right side canal (facing downstream) is registered next to
 **Important Note:**
 
 **Recreating Nodes on a route, or on an entire network, causes loss of floating node information, as well as related information created including data on design of structures.**
+
+[Back to ToC](#table-of-contents)
+
 
 END.

@@ -12,7 +12,23 @@ There are options for creating design criteria set for a given project. These ar
 
 * Pre-created criteria file stored in *.dcf* file [...](## Import from a Pre-created Criteria File)
 
-### Default criteria set
+Follow the links below to navigate this page.
+
+# Table of Contents
+<!--TOC-->
+  - [Default criteria set](#default-criteria-set)
+  - [Saving Design Criteria to a File](#saving-design-criteria-to-a-file)
+  - [Import from a Pre-created Criteria File](#import-from-a-pre-created-criteria-file)
+  - [Overriding Design Criteria](#overriding-design-criteria)
+  - [Replacing a design criteria from file](#replacing-a-design-criteria-from-file)
+  - [Important Notes](#important-notes)
+    - [Attempting to Solve Criteria Inconsistency](#attempting-to-solve-criteria-inconsistency)
+    - [Change the Naming Style](#change-the-naming-style)
+<!--/TOC-->
+
+
+## Default criteria set
+[Back to ToC](#table-of-contents)
 
 This method very common among users. It brings forward the builtin default criteria set depending on the naming style of choice. Once the default criteria is loaded, one can always edit the contents to suit project conditions. To use the default criteria set:
 
@@ -43,6 +59,7 @@ This method very common among users. It brings forward the builtin default crite
 6. Repeat the same for each generation of canal route.
 
 ## Saving Design Criteria to a File
+[Back to ToC](#table-of-contents)
 
 Saving design criteria to a file can be very helpful, especially when working in collaboration with other members of a team. In such collaborative working arrangements it is crucial that important data such as design criteria remain consistent, and do not change from engineer to engineer, thereby ensuring that each and every aspect of the design is completed with the same design criteria. This feature is one of the many ways the software can ensure quality of design processes.
 
@@ -73,6 +90,7 @@ To create a naming preference and design criteria for saving to a file, and late
 At this point, the naming style and design criteria set are saved as a file. This file can be used for importing design criteria to a new project, as in the second method above. This file can also be shared to a group for use in deigning components of a project in parallel, or saved for later use to fast-track project set up in future.
 
 ## Import from a Pre-created Criteria File
+[Back to ToC](#table-of-contents)
 
 This method allows users to import criteria from an existing file. For this method to work a *.dcf* file, successfully created using the same process as above and existing on your storage drive, is required. To use such file as a design criteria source for your desired project:
 
@@ -93,10 +111,12 @@ The saved design criteria, along with the naming style used to create it is now 
 ![](Images/Image%20010.png)
 
 ## Overriding Design Criteria
+[Back to ToC](#table-of-contents)
 
 Latter in the longitudinal profile design stage, the user may want to change some design criteria values to suit specific conditions on a specific route. This option is available to automate manual override procedures that may take time. Refer to *Longitudinal Design of Routes* guide for more details.
 
 ## Replacing a design criteria from file
+[Back to ToC](#table-of-contents)
 
 For a route with complete design information, you can replace the design criteria from a stored data in a .dcf file. Simply follow the above described procedure and go to `Workspace > Manage Design Criteria > Import from File...`. Pick the file containing the criteria data. 
 
@@ -108,7 +128,8 @@ Note: This makes the data available to the workspace. If you were to resize cana
 
 
 
-# Important Note
+## Important Notes
+[Back to ToC](#table-of-contents)
 
 The design criteria and naming style are critically linked. It is mandatory to maintain the consistency of the data in both. To be specific:
 
@@ -122,11 +143,13 @@ Inconsistency may also arise if the use opts to import a design criteria to a pr
 
 As a final note, it is ALWAYS recommended - and a best practice - to carefully choose and set a naming style that could best represent the project in question, and maintain it that way.
 
-## Attempting to Solve Criteria Inconsistency
+### Attempting to Solve Criteria Inconsistency
+[Back to ToC](#table-of-contents)
 
 If such issues arrise, there are a few ways the user can attempt to resolve the issue. However, success is not guaranteed.
 
 ### Change the Naming Style
+[Back to ToC](#table-of-contents)
 
 The easiest way is to change the naming style for the current project to match exactly the fields for the design criteria. The later can be seen from `Workspace > Manage Design Criteria > Set/ Edit Design Criteria... `This will list all the available fields for the data. Make note of it.
 
@@ -139,5 +162,8 @@ Then change naming style. There are two ways to do this:
 This should solve the insocistency. The crietia set can now be saved. Go to Workspace > Manage Design Criteria> Edit Current Naming ... Then in the dialog, set the value for *On Apply use for* variable to *Save to File*, and hit Apply. This will allow to save data to a file in a prefered location.
 
 To use the above saved criteria set, in any open project go to `Workspace > Manage Design Criteria > Import from File...` and pick the file saved above. This will import and replace the criteria set in the project, if any, with the new one. 
+
+[Back to ToC](#table-of-contents)
+
 
 END. 

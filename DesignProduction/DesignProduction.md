@@ -16,7 +16,41 @@ There are different products that the user can generate from a succesfully compe
 
 Below sections show how to generate these data.
 
-### Table Data
+# Table of Contents
+<!--TOC-->
+- [Table Data](#table-data)
+- [Bill-of-Quantity](#bill-of-quantity)
+  - [Preparing for BoQ extraction](#preparing-for-boq-extraction)
+  - [Bill of Quantity for a Canal Route](#bill-of-quantity-for-a-canal-route)
+  - [BoQ for Canal Segments](#boq-for-canal-segments)
+  - [BoQ between stations of a given canal](#boq-between-stations-of-a-given-canal)
+  - [BoQ for Select group of Canals](#boq-for-select-group-of-canals)
+  - [Settings for BoQ generation.](#settings-for-boq-generation.)
+- [Creating and Editing Axes](#creating-and-editing-axes)
+  - [Create a new axes](#create-a-new-axes)
+  - [Editing Axis](#editing-axis)
+  - [Edit or Create Alignment Markers](#edit-or-create-alignment-markers)
+- [Longitudinal Profile (LSec) Drawing Generation](#longitudinal-profile-lsec-drawing-generation)
+  - [Generating Longitudinal Profile drawing for single canal route](#generating-longitudinal-profile-drawing-for-single-canal-route)
+  - [Generating Longitudinal Drawing for multiple ranges of a canal route](#generating-longitudinal-drawing-for-multiple-ranges-of-a-canal-route)
+  - [Creating Longitudinal Profile Drawings for multiple canal routes](#creating-longitudinal-profile-drawings-for-multiple-canal-routes)
+- [Cross Section Drawings](#cross-section-drawings)
+  - [Cross-Sections at increments](#cross-sections-at-increments)
+  - [Cross-Sections for custom list](#cross-sections-for-custom-list)
+  - [Cross-sections at saved locations](#cross-sections-at-saved-locations)
+  - [Generating drawings for Canal Structures](#generating-drawings-for-canal-structures)
+- [Generating Plan Views](#generating-plan-views)
+  - [Generating Full Length Plans](#generating-full-length-plans)
+  - [Generating plan views for a selected segement](#generating-plan-views-for-a-selected-segement)
+  - [Generating plan view for user defined station range](#generating-plan-view-for-user-defined-station-range)
+- [Exploring Sections in Plan View](#exploring-sections-in-plan-view)
+  - [Creating Extended Plan Views](#creating-extended-plan-views)
+  - [Automatic Exporting of plan view](#automatic-exporting-of-plan-view)
+  - [Manual Exporting plan view or their components to AutoCAD](#manual-exporting-plan-view-or-their-components-to-autocad)
+<!--/TOC-->
+
+# Table Data
+[Back to ToC](#table-of-contents)
 
 Table data are results of design work for a particular canal route that can be presented as a table listing. The following are typical table data that can be generated for a selected route.
 
@@ -28,13 +62,15 @@ Table data are results of design work for a particular canal route that can be p
 
 See Exploring Solutions under Longitudinal Design of Canals Section, for details on each of these.
 
-### Bill-of-Quantity
+# Bill-of-Quantity
+[Back to ToC](#table-of-contents)
 
 Bill of Quantity document is one of the key outputs of a design task. In CanalNETWORK product, this is a fully automated process. The output can be created in many different ways.
 
 > Note: Often, the volume of cut and fill involved for a canal route is a design decision tool. To explore these values, the best way is to use the annotation tools from `Explore Solutions > Annotators`. See relevant section in this guide.
 
-#### Preparing for BoQ extraction
+## Preparing for BoQ extraction
+[Back to ToC](#table-of-contents)
 
 Before BoQ can be extracted accurately, all elements of the canal route - i.e., profile data and structures data must be updated. To ensure all data for the elements correspond to the most recent design changes, fully exploring solutions is a mandatory step, especially before BoQ extraction. This ensures that every element of the canal route are upto date.
 
@@ -56,7 +92,8 @@ Confirm `Go` and all relevant canal routes are auotmatically updated for the lat
 
 Note: BoQ created with out updated control and structures data can be incomplete, or inaccurate.
 
-#### Bill of Quantity for a Canal Route
+## Bill of Quantity for a Canal Route
+[Back to ToC](#table-of-contents)
 
 The general steps to creating a bill-of-quantity output is as follows:
 
@@ -86,7 +123,8 @@ The general steps to creating a bill-of-quantity output is as follows:
 
 Below are the different types of BoQ reports that can be generated.
 
-#### BoQ for Canal Segments
+## BoQ for Canal Segments
+[Back to ToC](#table-of-contents)
 
 BoQ can be generated for a single segement of a route, that is the reach between any two control nodes. To do this:
 
@@ -98,7 +136,8 @@ BoQ can be generated for a single segement of a route, that is the reach between
    
    ![figl](Images/Image%20041.png)
 
-#### BoQ between stations of a given canal
+## BoQ between stations of a given canal
+[Back to ToC](#table-of-contents)
 
 If estimate of work volume is required between stations, follow the following steps.
 
@@ -112,7 +151,8 @@ If estimate of work volume is required between stations, follow the following st
 
 Note: This method reports only canal related works, and excludes quantities related to minor or major structures.
 
-#### BoQ for Select group of Canals
+## BoQ for Select group of Canals
+[Back to ToC](#table-of-contents)
 
 Sometimes, extracting BoQ for selected group of canals may be needed. For this approach, the desired canals are instanced to an AutoCAD host object first. Then, using the `Explore Solutions > Batch  Processes > Bill of Quantity` will do the job. 
 
@@ -160,7 +200,8 @@ Sometimes, extracting BoQ for selected group of canals may be needed. For this a
    
    Notice the title indicating multiple canals are selected for the BoQ listing.
 
-#### Settings for BoQ generation.
+## Settings for BoQ generation.
+[Back to ToC](#table-of-contents)
 
 Quantity listing depends on values set to selected paramters. There are three imprtant parameters that affect the level of detail considered for quantity extraction. 
 
@@ -234,13 +275,15 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
 
 
 
-## Creating and Editing Axes
+# Creating and Editing Axes
+[Back to ToC](#table-of-contents)
 
 Often times one may need to create axes and edit the information displayed depending on the data ploted. 
 
-![fig](Images/Image%2040.png)
+<img src="./Images/Image%2040.png" style="width:6in">
 
-### Create a new axes
+## Create a new axes
+[Back to ToC](#table-of-contents)
 
 1. Start the menu command from `Explore Outputs > Plot to AutoCAD > Create Axes`. 
 
@@ -248,7 +291,7 @@ Often times one may need to create axes and edit the information displayed depen
 
 3. The variable editor dialog appears. Set axis limits for Abscisa and Ordinate as desired.
    
-   ![fig](Images/Image%2041.png)
+   <img src="./Images/Image%2041.png" style="width:4in">
    
    WCS data: Uses the AutoCAD World Coordinate System the object is located to create an axis. This will enlarge the BBox a little to set starting and ending positions.
    
@@ -258,13 +301,14 @@ Often times one may need to create axes and edit the information displayed depen
    
    Note: The value sets are START, STEP, END.
    
-   ![fig](Images/Image%2042.png)
+   <img src="./Images/Image%2042.png" style="width:5in">
    
    
 
 
 
-### Editing Axis
+## Editing Axis
+[Back to ToC](#table-of-contents)
 
 Used to change the appearance and orientation of axis labels, use below steps.
 
@@ -272,7 +316,8 @@ Used to change the appearance and orientation of axis labels, use below steps.
 
 2. In the dialog, ckick on the first row second column cell, and pick the axis to edit in AutoCAD.
    
-   ![fig](Images/Image%2044.png)
+   <img src="./Images/Image%2044.png" style="width:4in">
+   
 
 3. The dialog box populates the values of the current setting in the box. Edit as desired.
    
@@ -302,17 +347,19 @@ Upon completion, the axis will be redrawn in AutoCAD with the new changes.
 
 
 
-### Edit or Create Alignment Markers
+## Edit or Create Alignment Markers
+[Back to ToC](#table-of-contents)
 
 To create markers along an alignment use below steps:
 
 1. Start the menu `Workflow > Plot to AutoCAD > Edit/Create Alignment Marker`. AutoCAD will be ready in select mode, promoting *Pick Alignment object to Mark:* 
    
-   ![fig](Images/Image%2051.png)
+      <img src="./Images/Image%2051.png" style="width:6in">
 
 2. Pick the object for marking. If the object is not referenced, a dialog will apear to confirm the process. Accept and continue. If not, it will continue. 
    
-   ![fig](Images/Image%20124.png)
+      <img src="./Images/Image%20124.png" style="width:2.5in"> 
+
 
 3. If the Alignment has longitudinal informaiton, it will continue to step 4. If not,  a dialog will apear to confirm. Accept `Set New`. Input the deisred starting station for the object.
    
@@ -360,11 +407,13 @@ To create markers along an alignment use below steps:
 
 
 
-## Longitudinal Profile (LSec) Drawing Generation
+# Longitudinal Profile (LSec) Drawing Generation
+[Back to ToC](#table-of-contents)
 
 Generating longitudinal profiles drawings, also known as LSecs, can be done either for individual canals or for a group of canals. The latter will be uising the Batch Process commands. Either way, LSecs can be generated at any desired increments, if needed creating multiple LSec drawings for a single canal route.
 
-#### Generating Longitudinal Profile drawing for single canal route
+## Generating Longitudinal Profile drawing for single canal route
+[Back to ToC](#table-of-contents)
 
 Click on the desired route object in Plan View. The longitudnal view will be displayed on the profile view axis. 
 
@@ -390,7 +439,8 @@ Then:
    
    ![image100](Images/Image%20100.png)
 
-#### Generating Longitudinal Drawing for multiple ranges of a canal route
+## Generating Longitudinal Drawing for multiple ranges of a canal route
+[Back to ToC](#table-of-contents)
 
 Often, a canal route is too long to create a single profile drawing. Multiple drawings are required to do the job. This can be done using the batch process option. Start by selecting the route you want on plan view. 
 
@@ -418,7 +468,8 @@ Then:
    
    You can see that two drawings are generated, although three is expected 0-1000, 1000-2000, and 2000-2099.55 The algorithm will combine small length drawings to previous ones for presentation quality. Hence the two drawings for station ranges from 0-1000, 1000-2095.5.
 
-#### Creating Longitudinal Profile Drawings for multiple canal routes
+## Creating Longitudinal Profile Drawings for multiple canal routes
+[Back to ToC](#table-of-contents)
 
 The steps to creating profile drawings for multiple routes are similar to the batch process workflow shown above. Before starting the process make sure all the canal routes have the necessary data for production of drawings. Then:
 
@@ -430,7 +481,8 @@ The steps to creating profile drawings for multiple routes are similar to the ba
 
 3. When prompted provide the scaling desired, and watch it all happen in AutoCAD.
 
-## Cross Section Drawings
+# Cross Section Drawings
+[Back to ToC](#table-of-contents)
 
 Cross-section views can be generated to AutoCAD in one of three ways. The first method allows to generate cross-sections at preset intervals. An other way is to select and plot desired stations only. The third method allows users to save specific locations whose cross-sections are required, and generate only those specific sections. 
 
@@ -440,7 +492,8 @@ The command to execute this task is accessible from `Explore Solutions > Batch P
 
 > Note. In all cases, the cross-section view is generated FUS with respect to the current route. This is in line with the convention adopted for profile data extraction.
 
-#### 1. Cross-Sections at increments
+## Cross-Sections at increments
+[Back to ToC](#table-of-contents)
 
 To use the first method, start by switching off the XSEC toggle button at the top of the detail view area. Then start the command. You will be prompted with available options for incremental cross-section generation.
 
@@ -470,7 +523,8 @@ The resulting AutoCAD drawing looks similar to below, as specified a 2 x 4 array
 
 ![img077](Images/Image%20077.png)
 
-#### 2. Cross-Sections for custom list
+## Cross-Sections for custom list
+[Back to ToC](#table-of-contents)
 
 You can also generate cross-sections at select stations. To do this:
 
@@ -488,7 +542,8 @@ The plots are generated for each of the selected station as explained for the pr
 
 > Note: Stations are rounded upon rendering. For instance station value 24.987 is drawn to AutoCAD with annotation 0+24.90.
 
-#### 3. Cross-sections at saved locations
+## Cross-sections at saved locations
+[Back to ToC](#table-of-contents)
 
 This method requires an existing set of saved stations where cross-section drawings are required. Refer to documentation on Longitdinal Design of Routes, to learn how to create and save station data for cross-section generation.
 
@@ -514,7 +569,8 @@ Follow the proceedure for method one above to complete from this step onwards.
 
 > Note: While in plan view, the batch process for XSection drawing generation will only create drawings for those cross-sections whose stations are included in the START and END stations of the plan view.
 
-### 4. Generating drawings for Canal Structures
+## Generating drawings for Canal Structures
+[Back to ToC](#table-of-contents)
 
 Special structures, such as Head Regulators, Cross-Regulators and Inclined drops are designed outside of CanalNETWORK using iCAD's *CanalStructuresJET*module. A complete set of tools is available with in iCAD environment the drawinsg for these structures. 
 
@@ -522,13 +578,15 @@ Refere to pertaining documentation on Design of Canal Structures using FLoating 
 
 ![image107](Images/Image%20107.png)
 
-## Plan View
+# Generating Plan Views
+[Back to ToC](#table-of-contents)
 
 Plan view is a key product in the design workflow. It presents detailed alignment and embankement information, along with locations for various structures and station markers along the route. Plan views are also used to provide a view of parallely running canal routes, to refine any constructabilty issues.
 
 ![imageIntro](images/Image%20092.png)
 
-#### Generating Full Length Plans
+## Generating Full Length Plans
+[Back to ToC](#table-of-contents)
 
 To succesfuly generate plan views for a given route, the profile data must be fully updated. To do this, while the route is selected in plan view:
 
@@ -596,7 +654,8 @@ Then, you can start plan view generation. There are two steps to generate plan v
 
 4. To exit from plan view, right click on *Plan View Area* and choose `Refresh Nodes and Routes` option. This will clear the plan drawing, and repoulate route and node information.
 
-#### Generating plan views for selected segements
+## Generating plan views for a selected segement
+[Back to ToC](#table-of-contents)
 
 One can quickly create a plan view for a segment of the route profile as follows:
 
@@ -606,7 +665,8 @@ One can quickly create a plan view for a segment of the route profile as follows
 
 This step is particularly helpful when making modifications to the CBL of a segment, and an updated plan view is needed to see the change. Simply start the profile data update command (Ctrl+L) and request the plan view (Ctrl+W). This saves significant time, especially when working on very long canals where the drawing creation time is relatively longer. 
 
-#### Generating plan view for user selected range
+## Generating plan view for user defined station range
+[Back to ToC](#table-of-contents)
 
 One can also create plan views from an interactively selected window. To use this method:
 
@@ -618,7 +678,8 @@ One can also create plan views from an interactively selected window. To use thi
 
 3. If the range selected specifies a length less than 100meters, the command exits after blinking the rectangle. Otherwise, the plan view is created for the desired range.
 
-#### Exploring Sections in Plan View
+# Exploring Sections in Plan View
+[Back to ToC](#table-of-contents)
 
 You can explore sections in plan view in one of two ways. Start the Cross-Sections command from `XSEC` button, and click on a vertical section bar (solid, not dotted) created in profile view. An interactive vertical bar is created that allows you to pick a section. As you hover in the profile view, a red start marker is shown in plan view, pointing to the exact location of the selected station. Upon click, the section for that station is generated.
 
@@ -632,7 +693,8 @@ You can also create a data tip in plan view along the centerline of the route, a
 
 > Note: Station information on Data Tips of plan view are re-calculated based on rendered geometery, and may not always be precise to actual stations used to create the cross-section view.
 
-#### Creating Extended Plan Views
+## Creating Extended Plan Views
+[Back to ToC](#table-of-contents)
 
 You can generate plan views of two parallelly running canals at the same time, to see any overlap issues or to confirm if adeuate space is maintained between the two. To do this:
 
@@ -666,7 +728,8 @@ Note the following points when using this method:
 
 
 
-### Automatic Exporting of plan view
+## Automatic Exporting of plan view
+[Back to ToC](#table-of-contents)
 
 The quickest way to generate plan views to AutoCAD is shown below.
 
@@ -694,7 +757,8 @@ Notes on Colors:
   
   
 
-#### Manual Exporting plan view or their components to AutoCAD
+## Manual Exporting plan view or their components to AutoCAD
+[Back to ToC](#table-of-contents)
 
 1. To generate the drawings to AutoCAD, use the standard tool from `Workflow > Render To AutoCAD` or `Ctrl + P`,  The first step would be to copy the axes information to the region of plot in AutoCAD, hence choose *Copy BBox*. 
    
@@ -727,3 +791,6 @@ Notes on Colors:
    *Fig AutoCAD drawing, after few edits on line colors, and text annotation creation.*
    
    If only certain components of the drawing are needed, select those only, and continue. The desired elements are added to the drawing.
+
+
+   END.

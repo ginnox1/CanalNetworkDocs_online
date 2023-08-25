@@ -2,6 +2,44 @@
 
 Longitudinal design of routes is the stage where the engineer spends significant time working on individual canal routes, and exploring design scenarios. CanalNETWORK offers an interactive graphic environment with rich annotation to guide design process effectively.
 
+# Table of Contents
+<!--TOC-->
+  - [Pre-requisits](#pre-requisits)
+  - [Start Longitudinal Design](#start-longitudinal-design)
+    - [Adjust Control Inverts](#adjust-control-inverts)
+    - [Adjust Drops](#adjust-drops)
+    - [Invalid Drop Locations](#invalid-drop-locations)
+    - [Provide predefined list of drops](#provide-predefined-list-of-drops)
+  - [Adjust Canal Assembly for Segments](#adjust-canal-assembly-for-segments)
+  - [Update Segment Data](#update-segment-data)
+  - [Using Floating Nodes](#using-floating-nodes)
+  - [Exploring Solutions](#exploring-solutions)
+    - [Creating and Managing Annotations](#creating-and-managing-annotations)
+    - [Viewing and copying table data](#viewing-and-copying-table-data)
+    - [LSec Profile Data](#lsec-profile-data)
+    - [Exploring Flow Sections](#exploring-flow-sections)
+    - [Exploring Controls](#exploring-controls)
+    - [Exploring Drops](#exploring-drops)
+    - [Exploring Turnouts](#exploring-turnouts)
+    - [Exploring Division Boxes](#exploring-division-boxes)
+    - [Viewing BoQ data for a route](#viewing-boq-data-for-a-route)
+    - [Batch Explore of Solutions](#batch-explore-of-solutions)
+    - [Creating and Viewing Cross-section views](#creating-and-viewing-cross-section-views)
+    - [Copying table data and using in other applications](#copying-table-data-and-using-in-other-applications)
+- [Using Advanced tools for longitudinal design](#using-advanced-tools-for-longitudinal-design)
+  - [AutoDesign](#autodesign)
+  - [Solving for optimal flow section for individual segments](#solving-for-optimal-flow-section-for-individual-segments)
+  - [AutoDesign for Route](#autodesign-for-route)
+  - [Reset Design Criteria to Default](#reset-design-criteria-to-default)
+  - [Override design criteria (Exception)](#override-design-criteria-exception)
+  - [AutoDesigning a Selection of Routes](#autodesigning-a-selection-of-routes)
+  - [Working with large networks](#working-with-large-networks)
+<!--/TOC-->
+
+
+## Pre-requisits
+[Back to ToC](#table-of-contents)
+
 Longitudinal design stage requires that the below workflow tasks are completed adequatedly:
 
 1. Resolved network 
@@ -13,6 +51,7 @@ Longitudinal design stage requires that the below workflow tasks are completed a
 Once the above stages are complete, and data from each is accessible (See here for available ways to manage different data and make them accessible for CanalNETWORK), longitudinal profile design can continue.
 
 ## Start Longitudinal Design
+[Back to ToC](#table-of-contents)
 
 There are two ways to start the longitudinal design of a canal route:
 
@@ -31,6 +70,7 @@ Both options load and render longitudinal profile data, along with canal control
 The user can interact with the design as follows.
 
 ### Adjust Control Inverts
+[Back to ToC](#table-of-contents)
 
 Controls comprise key components in longitudinal design of routes. They represent acual control structures, such as Turn outs and division boxes. The primary task of the engineer can be to design the invert levels of these controls.
 
@@ -98,15 +138,16 @@ Finally, to change the functions of the control:
 
 * One can view the results of the hydraulic analysis by clicking on the R button next to the Division box check box. A report of the following form will be generated informing the user of the hydraulic analysis carried out, and the adjustments made to the inverts of the offtaking canals.
   
-  ![d](Images/Image%20002.png)
+  <img src="./Images/Image%20002.png" style="width:6in">
   
-  ![d](Images/Image%20003.png)
+  <img src="./Images/Image%20003.png" style="width:6in">
 
 * The same button also redesigns the division box currently selected, for any changes that may have been made to invert levels, flow depths, or similar. A new report, and a new set of invert levels are calculated and applied to the offtaking canals corresponding to the modification made.
 
-To reapply the default criteria set for the entire route, thereby removing any and all overrides done manually, the user must resize the canal. See part of this guide on [Design Criteria creation and use]()  for more details.
+To reapply the default criteria set for the entire route, thereby removing any and all overrides done manually, the user must resize the canal. See part of this guide on [Design Criteria creation and use](..DesignCriteria/AboutDesignCriteria.md)  for more details.
 
 ### Adjust Drops
+[Back to ToC](#table-of-contents)
 
 Drops are created automatically following the variation of the ground level. They are positioned strictly per the provisions of *CBL_designSettings* parameter set in the design criteria. See [Design Criteria Creation and Use]() for the meaning and use of each of these variables.
 
@@ -155,6 +196,7 @@ In above snapshot, the drop height of 0.836 can be adjusted to 0.800 by adding 0
 ![](Images/Image%20031.png)
 
 ### Invalid Drop Locations
+[Back to ToC](#table-of-contents)
 
 In rare instances, the sum effect of the drop location parameters specified by the user is not actionable. As a result, it may not be straight forward to position some drops. Also, the `Explore Drops` command may not collect and report drops in such segments.
 
@@ -179,6 +221,7 @@ There are two ways to resolve this issue:
 > Note: The minimum acceptable spacing between structures is sligthly greater than 5.0meters. In line with this, it is strongly recommended that the available distance between any two controls in the network is at least 20meters.
 
 ### Provide predefined list of drops
+[Back to ToC](#table-of-contents)
 
 Once can also override the entire list of drop heights and their stations in a canal segment, to replace with own predefined list. This may be particularly helpful when modeling existing projects.
 
@@ -199,6 +242,7 @@ This will create a new CBLinformation for the segment that accomodates the presc
 > Note: There are no limits to the size of the data length to be provided for such prescrptions. However, both the height and locaiotn data must be of the same length, and respect the data input expectations. Otherwise, the action will not take effect.
 
 ## Adjust Canal Assembly for Segments
+[Back to ToC](#table-of-contents)
 
 The last area of control for the user to guide and influence longitudinal canal is the `Canal Assembly` panel. In this panel, information regarding the parameters that determine the shape and size of the canal section and its flow parameters can be adjusted. 
 
@@ -223,6 +267,7 @@ To redesign the flow section by adjusting the slope within allowable performance
 * See further below topic [Solving Optimal flow sections for Individual segments]() further below for guidance on using the solve function.
 
 ## Update Segment Data
+[Back to ToC](#table-of-contents)
 
 Information for hydraulic and formation design in segments may require updating from time to time. Typically, a segment may exhibit a behaviour that is not expected as below:
 
@@ -241,6 +286,7 @@ To resolve these issues, DO NOT USE ReDraw Node DBL button, as shown at bottom r
 In above note, you notice that the reDraw button also creates an auto-generated data set for drop location in the immediate-next segment of the control. This is mandatory process, to ensure that any changes in invert level of the control node, is accomodated with respect to the downstream setment.
 
 ## Using Floating Nodes
+[Back to ToC](#table-of-contents)
 
 Floating nodes are nodes (or contols) similar to other nodes, but can be used to represent different hydraulic and physical constraints along a canal route. They can be an effective way to regulate and interact with the longitudinal design of a route. The following notes deal with the insertion, specification and management of floating nodes to emualte practical design considerations.
 
@@ -255,10 +301,12 @@ Canal Structures
 Special Segments
 
 ## Exploring Solutions
+[Back to ToC](#table-of-contents)
 
 There are multiple ways to explore and interact with the solutions of a longitudinal profile design of a canal route. These are all accessible from the menu `Explore Solutions`.  These are categorized in to two groups, annotations and data tables.
 
 ### Creating and Managing Annotations
+[Back to ToC](#table-of-contents)
 
 Users can create and manage various annotations to keep track of the changes happening, as well as ensure key criteria are met.
 
@@ -301,12 +349,14 @@ The above described annotations provide a quick and reliable overview of the hyd
 > Ctrl+3: Display on/off LSEc Details
 
 ### Viewing and copying table data
+[Back to ToC](#table-of-contents)
 
 The other group of tools to explore solutions is viewing tabular data. The solution for longitudinal design of routes incorporates tabular data. These are accessible from Explore Solutions > Data Tables. There are five table data available for viewing.
 
 ![d](Images/Image%20041.png)
 
 ### LSec Profile Data
+[Back to ToC](#table-of-contents)
 
 This table shows extensive detail of profile data along with canal bed level and embankement formation data for the entire range of stations in the route. 
 
@@ -391,6 +441,7 @@ Note: Cart away volumes reported on BoQ table represent the total excavated/Cut 
 See Design Production Section for  more information ob BoQ estimation, and how clearing depth is considered.
 
 ### Exploring Flow Sections
+[Back to ToC](#table-of-contents)
 
 This command generates the hydraulic design results for flow sections corresponding to each segment in the canal route.
 
@@ -449,6 +500,7 @@ Vratio= Vchzy/Vcrt
 Some practitioners recommend to accept design sections whose value for velocity ratio is close to unity.
 
 ### Exploring Controls
+[Back to ToC](#table-of-contents)
 
 This menu command generates a list of all the controls in the canal route, that define the connection between succesive segments, as well as junction with brnach canals - if any.
 
@@ -469,6 +521,7 @@ FSD: Flow depth for the flow section corresponding to the segment upstream of th
 FSL: the full supply level just before the control location.
 
 ### Exploring Drops
+[Back to ToC](#table-of-contents)
 
 Similar to above commands, this command list all the vertical fall structures for the route.
 
@@ -509,6 +562,7 @@ It is possible to extract the drops of a number of canal routes in one go. To do
 ![fig](Images/Image%20058.png)
 
 ### Exploring Turnouts
+[Back to ToC](#table-of-contents)
 
 This option specifically lists the relevant construction dimensions for each turnout structure found on the route. 
 
@@ -553,6 +607,7 @@ Vcut= dFloor x (LTotal+mxdFloor) x (BTotal + mxdFloor)
 > Note: Tunrouts can be combined with drops. If controls for Turnout locations have drops, the stilling basing structure will be sized and provided similar to the design approach for othe drops. The results are included in BoQ quantity. This functionality is not applicable to Floating Nodes or Division Boxes.
 
 ### Exploring Division Boxes
+[Back to ToC](#table-of-contents)
 
 Similar to turnouts, this command specifically lists the relevant contruction dimensions for each division box structure found on the route.
 
@@ -567,6 +622,7 @@ The symbols for each dimension heading is described in the below drawing.
 *Fig: Drawing for a typical division box from CDSWC, showing the deginition of symbols used in the table listing.*
 
 ### Viewing BoQ data for a route
+[Back to ToC](#table-of-contents)
 
 After the above solutions are explored, a complete BoQ information can be generated for a route as follows.
 
@@ -587,6 +643,7 @@ After the above solutions are explored, a complete BoQ information can be genera
 More detail is available under the Topic [Design Production]().
 
 ### Batch Explore of Solutions
+[Back to ToC](#table-of-contents)
 
 Exploring solutions is desired to analyze and confirm the outputs are acceptable, or if there are modifications required to the design. It is also important for production tasks. However, it can be tedious to run all the above commands for each canal in a network of canal systems. To assist in this process, batch processing options are available. This allows to automatically run the solutions for a number of canals at a time, and update the data contents for each route.
 
@@ -617,6 +674,7 @@ To use this tool, to explore solutions for sub canals of a route:
    ![image66](Images/Image%20066.png)
 
 ### Creating and Viewing Cross-section views
+[Back to ToC](#table-of-contents)
 
 One can easily view the cross-section at any station along the canal route. To view cross-sections, make sure the desired route is selected in plan view, and its details are presented in profile view. Then:
 
@@ -647,6 +705,7 @@ The stations viewed can be saved for latter use. To save selected stations, clic
  Learn more about this on documentation for Design Production.
 
 ### Copying table data and using in other applications
+[Back to ToC](#table-of-contents)
 
 All the data presented in the form of a table can be used in other applications, e.g., report writing in MS Word or further data processing in MS Excel. The `Copy Table` button provided at the bottom of the table display interface just helps do that. To copy the data content of the table view interface, click on the button.
 
@@ -657,6 +716,7 @@ Choose your preference as shown above, and jit Ok. The data is copied to the Win
 # Using Advanced tools for longitudinal design
 
 ## AutoDesign
+[Back to ToC](#table-of-contents)
 
 By default, the software generates a tentaive longitudinal profile for the route upon refreshing the profile view. Characteristics of this tentaive design include, bur are not limited to, the following:
 
@@ -681,6 +741,7 @@ Auto Design tool implements a sophisticated algorithm to factor all the above re
 Once again, the careful selection and setting of design criteria for canal routes can not be overemphasized. It affects the outputs of the automatic design, and hence directly impacts the time an engineer spends to complete the design of a single route.
 
 ## Solving for optimal flow section for individual segments
+[Back to ToC](#table-of-contents)
 
 Flow sections for individual segments, and the wider network of canals in general, are often expected to perform under established constraints that include:
 
@@ -727,6 +788,7 @@ Note, the following limitations apply:
 - Maximum calculated slope can not be higher than 10,000 (10000H: 1V)
 
 ## AutoDesign for Route
+[Back to ToC](#table-of-contents)
 
 The above procedure used for designing a single segment of a given route can be applied for an entire length of a route. To do so
 
@@ -749,6 +811,7 @@ To see the viability of the result from this auto-design process, the user can c
 
 
 ## Reset Design Criteria to Default
+[Back to ToC](#table-of-contents)
 
 To reset the design criteria for a route:
 
@@ -769,6 +832,7 @@ This will extract default design criteria and apply the current route. To review
 
 
 ## Override design criteria (Exception)
+[Back to ToC](#table-of-contents)
 
 Canal routes, every time they are refreshed, refer to the design criteria corresponding to their level or generation. To override some of these parameters as the site condition may require, users have to change junction node and canal segment assembly criteria. This makes the job time consuming, particularly for long canal routes.
 
@@ -791,6 +855,7 @@ Note: The new set of criteria are also saved on to the exception data string for
 Important: Exception design criteria EXCLUDE all variables in the command criteria group of variables.
 
 ## AutoDesigning a Selection of Routes
+[Back to ToC](#table-of-contents)
 
 ![](Images/Image%20007.png)
 
@@ -806,7 +871,7 @@ Important: It is important to revisit the designs for each route designed with t
 
 *Note: AutoDesign task can not be undone. To reset to original tentative settings, select the route, apply Resize. Design parameters are reapplied. To view the updated view, click on the route in plan view, which will refresh the view in Profile View Axis.*
 
-# Working with large networks
+## Working with large networks
 
 Working with large netwroks can pose some challenges when dealing with farm blocks creation. This can be easily solved using the sub-network view feature. This feature limits the displayed network to all branches of a given route. There are two ways to start this function.
 
