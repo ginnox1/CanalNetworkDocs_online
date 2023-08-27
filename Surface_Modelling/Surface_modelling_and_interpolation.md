@@ -1,10 +1,29 @@
 # Surface modelling and Profile Extraction
 
+## Table of Contents
+<!--TOC-->
+  - [Introdution](#introdution)
+  - [Steps to Profile Data Creation](#steps-to-profile-data-creation)
+    - [Hosting the Topographic Data](#hosting-the-topographic-data)
+    - [Understanding Profile Extraction output](#understanding-profile-extraction-output)
+    - [Profile for a single alignment route](#profile-for-a-single-alignment-route)
+    - [Profile Data for multiple objects](#profile-data-for-multiple-objects)
+  - [Surface Interpolant](#surface-interpolant)
+  - [Query on Topograhic Data](#query-on-topograhic-data)
+  - [Extrapolation](#extrapolation)
+  - [Curve Handling During profile extraction](#curve-handling-during-profile-extraction)
+  - [Notes about Alignments](#notes-about-alignments)
+<!--/TOC-->
+## Introdution
+[Back to ToC](#table-of-contents)
+
+
 Calculation and presentation of ground surface data is a key process in the design of irrigation infrastructure. iCAD product incorporates dedicated module to manage this task, and deliver results in a convenient and easy to use environment.  The module and its extended applications (for instance in CanalNETWORK product) leverage computational algorithms from within Matlab, to generate representations of surface models, and determine elevation values at specific query points. The technical details are described further below. In the following, the steps to profile data extraction in iCAD envronment is described.
 
 ## Steps to Profile Data Creation
 
 ### Hosting the Topographic Data
+[Back to ToC](#table-of-contents)
 
 Before you can extract profile data, the scattered topographic data (often found in CSV format) must be availble associated in the drawing file. 
 
@@ -37,6 +56,7 @@ The host object now contains the spot data set for topographic processing. You c
 You can now proceed to next steps.
 
 ### Understanding Profile Extraction output
+[Back to ToC](#table-of-contents)
 
 Upon succesful run of a profile extraction process, the following typical outputs and tools are available.
 
@@ -57,6 +77,7 @@ A typical profile data contains data on the following:
 > Note: For details on how curves are handled and pre-requisits, see further below.
 
 ### Profile for a single alignment route
+[Back to ToC](#table-of-contents)
 
 To create a profile data for a single alignment route, start by making sure iCAD session is connected to the current AutoCAD drawing, with the host object and desired alignment route ready. Follow below steps:
 
@@ -114,10 +135,12 @@ To create a profile data for a single alignment route, start by making sure iCAD
    The profile data, created and saved in this manner is available for other iCAD and CanalNETOWRK functions.
 
 ### Profile Data for multiple objects
+[Back to ToC](#table-of-contents)
 
 [... more content to be added soon...]
 
 ## Surface Interpolant
+[Back to ToC](#table-of-contents)
 
 Surface fitting and interpolation, as applied in the context of topographic data processing in iCAD and CanalNETWORK products, specifically refers to the use of scattered data of the form x, y, z triplet to determine a representative surface model of the form z= F(x,y) and using this surface model to generate elevation (z) values at arbitrary x, y locations. This means, data from typical surveying work or other sources that is available in x, y, z format can be used to reach at the desired surface model, and undertake subsequent tasks.
 
@@ -132,6 +155,7 @@ It is important to note that the method:
 - the elevation at any point inside or on the edge of each triangle is calaculated using linear interpolation
 
 ## Query on Topograhic Data
+[Back to ToC](#table-of-contents)
 
 Once the surface interpolant is determined, elevation at querry points of x, y is detemined from the same, using the following relation ship.
 
@@ -153,19 +177,22 @@ The surface data extraction algorithm in iCAD and CanalNETWORK software products
   
   When extracting strip elevation data for an alignment object, normal lines are generated at fixed intervals. In addition to x,y data at center line - i.e., on the alignment route - other x,y data are created at offset locations specified by the user along these normal lines. The offset locations are applied on both sides of the alignmnet. The resulting x,y data set forms a strip area along the alignment route. The elevation data at this data set is calculated from z= f(x,y).
   
-  ![[  ]](Images/Image%2041.png) 
+    <img src="./Images/Image 41.png" style="width:4in">
+ 
   
   *Schematic showing Alignment route, and offset querry points consideration. Offsets are read from Left to Right, facing in the direction of progress of the alignment route.*
 
-Note: The intervals for extracting profile data are specified by the user. The algorithm includes vertex points along the alignmnet route object, but the user has the option to exclude these points during the extraction process.
+    Note: The intervals for extracting profile data are specified by the user. The algorithm includes vertex points along the alignmnet route object, but the user has the option to exclude these points during the extraction process.
 
 - Profile Reload tools: Sometimes engineers want to modify alignment routes to meet some design requirements. This is naturally handled with in the AutoCAD environment. In such cases, both iCAD and CanalNETWORK products offer a function that allows reloading profile data for an alignmnet object whose vertices are modified. Reload functions essentially repeat the profile extraction steps described above using  settings used to create the original profile data.
 
 ## Extrapolation
+[Back to ToC](#table-of-contents)
 
 The implementation of the surface interpolant function in above described querry methods of either iCAD or CanalNETWORK product, allows extrapolation to determine elevation data ouside the area covered by input x,y data set. This meanse, the implementation can estimate elevation values for points outside the boundary area defined by the inpit data set. 
 
-![[  ]](Images/Fig2.jpg) 
+   <img src="./Images/Fig2.jpg" style="width:6in">
+
 
 *Schematic showing point data set, boundary area defined by the data set, and querry points for extrapolaiton.*
 
@@ -178,6 +205,7 @@ It is important to note that:
 Hence, the extrapolation capability is to be considered as only a complimentary feature to obtain a crude estimate of terrain variation beyond the boundary area. There is no guarantee that designs based on extrapolated data will be of acceptable quality and accuracy.
 
 ## Curve Handling During profile extraction
+[Back to ToC](#table-of-contents)
 
 Curves, if found in the AutoCAD alignment object, will be considered while extracting prorfile data. The requirements for succesful data extraction are:
 
@@ -203,19 +231,25 @@ Route curvatures meeting all these requirements are succesfully extracted as cur
 
 The schematic below shows detailed curve information extracted.
 
-![curve](Images/Image%20curve2.png)
+<img src="./Images/Image curve2.png" style="width:4in">{br}
 
-![im](images/cadCurve.png)
+<img src="./Images/cadCurve.png" style="width:4in">
+
 
 The following sample route geometry shows the validity of curves for profile extraction.
 
-![image08](images/Image%20008.png)
+<img src="./images/Image 008.png" style="width:4in">
+
 
 There are seven curves on the route, including the compound curve near station 500. The table report states that 3 out of 7 curves are extracted.
 
-![image31](Images/Image%2031.png)
+<img src="./Images/Image 31.png" style="width:4in">
 
-![Image33](Images/Image%2033.png)
+
+<img src="./Images/Image 33.png" style="width:4in">
+
+
+
 
 Curve 1 is discarded, because curves at the begining and end do not mee tangency requirements.
 
@@ -229,11 +263,14 @@ However, the data is collected at the specified incremental station to the last 
 
 For the same route, removing the last vertex, will cause a curve to be at the last segment. This results in two issues: (a) reduced length of the alignment route, and (b) miscalculated Point of Tangency. To avoid such issues, always ensure there is a stratight segment at the end of every alignment routes.
 
-![image38](images/Image%2035.png)
+<img src="./Images/Image 35.png" style="width:5in">
 
-![image39](images/Image%2038.png)
+
+<img src="./Images/Image 38.png" style="width:7in">
+
 
 ## Notes about Alignments
+[Back to ToC](#table-of-contents)
 
 The profile extraction process relies on a number of assumptions to execute the above mentioed tasks. Observing the following conventions and assumptions will help to avoid failed attempts, and hence save time. 
 
@@ -248,5 +285,8 @@ A known issue exists where profile extraction process fails or returns poor qual
 The optimal incremental distance to be used shall depend on the project scale/type, available DEM data resolution, expected variabilities of terrain, as well as the anticipated canal size. We recommend to limit minimum incremental distance to 10meters.
 
 **Curve data limitations:** The size of curves that can be read in to alignment profile data, as seen above, is limited by design for iCAD and CanalNETWORK products. Irrigation canals are, by practice, expected to meet some general principles of practice. The software products attempt to implemtn a pragramatic approach towards filtering curves provided by the user in the original AutoCAD drawing. As mentioned above, the smallest allowable curve radius and length, are limited to 15 and 20 meters, respectively. We anticipate that provissions below these limits are not practical, and hence are automatically filtered out during the extraction process.
+
+
+[Back to ToC](#table-of-contents)
 
 END.

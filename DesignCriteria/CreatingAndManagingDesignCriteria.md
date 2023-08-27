@@ -96,8 +96,14 @@ This method allows users to import criteria from an existing file. For this meth
 
 1. Start CanalNETWORK or clear the workspace of an existing CanalNETWORK session from `Workspace > Clear Workspace `then slecting All from confirmation dialog.
 
-2. Click on `Workspace > Manage Design Criteria… > Import From File…`![](Images/Image%20007.png)
+2. Click on `Workspace > Manage Design Criteria… > Import From File…`
+    
+    ![](Images/Image%20007.png)
    
+   This will launch a *Replace?* dialog.Hit to `Confirm`. 
+
+   <img src="./Images/Image 020.png">
+
    In the *Select File to Open* dialog, choose your file and hit *Open.*
    
    ![](Images/Image%20008.png)
@@ -106,9 +112,20 @@ This method allows users to import criteria from an existing file. For this meth
    
    ![](Images/Image%20009.png)
 
-The saved design criteria, along with the naming style used to create it is now available in the workspace. Check using `Workspace > Edit Current Naming...` The editor dialog displays the contents of the data file, with a note at the top, proving the description level for the data file that was entered during the time of creation.
+   The next dialog confirms the set of design criteria found specific to the canal levels or generations. **Source fields** indicate levels for which design criteira is found in the source file, while **Current Fields** indicate that in the currently loaded design criteria (CanalNETWORK workspace).
 
-![](Images/Image%20010.png)
+   > :bulb: **Tip**: It is not necessary the number of fields match, but the fields selected in the list box must be present in the **Current Fields**.
+
+   Select the levels for which to import the design criteria data, and hit `OK`.
+
+   <img src="./Images/Image 021.png">
+
+   > :bulb: **Note** You can select any (all) fields, to overwrite everything in the loaded design criteria.
+
+   The next dialog, confirms status of importing criteria to the current workspace.
+
+   <img src="./Images/Image 022.png">
+
 
 ## Overriding Design Criteria
 [Back to ToC](#table-of-contents)

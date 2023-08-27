@@ -57,6 +57,8 @@ Available guides and documentation:
 
 [9. Construction Tools **(NEW)**](ConstructionTools/Construction_Tools.md)
 
+[10. Design Quality Assurance **(NEW)**](DesignQuality/Design_quality_assurance.md)
+
 ## Technical Information
 
 Additional technical details are available in below list:

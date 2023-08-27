@@ -1,5 +1,15 @@
 # Design of Division Boxes
 
+## Table of Contents
+<!--TOC-->
+- [Introduciton](#introduciton)
+  - [Design Approach to Division box](#design-approach-to-division-box)
+  - [Generating Design Report](#generating-design-report)
+    - [BoQ generation](#boq-generation)
+<!--/TOC-->
+# Introduciton
+[Back to ToC](#table-of-contents)
+
 CanalNETWORK software can handle the design and estimation of canal junction structures. By default, every canal junction is designed as a turnout structure. If any junction is required to be designed as, and function as, a division box structures, the user must indicate this by checking the *Div. Box* check box on the Node Edit panel.
 
 ![[  ]](Images/Image%20001.png) 
@@ -11,12 +21,13 @@ CanalNETWORK software can handle the design and estimation of canal junction str
 This guide describes the method and procedure used in the design and documentation of division box structures in CanalNETWORK product.
 
 ## Design Approach to Division box
+[Back to ToC](#table-of-contents)
 
 The design approach implemented in CanalNETWORK product is taken from a guideline from ECDSWCo. (See Reference at the end). The division box design method adopting broadcrested weir as flow divisor is implemented in CanalNETWOEK product.
 
 The governing flow equation is:
 
-Q= 1.7 B H^(1.5)
+Q= 1.7 B H^1.5^
 
 Where:
 
@@ -36,7 +47,7 @@ The steps implemented are summarized as below:
 
 2. Compute the required overflow length from
    
-   w= Q/1.71/H^1.5
+   w= Q/1.71/H^1.5^
    
    Then determine individual lengths of overflow notch for each branch canal from the proportional flow equation:
    
@@ -44,9 +55,9 @@ The steps implemented are summarized as below:
 
 3. From a known headloss amount of z (above), determine the pre-jump and post-jump depths for the flow condition after the crest and in to the downstream basin of each branch canal. Blenchs curve method is used. This is used to determine:
    
-   Lbasin= 5*(Y2-y1), length of the stilling basin required behind the crest
+   Lbasin= 5*(Y~2~-y~1~), length of the stilling basin required behind the crest
    
-   hSill= y-y2, but not less than 0, height of stilling pool end sill
+   hSill= y-y~2~, but not less than 0, height of stilling pool end sill
 
 4. Finally the CBL levels for each branch canal are fixed based on z, hSill and FSL values.
 
@@ -111,6 +122,7 @@ Note: The above results are for a two way divison box, where a parent canal feed
 *Figure showing two line output of report table, for a three way division box. Note, only  dimensions pertinent to the third outlet are indicated in the second line. Notice also  the label for each row of result.*
 
 ## Generating Design Report
+[Back to ToC](#table-of-contents)
 
 The results of the above algorithm for a certain division box can be generated from the `R` (Redesign) button located right next to the *Div. Box* check mark in the Node Edit panel area.
 
@@ -125,6 +137,7 @@ Click on this button, a report of similar to the one shown below is generated.
 *Sample report for a division box design*
 
 ### BoQ generation
+[Back to ToC](#table-of-contents)
 
 BoQ is estimated using the dimensions generated in the preceeding table, and the standard drawings below.
 
@@ -138,6 +151,8 @@ A sample BoQ for a division box looks similar to below output.
 
 *Sample output of BoQ listing for a division box.*
 
+[Back to ToC](#table-of-contents)
+
 END.
 
-Regerences: A guideline for Design of Division Box Structures, Feb 2015, IDFP Design Team, Water Works Design and SUpervision Enterprise, Addis Ababa.
+References: A guideline for Design of Division Box Structures, Feb 2015, IDFP Design Team, Water Works Design and SUpervision Enterprise, Addis Ababa.

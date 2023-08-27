@@ -378,23 +378,24 @@ It is also important to note the following additional refinements, that are not 
 
 ![d](Images/Image%20042.png)
 
+> :bulb: **Tip**: If the table does not display data, or does not update its content, try closing it and running `Workflow > LSec Profile` or `Ctrl`+`L'. This should display the results.
+
+
 In the table:
 
 **Chainage**: Station locations where data is extracted (See below note.)
 
-**xOfst=0.0: ** OGL at centerline
+**xOfst=0.0:** OGL at centerline
 
-**CBL: ** Canal Bed Level value at the station
+**CBL:** Canal Bed Level value at the station
 
-**CBL2: ** Final excavation or fill level at a station, after considering canal lining thickness (if used.) If no canal lining is used, CBL and CBL2 contain the same values for a given station.
+**CBL2:** Final excavation or fill level at a station, after considering canal lining thickness (if used.) If no canal lining is used, CBL and CBL2 contain the same values for a given station.
 
 **hFil:** Height of fill caculated as CTL less OGL at centerline
 
 **hCut:** Height of cut calculated as OGL less CBL2 at centerline
 
 **aFil, aCut:** Area of fill and Cut work, respectively, at the particular station.
-
-work at the par
 
 **CTL:** Canal Top Level
 

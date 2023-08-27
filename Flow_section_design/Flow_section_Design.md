@@ -1,10 +1,24 @@
 # Design of Canal Flow Sections
 
+## Table of Contents
+<!--TOC-->
+  - [Introduction](#introduction)
+  - [Usage](#usage)
+  - [Manning's Equation: The basis](#mannings-equation-the-basis)
+  - [Design of the wetted area of the flow section](#design-of-the-wetted-area-of-the-flow-section)
+  - [Design of Free Board](#design-of-free-board)
+  - [Lining provision and types](#lining-provision-and-types)
+  - [Design for Constuction Dimensions](#design-for-constuction-dimensions)
+<!--/TOC-->
+## Introduction
+[Back to ToC](#table-of-contents)
+
 Hydraulic design of canal flow sections is a key and often implemented process both in iCAD (especially CanalManning module) and CanalNETWORK products. In the latter case, it also establishes the basis for all the subsequent design, analysis and documentation tasks. This section describes the implementation of the methodology as used in the products.
 
 
 
 ## Usage
+[Back to ToC](#table-of-contents)
 
 Software products tackle canal routes by breaking them down in to segments. Canal segments are portions of a canal route that are posited between two control structures (also known as nodes.) 
 
@@ -17,6 +31,7 @@ The solution for dimensions of a flow section are required in each of these cana
 ![f](Images/floswsec1.jpg)
 
 ## Manning's Equation: The basis
+[Back to ToC](#table-of-contents)
 
 The design of flow sections - i.e., the determination of the dimensions of canal sections - is carried out by solving the mannings equation.
 
@@ -49,6 +64,7 @@ In addition, practice dicated values - also read from design criteria or user ov
 
 
 ## Design of the wetted area of the flow section
+[Back to ToC](#table-of-contents)
 
 Determining the actual wetted flow area is the first solution the algorithm seeks to determine. To achieve this we solve the equation
 
@@ -87,6 +103,7 @@ The algorithm returns a the flow depth y, and the bottom width of the canal sect
 
 
 ## Design of Free Board
+[Back to ToC](#table-of-contents)
 
 The freeboard provission, along with the flow depth and bottom width, determine the final shape and size of the flow section. The setting for this parameters is also set as part of the design criteria listing, and applied for each level or generation of canal section. 
 
@@ -106,6 +123,7 @@ The value determined from this value is added to the earlier determined flow dep
 
 
 ## Lining provision and types
+[Back to ToC](#table-of-contents)
 
 The products allow users to specify lining types to provided the desired size and dimension of protective lining for the entire reach of the canal segment in question. Settings for canal lining parameter are also found in design criteria set, and applied to each canal route depending on the level of the canal.
 
@@ -146,8 +164,8 @@ The three linings are schematically presented as shown below.
 
 
 
-
 ## Design for Constuction Dimensions
+[Back to ToC](#table-of-contents)
 
 Results of design from the above mentioned steps and procedures often give theoretical values that are not suited for construction. It is often required that values are practical, and meet precision levels achievable during construction.
 
@@ -161,11 +179,12 @@ This settings forces all bottom width values, determined from Canal section desi
 
 Following these roundoff adjustments, the canal section is re-designed to determine the resulting flow depth, and the final designed section corrected accordingly.
 
-
-
+[Back to ToC](#table-of-contents)
 
 
 END.
+
+
 
 
 

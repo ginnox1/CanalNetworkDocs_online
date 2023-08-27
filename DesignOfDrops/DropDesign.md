@@ -1,5 +1,17 @@
 # Design of Drops in CanalNETWORK
 
+## Table of Contents
+<!--TOC-->
+  - [Introduciton](#introduciton)
+  - [Upstream Crest Design](#upstream-crest-design)
+  - [Design of Energy Dessipator](#design-of-energy-dessipator)
+  - [Drop Design Settings](#drop-design-settings)
+  - [BoQ calaculation for drops](#boq-calaculation-for-drops)
+<!--/TOC-->
+
+## Introduciton
+[Back to ToC](#table-of-contents)
+
 CanalNETWORK software can design drop structures using different methods. The software designs drops in two stages:
 
 * Crest Design: dealing with the design of the overflow area before the vertical fall, and the related hydraulic conditions.
@@ -27,10 +39,11 @@ While the approaches commonly used for crest design are fairly similar, there ar
 This guideline is primarily prepared to guide validation works with in our partners workflow, namely Ethiopian Construction Design and Supervision Works Corporation. In line with this, the discussion on design of energy dessipator focuses only on Chows method. 
 
 ## Upstream Crest Design
+[Back to ToC](#table-of-contents)
 
 A rectangular crest is used for drops designed using this method. For this condition, the Top Width of the crest B is given by:
 
-B= 0.55 x d ^(1/2)
+B= 0.55 * d ^1/2^
 
 where d is the drop size.
 
@@ -60,17 +73,18 @@ Based on the above solutions, the critical flow depth, overflow depth are determ
 
 q= Q/B
 
-yc= (q^2/9.801) ^ (1/3)
+yc= (q^2^/9.801) ^1/3^
 
-Ho= 1.5 x yc
+Ho= 1.5 * yc
 
 This completes the upstream crest design, and establishes the parameters for the design of the energy dessipation provission below.
 
 ## Design of Energy Dessipator
+[Back to ToC](#table-of-contents)
 
 The design of energy dessipator provssion in Chows method relies on the Drop Number, calculated from:
 
-D= q^2/(9.801 x h^3
+D= q^2^/(9.801*h^3^)
 
 where
 
@@ -80,39 +94,39 @@ h= d + ds, sum of the fall height and depth of sill
 
 Then, the upstream and downstream flow depth is dtermined from
 
-y1= d x 0.54 D ^0.425
+y~1~= d * 0.54 D ^0.425^
 
-y2= d x 1.66 D^0.27
+y~2~= d ** 1.66 D^0.27^
 
 Based on this, sill depth is determined from
 
-a= max (amin, y2/6)
+a= max (a~min~ , y~2~/6)
 
 Post impact length and 'unaided' jump length are determined from
 
-Ld= 4.30 D^0.270 x d
+L~d~= 4.30*D^0.270d^
 
-Lj= 5 x (y2-y1)
+L~j~= 5 (y~2~-y~1~)
 
 and
 
-L= Ld + Lj
+L= L~d~ + L~j~
 
 The width of the basin is determined by providing a fixed amount of 0.10m (aplit on both sides) to provide for aeration.
 
-Wb = Bw+0.10
+W~b~ = B~w~+0.10
 
 Finally, the appron thickness is determined from considering the maxium uplift pressure magnitude and a unit weitgh massonry or concrete taken as 2.2;
 
-Tb= (Ho + d + a)/2.2
+T~b~= (H~o~ + d + a)/2.2
 
 Nominal downstream and upstream cutoff depths are provided as follows.
 
-du= dd=  0.30
+d~u~= d~d~=  0.30
 
 Upstream and downstream protection lengths are provided usinhg
 
-L1= L2 = 1.2 + 1.5 q^(1/2).
+L~1~= L~2~ = 1.2 + 1.5 q^1/2^.
 
 > All dimensions for basin length, basin width, appron thickness, and protection length are rounded to 0.05 meters.
 
@@ -123,6 +137,7 @@ A typical output table for drop design data is extracted from `Explore Solutions
 *Typical output of drop design data*
 
 ## Drop Design Settings
+[Back to ToC](#table-of-contents)
 
 Many of the design tasks carried out to size the different components of the drop depend on *drop_designSettings* in Preferences. These can be adjusted to fit specific site conditions. 
 
@@ -131,6 +146,7 @@ Many of the design tasks carried out to size the different components of the dro
 > Note: These settings apply for the entire network of canals.
 
 ## BoQ calaculation for drops
+[Back to ToC](#table-of-contents)
 
 For the calcualtion of volumes of work for drops, the following procedures are implemented. The starting points are user provided values for Control BoQ Settings in `Workspace > Edit Preferences`. 
 
@@ -166,7 +182,7 @@ aF= ()dHt + hSil) x b2h
 
 Then:
 
-wTotal= 2*(WThk + mxh)+b
+w~Total~= 2*(W~Thk~ + mxh)+b
 
 Wb= b+2xmxh + 2xThk or Wb+2xWThk, which ever is maximum
 
@@ -187,6 +203,8 @@ Lining work quantity is also included for inlet and exit canals.
 A sample BoQ for a drop structure contains the below informaiton in the standard report for the same.
 
 ![d](Images/Image005.jpg)
+
+[Back to ToC](#table-of-contents)
 
 END.
 
