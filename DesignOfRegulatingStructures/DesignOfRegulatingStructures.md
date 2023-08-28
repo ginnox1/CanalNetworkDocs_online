@@ -1,10 +1,11 @@
 # Design of Regulating Structures
+[Back to Home](..\index.md#online-documentation)
 
 Flow regulating strucrures are a key component of a canal network system. They are provided at different points along canal routes to provide adequate control of flow condition during conveyance of irrigation water to different parts of the irrigation area. 
 
 CanalNETWROK and ICAD products currently allow the design of Head Regulator Strucures, Cross-Regulator Strucrtures and Inclinded drops. The design of these structures is handled using a dedicated module in the iCAD environment called CanalStructuresJET. To use this module, the structure must first be positioned in the CanalNETWORK environment. The work of canal structures starts, therefore, by positioning and defining locations for the structures along desired canal routes in the CanalNETWORK environment.
 
-# Table of Contents
+## Table of Contents
 <!--TOC-->
 <!--TOC-->
   - [Defining the Structure](#defining-the-structure)

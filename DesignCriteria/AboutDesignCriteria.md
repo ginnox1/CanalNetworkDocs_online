@@ -1,4 +1,5 @@
 # About Design Criteria
+[Back to ToC](#table-of-contents)
 
 Establishing a set of design criteria is the basis of design work. These data are also the key input data for tackling the sizing and detailing of a network of canal system in CanalNETWORK.
 
@@ -6,7 +7,7 @@ Design criteria in CanalNETWORK, specifically refer to a list of parameters that
 
 > Note: As parameters in Design Criteria set are constantly refered to in the design process, it is IMPORTANT to spend adequate time to set values. This will save significant time later.
 
-# Table of Contents
+## Table of Contents
 <!--TOC-->
   - [Contents of Design Criteria Set](#contents-of-design-criteria-set)
   - [Detail Definition of Design Criteria Parameters](#detail-definition-of-design-criteria-parameters)
@@ -22,25 +23,26 @@ Design criteria in CanalNETWORK, specifically refer to a list of parameters that
       - [FSL-OGL Control type](#fsl-ogl-control-type)
       - [Min FSL-OGL @Reach(m)](#min-fsl-ogl-reachm)
       - [Min Drv. Head @Control(m)](#min-drv.-head-controlm)
-      - [Branch Invert Raise (-):](#branch-invert-raise)
+      - [Branch Invert Raise (-):](#branch-invert-raise-)
     - [Construction Variables](#construction-variables)
-      - [Canal Lining type, Ltyp(-)](#canal-lining-type-ltyp)
+      - [Canal Lining type, Ltyp(-)](#canal-lining-type-ltyp-)
       - [Lining Thickness, Thk(m)](#lining-thickness-thkm)
       - [Foundation Thickness, THK(m)](#foundation-thickness-thkm)
-      - [Earth cut shape, Smc(-)](#earth-cut-shape-smc)
-      - [Earth fill shape, Smf(-)](#earth-fill-shape-smf)
+      - [Earth cut shape, Smc(-)](#earth-cut-shape-smc-)
+      - [Earth fill shape, Smf(-)](#earth-fill-shape-smf-)
       - [Complex Cut and Fill Shapes](#complex-cut-and-fill-shapes)
     - [Hydraulic Design](#hydraulic-design)
       - [Min. Design Discharge(m3/sec)](#min.-design-dischargem3sec)
-      - [Design B to D ratio(-)](#design-b-to-d-ratio)
+      - [Design B to D ratio(-)](#design-b-to-d-ratio-)
       - [Limiting Velocity(m/sec)](#limiting-velocitymsec)
       - [Max. All. Shear Stress (Kg/m2)](#max.-all.-shear-stress-kgm2)
-      - [Mannings Roughness, N(-)](#mannings-roughness-n)
+      - [Mannings Roughness, N(-)](#mannings-roughness-n-)
       - [Freeboard, FB(m)](#freeboard-fbm)
-      - [Canal Side Slope, m(-)](#canal-side-slope-m)
+      - [Canal Side Slope, m(-)](#canal-side-slope-m-)
       - [Bed Slope, So(m/m)](#bed-slope-somm)
 - [Default Criteria values for different canal Levels](#default-criteria-values-for-different-canal-levels)
 <!--/TOC-->
+
 ## Contents of Design Criteria Set
 [Back to ToC](#table-of-contents)
 
@@ -382,7 +384,7 @@ For instance, in the figure, a user chooses values for *Firm Clay Loom* soil typ
 | Sandy Soil        | 0.3-0.60    | 0.45      |
 | Black Cotton Soil | 0.6-0.90    | 0.75      |
 | Firm Clay Loom    | 0.9-1.15    | 1         |
-| Gravel            | 1.2-2.0     | 1.6       |
+| Gravel            |  1.2-2.0    | 1.6       |
 | Hard Rock         | >3.0        | 4         |
 | Concrete          | ~6          | 6         |
 | Steel Lining      | 10          | 10        |

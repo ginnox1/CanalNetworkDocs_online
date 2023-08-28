@@ -1,4 +1,5 @@
 # Farm Blocks and Network Sizing
+[Back to Home](..\index.md#online-documentation)
 
 One of the key strengths of CanalNETWORK software is high level of task automation avaiable for time consuming and error prone tasks. Once a network of canals is succesully imported and resolved, subsequent tasks are easy to manage, giving users a quick turnarround time for their projects. Farmblock analysis functionality is one of such many features.
 
@@ -12,7 +13,7 @@ Sizing of canal segments, refers to the determination of amount of discharge pas
 
 These, otherwise time consuming tasks can be completed in a matter of a few seconds in CanalNETWORK software, with quality and speed.
 
-# Table of Contents
+## Table of Contents
 <!--TOC-->
   - [Farm Blocks](#farm-blocks)
     - [Farmblocks from AutoCAD](#farmblocks-from-autocad)

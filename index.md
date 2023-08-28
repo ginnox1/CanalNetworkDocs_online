@@ -35,9 +35,10 @@ Click on the link to navigate to the topic.
 
 This online resource site is under continuous devekiopment and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most uptodate reference to our products by directly accessing this resource site.
 
-> For the best experience while browing contents, we recommend using Chrome Browser, and installing a *Table of Contents* extension. This will automatically provide a navigation side bar that can help to quickly locate content on differnt pages.
+Click on the topics to navigate to each section. To come back to this page, click on the [Back to Home]() link at the top of each section.
 
-Available guides and documentation:
+
+
 
 [1. Introducing CanalNETWORK software](Introduction/Introduction.md)
 
@@ -57,7 +58,7 @@ Available guides and documentation:
 
 [9. Construction Tools **(NEW)**](ConstructionTools/Construction_Tools.md)
 
-[10. Design Quality Assurance **(NEW)**](DesignQuality/Design_quality_assurance.md)
+[10. Design Quality Assurance **(NEW)**](DesignQuality/Design_Quality_Assurance.md)
 
 ## Technical Information
 

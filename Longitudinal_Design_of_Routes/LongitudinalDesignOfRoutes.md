@@ -1,8 +1,9 @@
 # Longitudinal Route Design
+[Back to Home](..\index.md#online-documentation)
 
 Longitudinal design of routes is the stage where the engineer spends significant time working on individual canal routes, and exploring design scenarios. CanalNETWORK offers an interactive graphic environment with rich annotation to guide design process effectively.
 
-# Table of Contents
+## Table of Contents
 <!--TOC-->
   - [Pre-requisits](#pre-requisits)
   - [Start Longitudinal Design](#start-longitudinal-design)
@@ -873,6 +874,7 @@ Important: It is important to revisit the designs for each route designed with t
 *Note: AutoDesign task can not be undone. To reset to original tentative settings, select the route, apply Resize. Design parameters are reapplied. To view the updated view, click on the route in plan view, which will refresh the view in Profile View Axis.*
 
 ## Working with large networks
+[Back to ToC](#table-of-contents)
 
 Working with large netwroks can pose some challenges when dealing with farm blocks creation. This can be easily solved using the sub-network view feature. This feature limits the displayed network to all branches of a given route. There are two ways to start this function.
 
@@ -895,5 +897,7 @@ Working with large netwroks can pose some challenges when dealing with farm bloc
    Accept OK on the dialog, and this will retain only relevant canal routes in the view.
 
 You can work on any sub-network, as you would on the entire network. The changes will only affect the network in view.
+
+[Back to ToC](#table-of-contents)
 
 END.
