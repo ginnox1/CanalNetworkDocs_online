@@ -1,5 +1,5 @@
 # Design of Regulating Structures
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 Flow regulating strucrures are a key component of a canal network system. They are provided at different points along canal routes to provide adequate control of flow condition during conveyance of irrigation water to different parts of the irrigation area. 
 

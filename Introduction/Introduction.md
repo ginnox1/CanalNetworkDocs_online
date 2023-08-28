@@ -1,6 +1,6 @@
 # Introduction to CanalNETWORK software
 
-[Back to Home](..\Index.md#online-documentation)
+[Back to Home](..\Index#online-documentation)
 
 Well come!
 

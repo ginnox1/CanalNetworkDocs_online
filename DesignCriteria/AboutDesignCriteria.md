@@ -1,5 +1,5 @@
 # About Design Criteria
-[Back to ToC](#table-of-contents)
+[Back to Home](..\Index#online-documentation)
 
 Establishing a set of design criteria is the basis of design work. These data are also the key input data for tackling the sizing and detailing of a network of canal system in CanalNETWORK.
 

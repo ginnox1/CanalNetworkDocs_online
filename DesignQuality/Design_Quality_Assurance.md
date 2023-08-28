@@ -1,5 +1,5 @@
 # Design Quality Assurance
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 The latest development in CanalNETWORK product features is the ability to automatically check quality of design. The process uses an agreed design criteria as a benchmark, to compare values from actual design.
 

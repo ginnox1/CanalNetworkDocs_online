@@ -1,5 +1,5 @@
 # Creating and Managing Design Criteria
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\Index#online-documentation)
 
 Establishing a set of design criteria is the basis of design work. These data are also the key input data for tackling the sizing and detailing of a network of canal system in CanalNETWORK. See Standard workflow in Introduction to see at which stage of project design this may be required. However, it is highly recommended to set a design criteria set as the first step in creating a project workspace. 
 

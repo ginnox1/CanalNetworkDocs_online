@@ -1,5 +1,5 @@
 # Layout plans and Network Resolution
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\Index#online-documentation)
 
 Refer to the standard workflow for using CanalNETWORK software. One of the input data is a layout map in AutoCAD. This section discusses the task of importing such a layout map from an AutoCAD environment, and processing the connectivity data for the network of canals. Most of the task is handled automatically, while it needs some assistance from the user to resolve some issues that may linger.
 
