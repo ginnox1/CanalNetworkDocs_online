@@ -1,4 +1,5 @@
 # Design of Canal Flow Sections
+[Back to Home](..\index#online-documentation)
 
 ## Table of Contents
 <!--TOC-->
