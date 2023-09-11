@@ -235,6 +235,17 @@ Examples of quality check using this reconstructed route can include, but not li
 - Run Cut/Fill annotations to check for quantities
 
 
+## Topo Data Quality
+[Back to ToC](#table-of-contents)
+
+Topographic data, as the major foundational imput to design processes, need to have expected levels of quality. Errors are sometimes introduced during the data preparation, that go to the design process. These impact quantity estimates and design quality substatntially.
+
+If such issues are suspected, one can use the tool imbeded in *ContourCloud* module from `Workflow > Data Statsisics` and choose *Elevation* data.
+This will display a result of a standard statistical analysis showing possible outliers, for easy correction.
+
+<img src="./media/LinkedIn.png" style="width:7in">
+
+
 [Back to ToC](#table-of-contents)
 
 END.

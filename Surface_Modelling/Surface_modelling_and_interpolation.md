@@ -2,6 +2,8 @@
 
 [Back to Home](..\index#online-documentation)
 
+> :bulb: **Important Note**: For this section, we strongly recommend to read documentation for iCAD product under the same heading. It provides a more detailed and comprhensive information that is up to date.  This section of the CanalNETWORK documentation will be removed in the future.
+
 ## Table of Contents
 <!--TOC-->
   - [Introdution](#introdution)
