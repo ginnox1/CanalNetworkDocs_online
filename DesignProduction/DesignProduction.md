@@ -22,16 +22,35 @@ Below sections show how to generate these data.
 
 ## Table of Contents
 <!--TOC-->
-  - [ent is one of the ke](#ent-is-one-of-the-ke)
-  - [.e., profile data a](#.e.-profile-data-a)
-  - [ere are three o](#ere-are-three-o)
-  - [lways excluded from Bill](#lways-excluded-from-bill)
-    - [be generated for](#be-generated-for)
-    - [dialog.
-   
-   ![fig](Images/Image%](#dialog.-figimagesimage)
-    - [e parent canal, and then us](#e-parent-canal-and-then-us)
-    - [Excavation and fill works on ca](#excavation-and-fill-works-on-ca)
+  - [Table Data](#table-data)
+  - [Bill-of-Quantity](#bill-of-quantity)
+    - [Preparing for BoQ extraction](#preparing-for-boq-extraction)
+    - [Bill of Quantity for a Canal Route](#bill-of-quantity-for-a-canal-route)
+    - [BoQ for Canal Segments](#boq-for-canal-segments)
+    - [BoQ between stations of a given canal](#boq-between-stations-of-a-given-canal)
+    - [BoQ for Select group of Canals](#boq-for-select-group-of-canals)
+    - [Settings for BoQ generation.](#settings-for-boq-generation.)
+  - [Creating and Editing Axes](#creating-and-editing-axes)
+    - [Create a new axes](#create-a-new-axes)
+    - [Editing Axis](#editing-axis)
+  - [Edit or Create Alignment Markers](#edit-or-create-alignment-markers)
+  - [Longitudinal Profile (LSec) Drawing Generation](#longitudinal-profile-lsec-drawing-generation)
+    - [Generating Longitudinal Profile drawing for single canal route](#generating-longitudinal-profile-drawing-for-single-canal-route)
+    - [Generating Longitudinal Drawing for multiple ranges of a canal route](#generating-longitudinal-drawing-for-multiple-ranges-of-a-canal-route)
+    - [Creating Longitudinal Profile Drawings for multiple canal routes](#creating-longitudinal-profile-drawings-for-multiple-canal-routes)
+  - [Cross Section Drawings](#cross-section-drawings)
+    - [Cross-Sections at increments](#cross-sections-at-increments)
+    - [Cross-Sections for custom list](#cross-sections-for-custom-list)
+    - [Cross-sections at saved locations](#cross-sections-at-saved-locations)
+    - [Generating drawings for Canal Structures](#generating-drawings-for-canal-structures)
+  - [Generating Plan Views](#generating-plan-views)
+    - [Generating Full Length Plans](#generating-full-length-plans)
+    - [Generating plan views for a selected segement](#generating-plan-views-for-a-selected-segement)
+    - [Generating plan view for user defined station range](#generating-plan-view-for-user-defined-station-range)
+  - [Exploring Sections and Plans to AutoCAD](#exploring-sections-and-plans-to-autocad)
+    - [Creating Extended Plan Views](#creating-extended-plan-views)
+    - [Automatic Exporting of plan view](#automatic-exporting-of-plan-view)
+    - [Manual Exporting plan view or their components to AutoCAD](#manual-exporting-plan-view-or-their-components-to-autocad)
 <!--/TOC-->
 
 ## Table Data
@@ -736,7 +755,7 @@ Notes on Colors:
 
 - All drawing elements are generated per set color standard.
 
-- Axis and their labels, alignment markers and annotations, plan view slope lines and other text information are generated using the currently selected color in AutoCAD.
+- Axis and their labels, alignment markers and annotations, plan view slope lines and other text information are generated using the currently selected layer, and color in AutoCAD.
 
 - Annotations and objects are exported to AutoCAD in groups, and its easy to edit them for color or other details.
   
