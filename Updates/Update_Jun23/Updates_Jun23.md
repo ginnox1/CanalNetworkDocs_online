@@ -23,7 +23,7 @@ Happy Designing,
 Update your version of CanalNETWORK product as follows:
 1. Download the update resoruces from [Latest CanalNETWORK update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
 
-    The latest is **Version 2.0.8.3577**
+    The latest is **Version 2.0.8.3601**
 
 2. Start your product, go to `Help > Updates...` Then choose `Manual` option. This will ask to close the application and re-start. Choose `Exit` to agree, and continue.
 
