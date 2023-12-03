@@ -8,9 +8,11 @@ We will continually update this site to provide information on progress and late
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
-[Learn about the latest updates here](Updates/Update_Jun23/Updates_Jun23.md)
+[Learn about the latest updates for Nov 2023 here](Updates/Update_Nov23/Update_Nov23.md)
 
 Notes on previous updates can be accessed below.
+
+[Updated for Jun-Sep 2023 here](Updates/Update_Jun23/Updates_Jun23.md)
 
 [Updates for Nov-Dec2022 here.](Updates/Updates_Dec22/updatenotesDec2022.md)
 

@@ -17,7 +17,7 @@ Happy Designing,
 <p style="color:green">Team Quanomic.</p>
 
 
-
+<!---
 ## Update Resources
 
 Update your version of CanalNETWORK product as follows:
@@ -36,7 +36,7 @@ To use this release, you will need to remove your previous application and insta
 If you have not yet installed the latest version, you can download the latest version from our website at www.quanomic.co. A direct access link is [here]().
 
 Download the update resources to make your installation uptodate from the linke below.
-
+-->
 
 ## New features
 
