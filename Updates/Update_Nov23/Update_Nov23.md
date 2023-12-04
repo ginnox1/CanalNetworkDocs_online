@@ -68,3 +68,8 @@ Custom station entry dialog is now included for generating cross-section drawing
 
 ### Bug Fixes
 - A bug reported when commulating farm block areas is reoslved. This contained exceptional (and rare) similarities in object handles used to represent objects in AutoCAD environemnt. This is succesfully handled in this release of CanalNETWORK application.
+
+- Side slope annotations on Longitudinal profile view axis is now rounded to two decimals (previously rounded to whole number). This also applies to LSec drawings generated to AutoCAD.
+
+<img src="./media/Image 10.png" style="width:7in">
+
