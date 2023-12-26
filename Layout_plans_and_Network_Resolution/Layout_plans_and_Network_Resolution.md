@@ -382,6 +382,10 @@ This will start the *Edit Variables* Dialog, set each variable to desired values
    
    *Available Options for Descriptive texts*
 
+   > Note: If the number of 2nd generation routes are more than the set number of level descriptors, the applied suffix (or prefix) text will repeat it self.
+
+   For instance, if 'L' suffix descriptor is used for an MC, SC, TC... naming, and there are 5 secondary canals, the naming on the SC routes will be SL, SR, SL, SR,and SL.
+
 3. Over-ride Min. Discharge: The setting for this variable is overwritten in the design criteria. Hence users may leave this to the default value of -1 (representing None)
 
 4. Next Action: On Apply Use For: leace as is

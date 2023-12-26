@@ -19,13 +19,11 @@ Read on to learn about the new features, and
 
 ## Update Resources
 
-Update resources are currently released for validation ONLY. They will be available on 6th December 2023. Come back soon.
 
-<!---
 Update your version of CanalNETWORK product as follows:
 1. Download the update resoruces from [Latest CanalNETWORK update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
 
-    The latest is **Version 2.0.8.3601**
+    The latest is **Version 2.0.8.3640**
 
 2. Start your product, go to `Help > Updates...` Then choose `Manual` option. This will ask to close the application and re-start. Choose `Exit` to agree, and continue.
 
@@ -33,14 +31,30 @@ Update your version of CanalNETWORK product as follows:
 
 
 
-> :warning: **Important**:
-To use this release, you will need to remove your previous application and install the new release available from your provider. The previous release is no more supported.
-If you have not yet installed the latest version, you can download the latest version from our website at www.quanomic.co. A direct access link is [here]().
 
 Download the update resources to make your installation uptodate from the linke below.
 
---->
+
 ## What's New
+
+### Drainage Canal Network
+
+Drainage canal network is released for validation. A whole new documentation will be recently released to accompny this product, focusing on specific features for drainage networks application.
+
+
+<img src="./media/Image 11.png" style="width:7in">
+
+The solution treats canals as networks, similar to the approach implemnted in supply networks. Separate features are built in to the same environment to handle design, drawing and estimation of drainage canal networks.
+
+These will be documented in a separate documentation, that will be available soon.
+
+### Enhanced Data Security
+Improvements are included in this release to allow automatic data saving for users arround every 3 minutes. This allows users to backup their work, in case of unexpected conditions (e.g., file corruption or power failure before saving)
+
+
+<img src="./media/Image 12.png" style="width:5in">
+
+
 
 ### Discharge value notation
 
@@ -72,4 +86,8 @@ Custom station entry dialog is now included for generating cross-section drawing
 - Side slope annotations on Longitudinal profile view axis is now rounded to two decimals (previously rounded to whole number). This also applies to LSec drawings generated to AutoCAD.
 
 <img src="./media/Image 10.png" style="width:7in">
+
+- An issue resulting in (undesired) recalculation of CBL for upper most segments of canal routes is revisited. More testing will be carrried out to ensure changes meet requirement.
+
+
 
