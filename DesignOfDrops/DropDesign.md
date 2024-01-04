@@ -85,11 +85,11 @@ This completes the upstream crest design, and establishes the parameters for the
 
 The design of energy dessipator provssion in Chows method relies on the Drop Number, calculated from:
 
-D= q^2^/(9.801*h^3^)
+D= q^2^/gh^3^
 
 where
-
-h= d + ds, sum of the fall height and depth of sill
+- g=9.81(m/sec<sup>2</sup>)
+- h= d + ds, sum of the fall height and depth of sill
 
 ![[  ]](Images/Image%20002.png) 
 
@@ -105,7 +105,7 @@ a= max (a~min~ , y~2~/6)
 
 Post impact length and 'unaided' jump length are determined from
 
-L~d~= 4.30*D^0.270d^
+L~d~= 4.30*D<sup>0.270</sup>d
 
 L~j~= 5 (y~2~-y~1~)
 
@@ -117,9 +117,9 @@ The width of the basin is determined by providing a fixed amount of 0.10m (aplit
 
 W~b~ = B~w~+0.10
 
-Finally, the appron thickness is determined from considering the maxium uplift pressure magnitude and a unit weitgh massonry or concrete taken as 2.2;
+Finally, the appron thickness is determined from considering the maxium uplift pressure magnitude and a unit weitgh G of massonry or concrete taken as 2.2;
 
-T~b~= (H~o~ + d + a)/2.2
+t<sub>b</sub>= (H<sub>o</sub> + d + a)/(G-1)
 
 Nominal downstream and upstream cutoff depths are provided as follows.
 
@@ -127,9 +127,9 @@ d~u~= d~d~=  0.30
 
 Upstream and downstream protection lengths are provided usinhg
 
-L~1~= L~2~ = 1.2 + 1.5 q^1/2^.
+L<sub>p</sub>=  1.2 + 1.5 q^1/2^.
 
-> All dimensions for basin length, basin width, appron thickness, and protection length are rounded to 0.05 meters.
+> All dimensions for basin length, basin width, appron thickness, and protection length are finally rounded to 0.05 meters.
 
 A typical output table for drop design data is extracted from `Explore Solutions > Data Tables > Explore Drops` as shown below.
 
@@ -163,7 +163,7 @@ Excavation Cut Slope: Slope of vertical excavation from surface to foundation le
 
 Working space: desired space to maintain for working space, set by default to 0.30m
 
-Compacted fill Ht: Height of compacted back filll material required on excavated bottom, and below the foundation block.
+Compacted fill Ht: Height of compacted back filll material required on excavated bottom, and below the foundation block. The compacted fill volume reported considers 0.10m width application in excess of the foot print of structures on all sides.
 
 The calculation of quantities is carried out based on the following schematic diagrams:
 

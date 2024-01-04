@@ -48,22 +48,19 @@ Profile extraction, and softreload.
 
 Node invert edit (Node panel tools)
 
+Reverse hydraulics concepts
+- station measured from parent junction
+- Nodes represent DS segment
+- Exit Drops are now Entry Drops
+- Outfall Height is a new node control parameter
+
 Segment edit (Assembly edit and flow Section Design)
 
-AutoDesign
+Two types of structures:
+- Drops design (not changed), quantity listing, and estimation
+- Outfall Design controls, explore listing, and BoQ (Newly included with He, Hf in dimension table)
 
-Drops design, quantity listing, and estimation
-
-Floating nodes insertion
-
-Drainage Structures (Junctions, Culverts/aqueduct/ Chutes To be proposed)
-
-
-
-
-
-
-
+Floating nodes insertion for crossing locations and hydraulic control
 
 
 ## Design Production
@@ -82,6 +79,11 @@ All six products
 
 - BoQ (detailes, summay, sumarry of symmary)
 
+
+
+## Limitations to current release
+- Only common structures
+- Outfalls can not have two feeders
 
 
 
