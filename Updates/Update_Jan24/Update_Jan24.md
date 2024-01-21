@@ -39,6 +39,8 @@ Update your version of CanalNETWORK product as follows:
 
     Accompanied by **Version V4.8.12** of iCAD Bridge Application.
 
+    <img src="./media/Image 16.png">
+
 2. Start your product, go to `Help > Updates...` Then choose `Manual` option. This will ask to close the application and re-start. Choose `Exit` to agree, and continue.
 
 3. Upon restart, the launcher application will ask if you would like to download or manually update. Choose `Manually`. On the file explorer, point to your downloaded resource file. The rest will be handled by the launcher.
