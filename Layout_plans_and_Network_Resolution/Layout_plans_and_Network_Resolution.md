@@ -11,6 +11,7 @@ Refer to the standard workflow for using CanalNETWORK software. One of the input
     - [Removing Unwanted Routes](#removing-unwanted-routes)
   - [Node Identification](#node-identification)
   - [Identifying Connectivity Issues and Resolving them](#identifying-connectivity-issues-and-resolving-them)
+    - [Reversing Routes](#reversing-routes)
     - [Missing Junction Nodes](#missing-junction-nodes)
     - [Unresolved EoC nodes](#unresolved-eoc-nodes)
     - [Mulitple Parent Nodes](#mulitple-parent-nodes)
@@ -98,9 +99,11 @@ Lets now see how layout maps prepared in AutoCAD are imported to CanalNETWORK en
 
 The first step is to import the drawing to the CanalNETWORK environment. There are many ways to do this:
 
-1. To import a individual routes - i.e., a single route at a time - Go to `Workspace > Pick Route (AutoCAD)` .
+1. To import a individual routes - i.e., a single route or multiple routes at a time - Go to `Workspace > Pick Route (AutoCAD)` .
    
    ![s](Images/Image%20005.png)
+
+   <img src="./Images/Image 066.png" style="width:7in">
 
 2. To import alignment routes drawn on a layer, go to Workflow > Pick Routes (AutoCAD Layer). This will invoke a dialog listing all the layers in the current drawing. 
    
@@ -122,7 +125,10 @@ The first step is to import the drawing to the CanalNETWORK environment. There a
      
      ![s](Images/Image%20009.png)
 
-> Note: A complete canal route data consists an alignment data (x, y) and a profile data. The below $Partial Import?$ prompt may apear when importing canal routes whose profile data is not yet extracted. This is perfectly acceptable, and proceed by hitting `Partial` button. Partial meanse that only the alignment data will be available with out the profile data. Also, note that routes imported with partial are represented with broken lines in the plan veiw area of the interface.
+> Note: A complete canal route data consists an alignment data (x, y) and a profile data. The ***Partial Data Routes*** indicated in below figure may apear when importing canal routes whose profile data is not yet ready. This is perfectly acceptable, and proceed by hitting `Partial` button. Partial meanse that only the alignment data will be available with out the profile data. Also, note that routes imported with partial are represented with broken lines in the plan veiw area of the interface.
+
+> Note: During multiple route selection and import, if a route with out profile data is encountered, all the following routes will be imported as partial - even if they have profile data. This can be fixed by selecting the routes, and using soft reload menu command.
+
 
 ![[  ]](Images/Image%20010.png) 
 
@@ -193,7 +199,48 @@ Most of these connectivity issues can be identified automatically, as discussed 
 ## Identifying Connectivity Issues and Resolving them
 [Back to ToC](#table-of-contents)
 
-The user may expect two types of isses with the connectivity established from above step.
+The following are commonly encoutered isses with the connectivity established.
+
+### Reversing Routes
+[Back to ToC](#table-of-contents)
+
+CanalNETWORK's governing convention is the all canals must be drawn away from the parent canal. For supply canals this would require drawing routs in the direction of flow. 
+
+A common problem occurs when canal routes are drawn in the reverse direction. Typically this issue is noted by the square nodes appearing on branch locations.
+
+In the example shown below, look at the network. The upper left canal route has its end-of-canal node lying on the parent canal. This tells us the route is reveresed. Clicking on the *Current Vertex* property, index 1 shows the end of the route, confirming the route is reversed.
+
+<img src="./Images/Image 067.png" style="width:7in">
+
+To fix this issue,
+
+1. Select the route. 
+1. start the command from `Workflow > Prep Network > Reverse Selected Routes...` menu item.
+    <img src="./Images/Image 069.png" style="width:7in">
+
+
+1. Notice the message, informing the user the **This will remove all refered Nodes and Profile Data.** Confirm to the dialog to continue.
+1. All necessary changes are made to the AutoCAD object and the network data base, and status reported as shown below.
+
+    <img src="./Images/Image 070.png" style="width:10in">
+    
+    Note the end-of-canal node is removed (Show nodes option displayed here). Also the AutoCAD vetex status have changed, confirming the change in AutoCAD.
+
+1. Recreate the node to reflect the new changes. The bracnh node is now correctly created.
+
+    <img src="./Images/Image 071.png" style="width:4in"> 
+
+
+The reverse tool manages the following task in one invokation:
+- delete refered nodes in the network data base to avoid residual data that causes error
+- Delete the profile data (if any) associated with the parent AutoCAD object, because this is no more relevant
+- Reimport the object coordinates to CanalNETWORK environment.
+
+
+
+> Note: The Reverse Routes menu command can work on multiple selections at a time.
+
+> Note: Routes reversed using the above tool will require the **pipe workflow** to be carried out, i.e, Node ID, Naming, Sizing (if needed with Farmblocks), Profile Extraction, and Soft-reloading.
 
 ### Missing Junction Nodes
 [Back to ToC](#table-of-contents)

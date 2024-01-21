@@ -416,6 +416,16 @@ To create markers along an alignment use below steps:
 
 Generating longitudinal profiles drawings, also known as LSecs, can be done either for individual canals or for a group of canals. The latter will be uising the Batch Process commands. Either way, LSecs can be generated at any desired increments, if needed creating multiple LSec drawings for a single canal route.
 
+A set of templates are coninually being developed and added. It will be best to generate standard production quality drawings using these templates. In the current version, the available templates are available from the menu as follows.
+
+<img src="./Images/Image 129.png" style="width:6in">
+
+The drawings generated to AutoCAD appear as follows. 
+
+<img src="./Images/Image 130.png" style="width:7in">
+
+> Note: The objects are drawn to **1unit:1mm** scale for the paper sizes selected.
+
 ### Generating Longitudinal Profile drawing for single canal route
 [Back to ToC](#table-of-contents)
 
@@ -433,7 +443,9 @@ Then:
    
    ![image097](Images/Image%20098.png)
 
-3. AutoCAD will be in select mode. Pick a bounding box where you want the drawing to be placed. This is often a rectangle object. (See below on scaling of drawings).
+3. AutoCAD will be in select mode. Pick a bounding box where you want the drawing to be placed. This can be any polyline object, preferably a template geneated by the `Create Plot Sheet` menu command. The LSec drawing will be generated to the limits defined by this bounding box object. (See below on scaling of drawings).
+
+    > Note: For consistency in producong drawings, use `Explore Outpus > Plot to AutoCAD > Create Plot Sheet` menu command to generate template objects.
 
 4. Next you will be prompted to input scaling. Accept the default 0,0 if you want the drawing to fit the box selected. For standard production, you will need to set your own values.
    
