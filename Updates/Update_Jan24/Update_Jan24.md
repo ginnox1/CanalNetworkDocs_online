@@ -1,4 +1,4 @@
-# CanalNETWORK 2.0
+# CanalNETWORK 2.0 (Jan 2024)
 
 **Hello and Welcome Again,**
 
