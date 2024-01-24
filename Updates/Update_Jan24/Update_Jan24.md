@@ -39,7 +39,9 @@ Update your version of CanalNETWORK product as follows:
 
     Accompanied by **Version V4.8.12** of iCAD Bridge Application.
 
-    <img src="./media/Image 16.png">
+    <img src="./media/Image 16.png">{br}
+
+    > **Important Note:** Make sure AutoCAD is closed before you continue. If not, your update may not work, and require time to sort out. This release contains updates to the ***iCAD Bridge*** application.
 
 2. Start your product, go to `Help > Updates...` Then choose `Manual` option. This will ask to close the application and re-start. Choose `Exit` to agree, and continue.
 
