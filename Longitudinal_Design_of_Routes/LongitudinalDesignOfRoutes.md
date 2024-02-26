@@ -568,17 +568,17 @@ It is possible to extract the drops of a number of canal routes in one go. To do
 
 This option specifically lists the relevant construction dimensions for each turnout structure found on the route. 
 
-![s](Images/Image%20048.png)
+![s](Images/Image%20074.png)
 
-The symbols for the dimensions are explained in the accompanying drawing below.
+The symbols in the table represent the dimensions corresponding to the standard turnout design drawing developed and in use by ECDSWCo (2024). The drawing is shown below.
 
-![  ](Images/CDSWC_str/Image%20003.png)
+![  ](Images/CDSWC_str/Image%20075.png)
 
-![sec](Images/CDSWC_str/Image%20004.png)
+![sec](Images/CDSWC_str/Image%20076.png)
 
-![sec2](Images/CDSWC_str/Image%20005.png)
+![sec2](Images/CDSWC_str/Image%20077.png)
 
-*Figure: Tunrout Structure detail drawings from ECDSWC, with dimension detail corresponding to the symbols in the explore output table.*
+*Figure: Tunrout Structure TYPE-I detail drawings from ECDSWCo, with dimension detail corresponding to the symbols in the explore output table.*
 
 <u>**Notes on BoQ calculation for Turnouts**</u>
 
@@ -590,7 +590,7 @@ The calculation of quantity items for turnout structures is based on the sizes o
 
 * The depth of cut for earth excavation calculation is calculated from:
 
-* dFloor= OGL at control location (centerline) - lowest excavation level, where lowest excavation level is estimated from bed level of lowest canal bed (upstream od downstream, especially for turnouts with falls), less 0.40m thickness of bed lining, less compacted backfill height provided in Control_BoQSettings (under network preferences).
+    dFloor= OGL at control location (centerline) - lowest excavation level, where lowest excavation level is estimated from bed level of lowest canal bed (upstream od downstream, especially for turnouts with falls), less 0.40m thickness of bed lining, less compacted backfill height provided in Control_BoQSettings (under network preferences).
 
 The cut volume is calculated using:
 
