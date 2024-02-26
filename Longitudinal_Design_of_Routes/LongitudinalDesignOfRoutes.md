@@ -606,7 +606,7 @@ Thus:
 
 Vcut= dFloor x (LTotal+mxdFloor) x (BTotal + mxdFloor)  
 
-> Note: Tunrouts can be combined with drops. If controls for Turnout locations have drops, the stilling basing structure will be sized and provided similar to the design approach for othe drops. The results are included in BoQ quantity. This functionality is not applicable to Floating Nodes or Division Boxes.
+> **TURNOUTS with DROPS**: Tunrouts can be combined with drops. The outputs will use combined drops ONLY if the exit drop provided is > 0.10m. In such cases, the stilling basing structure will be sized and provided following the set drop design method (Chow's method is default). The results are included in BoQ quantity.
 
 ### Exploring Division Boxes
 [Back to ToC](#table-of-contents)
