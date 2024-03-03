@@ -8,9 +8,18 @@ We will continually update this site to provide information on progress and late
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
-[Learn about the latest updates for Jan2024 Here](Updates/Update_Jan24/Update_Jan24.md)
+### What's New in Feb2024!
+<p style="color:blue"> <strong>
+We are thrilled to release  the Drain Network feature for CanalNETWORK software - making it the complete workspace for irrigation systems design.</strong>
+</p>
 
-Notes on previous updates can be accessed below.
+Learn about the updates in the latest release of Feb 2024.
+
+
+Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how the product is evolving.
+
+[Uppdates for Jan2024 Here](Updates/Update_Jan24/Update_Jan24.md)
+
 
 [Updates for Nov 2023 here](Updates/Update_Nov23/Update_Nov23.md)
 
