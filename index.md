@@ -13,7 +13,7 @@ This site will also be the platform for online documentation. Contents relevant 
 We are thrilled to release  the Drain Network feature for CanalNETWORK software - making it the complete workspace for irrigation systems design.</strong>
 </p>
 
-Learn about the updates in the latest release of Feb 2024.
+Learn about the updates in the [Latest release of Feb 2024.](Updates/Update_Feb24/Update_Feb24.md)
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how the product is evolving.
