@@ -210,15 +210,17 @@ To update from the drawings, select the desired blocks to update, and choose `Up
 
 ![imag40](Images/Image%20042.png)
 
-Such work saved in AutoCAD can be reloaded to the CanalNETWORK environment using `Workflow>FarmBlocks> AutoEstimate...` tool, if the FarmBlock Host object is available and linked.
+Such work saved in AutoCAD can be reloaded to the CanalNETWORK environment using `Workflow > FarmBlocks> AutoEstimate...` tool, if the FarmBlock Host object is available and linked.
 
-Tips:
+**Helpful Tips:**
 
 - It is highly recommended to create and use a separate layer to contain the host object and the blocks of farm parcels. With the number of objects increasing in the AutoCAD environment, it may be hard to keep track of changes, and accidentally delete uninteded objects that may cause problems at later stage.
 
+- Blocks drawn to AutoCAD and edited, can be imported entirely to CanalNETWORK by using `Workflow > FarmBlocks > Auto Estimate...` again.
+
 - Using `Edit > Highlight Selection in AutoCAD` helps to know which block is for which route while working in AutoCAD.
   
-  You can not import farm blocks using manual steps, while a FarmBlock host object is linked to the current workspace. The following message will appear if attempted.
+- You can not import farm blocks using manual steps, while a FarmBlock host object is linked to the current workspace. The following message will appear if attempted.
   
   ![figinfo](Images/Image%20043.png)
 

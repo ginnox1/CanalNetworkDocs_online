@@ -247,7 +247,21 @@ This will create a new CBLinformation for the segment that accomodates the presc
 
 The last area of control for the user to guide and influence longitudinal canal is the `Canal Assembly` panel. In this panel, information regarding the parameters that determine the shape and size of the canal section and its flow parameters can be adjusted. 
 
-> Note: When a node is selected, this panel shows flow information in the segment upstream of the control. The small rectangular button, also known as Perfoamnce Indicator button, show the acceptability of the flow conditions. A red color indicates tells that either the velocity limits or the shear stress limits are not respected, and redesign is needed.
+> Note: When a node is selected, this panel shows flow information in the segment upstream (downstream for drain) of the control.
+
+The small rectangular button, indicated with an arrow in below figure, is known as Perfoamnce Indicator butto. It shows the acceptability of the flow conditions. Numerous comparisons are made with respect to available design criteria to show the perofmance, namely:
+
+- A <i style="color:red"><strong>RED</strong></i> color indicates an high level alert, showing either limiting velocities or shear stress limits are exceeded. The text contains one or two exclamation marks.
+
+    <img src="./Images/Image 075.png">
+
+- A <i style="color:magenta"><strong>YELLOW</strong></i>  color indicates low level alert, showing actual flow velocities exceed criteria velocity values. The text contains a question mark.
+
+- A <i style="color:green"><strong>GREEN</strong></i>  color indicates acceptable perfomance in all respects. The text contains neither question marks or exclamation marks.
+
+For detailed information about the different flow paramters, see section on [Exploring Flow Sections](#Exploring-Flow-Sections) further below.
+
+tells that either the velocity limits or the shear stress limits are not respected, and redesign is needed.
 
 The user can interact with the canal assembly informaiton in many ways. Select ((click on the OGL profile line) a canal segment or reach in the profile view that you want to edit and follow below guideline:
 
