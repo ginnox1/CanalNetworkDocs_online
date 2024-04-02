@@ -122,6 +122,8 @@ FarmblocK creator is not more an experimental tool. Following a recommendation f
 
     <img src="./media/Image 003.png" style="width:6in">
 
+> **Important Note** It is recommended to use Host Objects to work with farm blocks, also when using layers to create them. This will ensure streamlined use, allowing show/hide features with out the need to reimport again.
+
 [Back to ToC](#table-of-contents)
 
 END.
