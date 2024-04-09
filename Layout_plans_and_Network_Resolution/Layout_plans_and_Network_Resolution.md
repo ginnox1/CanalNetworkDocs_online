@@ -395,11 +395,12 @@ The meaning and use of each variable setting is described below.
 | 2     | Excavation cut slope             | Cut slopes to be assumed for controls (turnouts, divisionboxes) and drops, when determining excavation volumes.                                                                                                                                                                                                                  | 0.25          |
 | 3     | Working space(m)                 | Amounf of working space to consider in volume calculations for above,                                                                                                                                                                                                                                                            | 0.3           |
 | 4     | Compacted fill Ht(m)             | Height of compacted fill to be considered in determining both cut and fill volumes for above.                                                                                                                                                                                                                                    | 0.1           |
-| 5     | BoQ List of Items(-)             | The level of detail desired for BoQ report gerneration: could be set to either detailed (default) or summarized.                                                                                                                                                                                                                 | Detailed      |
+| 5     | Consider Structure Reaches(-)    | Option to exclude earth volumes of structure locations when calculating canal volumes.<br><strong>Yes</strong>: Exclude volumes<br><strong>No</strong>: Do not consider Structures.                                                                                                | Yes           |
+| 6     | BoQ List of Items(-)             | The level of detail desired for BoQ report gerneration: could be set to either detailed (default) or summarized.                                                                                                                                                                                                                 | Detailed      |
 
-> Note: Invert levels -0.5 denotes, to use the OGL level at the begining of the canal less 0.5m. It is defined relative to the OGL at the point of interest.
+> **Note**: Invert levels -0.5 denotes, to use the OGL level at the begining of the canal less 0.5m. It is defined relative to the OGL at the point of interest.
 
-Bottom width roundup value also forces minimum allowable width to 0.30m.
+> **Note**: Bottom width roundup value also forces minimum allowable width to 0.30m.
 
 ## Generating Canal Naming for the Resolved Network
 [Back to ToC](#table-of-contents)

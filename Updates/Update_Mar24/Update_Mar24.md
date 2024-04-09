@@ -26,7 +26,7 @@ Navigate this page using the links below.
 Update your version of CanalNETWORK product as follows:
 1. Download the update resoruces from [Latest CanalNETWORK update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
 
-    The latest is **Version 2.1.0.3933**
+    The latest is **Version 2.1.0.3951**
 
     Accompanied by **Version V4.8.12** of iCAD Bridge Application.
 
