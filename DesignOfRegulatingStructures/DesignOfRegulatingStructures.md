@@ -3,29 +3,39 @@
 
 Flow regulating strucrures are a key component of a canal network system. They are provided at different points along canal routes to provide adequate control of flow condition during conveyance of irrigation water to different parts of the irrigation area. 
 
-CanalNETWROK and ICAD products currently allow the design of Head Regulator Strucures, Cross-Regulator Strucrtures and Inclinded drops. The design of these structures is handled using a dedicated module in the iCAD environment called CanalStructuresJET. To use this module, the structure must first be positioned in the CanalNETWORK environment. The work of canal structures starts, therefore, by positioning and defining locations for the structures along desired canal routes in the CanalNETWORK environment.
+CanalNETWROKcurrently allow the design of Head Regulator Strucures and Cross-Regulator Strucrture. The design of these structures is handled with in the CanalNETWORK environment. Follow below links to navigate this page.
 
 ## Table of Contents
 <!--TOC-->
-<!--TOC-->
   - [Defining the Structure](#defining-the-structure)
+  - [Design Settings for HR/CR structures](#design-settings-for-hrcr-structures)
+    - [Design Settings](#design-settings)
+    - [Additional Settings](#additional-settings)
   - [Designing the Canal Structure](#designing-the-canal-structure)
-  - [Editing Variables](#editing-variables)
-  - [Working with the Module](#working-with-the-module)
-    - [Interactive sizing](#interactive-sizing)
-    - [Changing views](#changing-views)
-    - [Changing Energy Dessipation Mechanism](#changing-energy-dessipation-mechanism)
-  - [Changing Hydraulic and Location conditions](#changing-hydraulic-and-location-conditions)
-    - [Bridge Decks](#bridge-decks)
-    - [Plan View](#plan-view)
-    - [Saving Design Work](#saving-design-work)
-    - [Generating BoQ](#generating-boq)
-    - [Generating Longitudinal Drawings](#generating-longitudinal-drawings)
+    - [Design of Cross Regulator Structures](#design-of-cross-regulator-structures)
+    - [Design of Head Regulator Structures](#design-of-head-regulator-structures)
+  - [Exploring Solutions](#exploring-solutions)
+    - [Dimension Tables](#dimension-tables)
+    - [Detailed Drawing Views](#detailed-drawing-views)
+    - [Bill-of-Quantity](#bill-of-quantity)
+  - [Technical Notes](#technical-notes)
 <!--/TOC-->
+
+ 
 ## Defining the Structure
 [Back to ToC](#table-of-contents)
 
-To define a location for the structure, insert a floating node that represents a control behavior along a resired canal route in the network system. The most common purpose of floating nodes is to use them as any control, to represent a change in hydraulic condition. 
+The design of regulating and conveyance structures is carried out using floating nodes. Floating nodes can be used for many purposes. Representing a structure is only one of the uses (Refer the chapter on [Longitudinal Design]() for more details.
+
+   <img src= "./Images/Image 073.png">
+
+**<u>Important Notes</u>**
+
+Before defining and designing structues with in the CanalNETWORK environemnt, it is recommended to understand the following notes:
+1. Floating node positions are restrained by profile data available, and minSpacing project preference setting. 
+1. CR can be placed on any canal, any segment.
+1. HR requires a regular (junction) node - connecting to a parent canal - just upstream of its location, and no drop strucrutes are allowed in between.
+
 
 To insert the floating node along a canal route:
 
@@ -43,12 +53,12 @@ To insert the floating node along a canal route:
    
    You can also delete floating nodes from `Workflow > Floating Node > Delete Current`, by first selecting the node.
 
-4. Click on the floating node just inserted to select it, and go to `Workflow > FLoating Node > Canal Structures...` to define the strucrure. 
+4. Click on the floating node just inserted to select it, and go to `Workflow > FLoating Node > Canal Structures...` to define the strucrure. The *Edit Variables* dialog box appears for user input. Supply data as below:
    
-   ![dsf](Images/Image%20001.png)
+   ![dsf](Images/Image%20047.png)
    
-   ![dsfg](Images/Image%20002.png)
-* User Tag or Name: specify the name of the individual structure that can adequately identify the structure properly latter. A standard convention is to use the canal route tag and type of structure, if needed including a serial number. (eg., HR 01 TC_3_12)
+ 
+* User Tag or Name: specify the name of the individual structure that can adequately identify the structure properly latter. A standard convention is to use the canal route tag and type of structure, if needed including a serial number. (eg., HR 01 TC_3_12). This input is used to identify the control structure on plan views annotations.
 
 * Type of Structure: The type of structure the floating node represents. Select from the available list (select the proposed structure of interest either cross regulator, head regulator or inclined drop).
   
@@ -56,368 +66,300 @@ To insert the floating node along a canal route:
   
   <u>Head Regulators</u> are structures posited on branch canals. They usually have their crest levels raised in proportion to the expected overflow discharge rate.
   
-  <u>Inclined drops</u> are energy dissipating structures located along canals. These drops can be designed as special structures - in contrast to regular vertical drop structures - with proper consideration for surface and subsurface hydraulic conditions.
-  
-  *Edit Variable dialog for New Canal Structure.*
-  
-  The dialog also allow to input a user specificied name that can be used to identify the control structure on plan views, or BoQ generation.
-  
-  * Next Action: The proposed action to execute upon hitting `Apply` Button.  During definition, this option can be left to default setting (Do Nothing.)
-  5. After selecting the structure type, and providing an identifier name as above, hit `Apply` button to save the data. 
+ <!-- <u>Inclined drops</u> are energy dissipating structures located along canals. These drops can be designed as special structures - in contrast to regular vertical drop structures - with proper consideration for surface and subsurface hydraulic conditions.
+  -->
 
-> Note: For Inclined drops, automatic check applies if drop height is sufficient for an effective energy dissipation upstream energy grade line (US.EGL) is sufficiently greater than the downstream energy grade line (US.EGL) if not, a message is displayed and check the exit drop and try again. Similarly, if the head loos not sufficiently defined the right message displayed for cross and head regulator and feed the value greater than 0.1m.
+  
+  * Next Action: The proposed action to execute upon hitting `Apply` Button. There are two options.
+
+      <u>Save</u> saves the information provided on the floating node objects, and exits.
+
+      <u>Design</u> This choice saves the data, and continues to the design process. Note, if there is an existing design information on the selected node, the option will appear as **Redesign**. 
+      
+  5. Hit the `Apply` button to continue. 
+
+<!-- Note: For Inclined drops, automatic check applies if drop height is sufficient for an effective energy dissipation upstream energy grade line (US.EGL) is sufficiently greater than the downstream energy grade line (US.EGL) if not, a message is displayed and check the exit drop and try again. Similarly, if the head loos not sufficiently defined the right message displayed for cross and head regulator and feed the value greater than 0.1m.
+
 
 ![[  ]](Images/Image%20004.png) 
 
+
 *Dialog promoting invalid action for inclined drop design.*
+-->
+
+## Design Settings for HR/CR structures
+[Back to ToC](#table-of-contents)
+
+
+Specific parameters and settings for regulator structures design is found as part of the proejct preferences setting. It can be accessed from `Workspace > Edit Preferences...` menu command. The parameters are shown below.
+
+<img src="./Images/Image 048.png">
+
+Each of the variables are used in design, drawing generation and BoQ estimation as needed in different workflows. The following table defines and explains each variable.
+
+Some of the paramters are shown also in the below typical section figure.
+<img src="./Images/Image 050.png">
+
+### Design Settings
+[Back to ToC](#table-of-contents)
+
+
+
+|No|Variable Name, and Unit| Values | Remarks|
+|----------------------------------
+|1| Discharge Factor| min 0.5<br> max 1.0<br>Default: 0.85| A discharge reduction factor to represent minimum flow conditions. <br> Note: This is applicable in CR structures only.|
+|2|Allowable Exit Gradient(m)| min: 0.10<br>max:0.3<br>Default:0.2| Desired safe exit gradient desired at downstream end of the structures. This value is used to determine the depth of the downstream cutoff wall and the overall length of the impervious floor of the structures|
+|3| Wing Wall Thickness(m)|min: 0.20m<br> max:0.50<br> Default:0.30m|Desired thickness for all wall components of the structures.|
+|4| Min Apron Thickness(m)| min: 0.20m<br> max:0.50<br> Default:0.30m|Apron thickness for upstream and downstream impervious floor. Note, for downstream floor, apron thickness is also calculated based on subsurface flow conditions and resulting unbalanced head. The applied thickness is the maximum of the two.|
+|5|Cutoff Wall Thickness(m)|min:0.05m<br>max:0.50m<br>Default:0.30|Thickness values for cutoff walls or piles as needed.|
+|6|Gate Provisions|Gate width:<br><ul>min:0.30m<br>max:1.0m</ul>Pier Width:<ul>min:0.15m<br>max:0.50m<br>|Gate provision, specified as a pair of values representing GATE WIDTH, PIER WIDTH.|
+|7|Filter Block Size(m)|min:0.20<br>max:0.50<br>Default:0.20|Desired filter block sizes to be used for design. Note, these are applied also considering the number of layers (below)|
+|8|Filter Block Layers(-)|min:1<br>max:3<br>Default:3|Specifies how the filter blocks are laid out for quantity estimation. Note: A desired arragnement can be created by manipulating the block size and number of layers.|
+|9|Silt Factor|min:0.05<br>max:12.5<br>Default:1.0|Silt factor for use in scour depth estimation and subsequent sizing of upstream and downstream cutoff walls, as well as sizing of the launching appron thickness.|
+
+### Additional Settings
+[Back to ToC](#table-of-contents)
+
+
+|No|Variable Name, and Unit| Values | Remarks|
+|----------------------------------
+|1| Width of Walkway(m)|min:0.6m<br>max:1.5m<br>Default:1.0|Clear walkway desired on the operating slab or bridge deck of the structure, exluding the curbs on both sides.|
+|2|Thickness of Operating Slab(m)|min:0.10m<br>max:0.30m<br>Default:0.20m|Thickness of the concrete slab.|
+|3|Width and Height of the Curb(m)|min:0.10<br>max:0.3<br>Default:0.20|Thickness and height of the side curbs on the operating slab.<br><img src="./Images/Image 049.png"  style="width:1.5in">|
+
+
+
 
 ## Designing the Canal Structure
 [Back to ToC](#table-of-contents)
 
-Before proceeding to design, make sure to save the modified data of the network to the Network Host object of choice. Failing to do so will make the data unavailable for iCAD.
+The design of a structre represented with a floating node can be started or revisited at any time by following these steps.
 
-To start the design process for canal strucrues defined as above, start iCAD if not already started. Then define a session using the dedicated module *CanalStructuresJET*. To do so:
+1. Click on the floating node, and start the menu command `Workflow > Floating Nodes > Canal Structure...`.
+1. On the *Next Actions* variable of the edit dialog, choose `Design` or `Redesign` option, and hit `Apply`.
 
-1. Go to `Workspace > New Session`. The *Module Browser* dialog will apear. 
-   
-   ![[  ]](Images/Image%20005.png) 
-   
-   *Module Browser dialog.*
-   
-   You can also start from the push menu item shown below.
-   
-   ![image34](images/Image%20034.png)
+This will proceed to the design process.
 
-2. Choose *CanalStructuresJET module* and hit `Continue`. This will invoke the *Jump Design* editor dialog. Note, all structures addressed for designed in the workflow under discussion involve the analyisis of hydraulic jumps, hence the name for the editor.
-   
-   ![fddsg](Images/Image%20006.png)
-   
-   **Note: You can select a flow section object in AutoCAD to start designing tentative (that is not bound to any canal route) structures.**
+> **Important Note:** The design settings on project preferences are used in all design/redesin tasks. It is recommended to set these values once, and retain for the life of the project design.
 
-3. Click on the space for *Network Host Object* variable, and AutoCAD will be in select mode promoting to select a network host object. Pick the host object where the network data, including the definition of structures, is saved to and hit the continue button `>>`.
-   
-   Note: Step 2 and 3 may be skipped by using the *Next Action* variable setting discussed earlier (Defining the structure) to *Point to Current*.
-   
-   Note: The dialog will remember previous selections of host entity, and may display an object ID. Click on it to change it.
+In below sections, detailed presentation is made regarding the design steps followed for each structure.
 
-4. The *Choose Structure* dialog will apear. In the dialog,  you will see a list of structures saved to the current host object. Choose your desired structure, and click `OK` to proceed with design. 
-   
-   ![[  ] ](Images/Image%20007.png)
-   
-   *Dialog to choose a strucure, to contunue with design work.*
-   
-   If the structure is called for the first time, iCAD will begin the design session by using the set default values. Else, a *Choose Startup Option* dialog apears to allow users to decide how they want to proceed. Users can start design process afresh, or continue from previous design work.
-   
-   ![[ ]](Images/Image%20008.png) 
-   
-   *Start-up option dialog.*
-* Use Design Data option to continue from previous design data saved to the data base.
+### Design of Cross Regulator Structures
+[Bacto to ToC](#table-of-contents)
 
-* Start New Design option to start the design process afresh.
-  
-  Note: If a pointer is set in CanalNETWORK, iCAD will always choose the structure to work on from the setting. Use *Clear Pointer and Exit*, and click `OK` to clear pointers, to be able to select a different structure.
+Technical details on theoretical basis implemented in the software is included below in [Technical Notes](#technical-notes).
 
-## Editing Variables
+Cross-regulators are designed with out overflow crest height, or h~c~=0.0. The software searches for an ideal drop height that meets modular flow requirements.
+
+The search begins from the currently provided drop height with increments of 2.5Cms until an acceptable flow condition is found. The detail view axis shows the solution found.
+
+<img src="./Images/Image 056.png"><br>
+
+Note: The solid line represents Normal flow volume, and dotted lines represent the reduced flow volume.
+
+If solution fails, the following message is thrown.
+
+<img src="./Images/Image 055.png" style="width:6in"><br>
+
+> Note: It is recommended to start design with no exit drop provided. However, setting a desired height is also acceptable.
+
+
+### Design of Head Regulator Structures
 [Back to ToC](#table-of-contents)
 
-The iCAD environment is now ready for detailed design work, displaying the section view for the structure (Face-upstream-direction), and differnt annotated settings along with it.
 
-![[  ] ](Images/Image%20009.png)
+Detailed theoretical basis for the design of regulating structures is included further below under the section [Technical Notes](#technical-notes).
 
-*iCAD environment showing initial view of the strucrure for an inclined drop design.*
+For succesful design of head regulator structures, the floating node representing the structre must meet the following requirements.
 
-The module allows you to work on your design in transverse view, in longitudinal view and in plan view. Different structural and hydraulic conditions are considered in the different views. In line with this, you can edit different sets of variables in each view. By default, the design module starts with the transverse section view. Follow these steps to proceed with design:
+1. The canal alignment mut be a branch canal to a supply canal. HR structures can not be applied on a parent canal for the project.
 
-1. Edit Variables
+    <img src="./Images/Image 057.png">
+
+1. The upstream node on the parent canal can not be a division box or a turnout.
+
+    <img src="./Images/Image 059.png">
+
+
+1. The node must be the first structure in the canal (no drops or other node/controls) before its location.
+
+    <img src="./Images/Image 058.png">
+
+
+1. The available bottom width must be greater than or equal to the gate width specified in the project preferences.
+
+    <img src="./Images/Image 060.png">
+
+Once these conditions are met the floating node is accepted for design as a head regulator structure. The process is much similar to that explained in [Design of Cross Regulator Structures](#design-of-cross-regulator-structures) above. 
+
+The following workflow is implemented.
+
+> Note: We refer to the supply canal as the **parent canal.** The **Host canal** is the canal on which the head regulator structure is located.
+
+1. Determine the upstream flow condition, based on the hydraulics in the parent canal as well as the host canal alignment. This considers both the normal *Q* and factored *Q**Q~minFac~* flow rates in the parent canal. See [Technical Notes](#technical-notes) below for details.
+
    
-   To define specifc design variables for your structure, go to `Workflow > View Varibela Editor`. 
-   
-   ![[  ]](Images/Image%20010.png) 
-   
-   *View Variable Editor menu command.*
-   
-   This will invoke the variable editor dialog with detailed variables relevant to the current view.
-   
-   ![[  ]](Images/Image%20012.png)
-   
-   *Variable Editor for transverse view*
-   
-   <u>Coeficient of Discharge</u>:  The value of Cd in governing equation, set by default to 1.710. A value greater or equal to 1.0 is expected.
-   
-   Q= C L H^(3/2)
-   
-   <u>Calculation Method</u>: The method of overflow rating curve calculation. Please see technical details for more on this. By default, this is set to *Use User Input Cd*
+    
+    <img src="./Images/Image 065.png">
 
-> Note: You can only specify the Ogee method for Hear Regulator (HR) Structures. This is because the crest height is set to zero by default for CR and ID.
+    This step often requires repositioning of the starting invert level for the host canal, inorder to accomodate the flow within the design full-supply-depth. Confirm to the prompt, and the invert level is adjusted. Click on the route in plan view to see the changes.
+    
+      <img src="./Images/Image 061.png">
 
-   <u>US/DS Angle and Length of Abutment</u>: Specify the layout of the structure in plan view, dictating how long and wide the abutment provisions must continue upstream and downstream
+    
+2. The design of crest height and fall heigh is then carried out by considering modular flow requirements and broad crested weir flow conditions. A dialog confirms the solution, and graphical presentation shown in the detail view axis.
 
-   ![[  ]](Images/Screenshot_20220127-151419_Concepts.jpg) 
+    <img src="./Images/Image 066.png">
+    <img src="./Images/Image 067.png">
 
-*Layout of a typical canal structure showing dimensions for abutment provissions.*
+Different solutions for the design can be explored as detailed in the following section.
 
-   <u>Total Longitudinal Length</u>: The total length of the structure measurered from begining of upstream appron, to end of downstream appron.
 
-   <u>Length of Approach Section</u>: The length of upstream impervious floor required for the structure before the control section and to the begining of the upstream appron.
-
-   <u>Abut. Wall Width</u>: The top thickness of the abutment wall to be provided, and B/H ratio to use in determining the thickness of the wall at the foundation level (applied for BoQ estimation.)
-
- ![da ](Images/Screenshot_20220127-151747_Concepts.jpg)
-
-*Abutment wall dimensions for structures*
-
-   Applying the changes to the variable editor, will make the necessary adjustments on the transverse view. It also recalculates the overflow rating curve in preparation for the design and analysis involved in the longitudinal view.
-
-2. Edit variables. 
-   
-   Yes, the next step is also to edit more variables. This time, it will be for the longitudinal view. Change the view from `Workflow > Next View`. The longitudinal view of the structre is diplayed, again using default settings. Edit variables as needed.
-   
-   ![[  ]](Images/Image%20013.png) *Variable Editor listing the variables relevant to the longitudinal view*
-   
-   <u>Minimum Appron Thickness</u>: The minimum applicable appron thickness for the structure, set by default to 0.40m.
-   
-   <u>Jump Mechanism</u>: This specifies what type of energy dessipating mechanism to use in the stilling basin area of the structure. There are three options: (a) SImple basisn, (b) USBR Type II and (c) USBR Type IV basins. 
-
-> Note: Changing the eneergy dessipating mechanism will automatically force some changes on the stilling pool depth.
-
-   <u>Pool Depth</u>: The depth of the stilling pool measured from the exit level (bed level of the downstream canal) to the lowest point in the stilling pool. Set by default to 0.10m or other similar value depending on the energy level.
-
-   <u>US/DS cutoff Depths</u>: specify the depth of the upstream / downstream cutoff walls for the strucrure.
-
-> Note: The thickness of the cutoff walls is set equal to the minumum appron thickness value above, or 0.40m by default.
-
-   <u>Allowable Excess Energ</u>y: prescribes the minimum and maximum undesipated energy that can be allowed downstream of the structure. This latter is theoretically desired to be zero, but one can specify in the range of 0.05 to 0.10 for practical purposes.
-
-   After making the necessary changes, hit `Apply` and the drawing will change to reflect the new settings.
-
-## Working with the Module
+## Exploring Solutions
 [Back to ToC](#table-of-contents)
 
-The module offers differnt functionalities for the engineer to design and document a well defined structure. The following are common:
+One can explore solutions for Head and Cross-regualator structures as follows.
 
-### Interactive sizing
+### Dimension Tables
 [Back to ToC](#table-of-contents)
 
-Click on any bold (green or red) colored graphic element, and you will find an interactive tool to reposition that particular component of the structure. This is available:
+To list the dimension table for structures, follow below steps. The dimension tables are generated in accordance with the symbols and drawing presented below.
 
-* both upstream and downstream cutoff walls, used to increase or decrease the depth of the walls.
+   <img src="./Images/Image 068.png">
 
-* Stillin pool level to raise or lower the depth of the stilling pool.
+1. Make sure there is no selection in profile view.
+1. Then start the menu command `Workflow > Floating Nodes > Canal Structures...`. This will start the below dialog box.
 
-* Inflection point for bottom profile of downstream appron (available only for HR/CR, and where adequate variations in unbalanced hydraulic gradient exist.)
+    <img src="./Images/Image 070.png">
+1. To delete or see the summary data related to a single structure skip to next step. To create the dimension tables, select desired structures and hit `OK` button.
 
-![[  ]](Images/Image%20019.png) 
 
-*Interactive sizing tool showing drag feature for downstream cutoff depth.*
+    <img src="./Images/Image 069.png">
 
-### Changing views
+1.  choose one of the structures, and hit `OK` button. Confirm your desired action.
+
+    <img src="./Images/Image 071.png">
+
+
+
+### Detailed Drawing Views
 [Back to ToC](#table-of-contents)
 
-The module undertakes design works in longitudinal and transverse views. To access these views simply go to `Workflow > Next View`. This menu command will change the view as follows:
 
-- if current view is transverse section view (face upstream), the the command will change the view to longitudinal section view.
+For a floating nodes whose design is fully solved and completed, section and elevation views can be generated. To view these, 
 
-- if current view is longitudinal section view, the command will change the view to transverse seciton view. 
+1. Select a desired node on the profile view axis.
 
-A third view is the plan view. In this view, the arrangement of the different components of the structure in the x-y direction (from top view) are displayed. To generate the plan view, go to `Workflow > Plan View`.
+1. Toggle the *View FUS/FDS* radio button above the detail view axis to generate alternate views. When toogled on an elevation view is generate.
 
-Sample views are inclued in following section.
+      <img src="./Images/Image 062.png">
 
-### Changing Energy Dessipation Mechanism
+1. When toggled off, a longitudinal section is created.
+    
+    <img src="./Images/Image 063.png">
+
+
+These drawings can be sent to AutoCAD at a desired scale and annotated for more detailed presentation.
+
+<img src="./Images/Image 064.png">
+
+### Bill-of-Quantity
 [Back to ToC](#table-of-contents)
 
-This is important as the performance of the structure depends largely on the abiilty of the provisions for the structure to efficiently and adquately dessipate any excess energy with in the confines of the structure. Depending on the amount of excess energy reaching and leaving the stilling pool, the user can vary the provissions to come to an acceptable design.
 
-Every time, the mechanism is changed, the longitudinal view will also change to reflect the new changes. 
+Bill of quantity is included as part of the canal route quantity schedule. To create one:
 
-> Note: Type I stilling basin provides a suitable pool depth value. When changed to Type II, the pool depth will be fixed to a prescribed value that depends on the unit discharge and energy difference. Accordingly, baffle blocks and pool-end blocks are provided. When changed to Type IV, the pool depth is forced to zero, and baffle blocks are provided at downstream end of the glacis.
+1. Select the desired canal route containing the structure, and make sure profile data is generated using `Workflow > Data Tables > Lsec Profile Data...`.
 
-The following schematics show the resulting flow profile and stilling basin arrangement for the three types of energy dessipating mechanisms.
+1. Use `Workflow > Data Tables > Generate Route BoQ...` menu command to create the BoQ schedule.
 
-![[  ]](Images/Image%20020.png) *Schematic of a simple (Type I) Energy dessipating mechanism.*
+    > Tip: You can select the structure node, and create a specific BoQ for the node (and the segment upstream).
 
-![[  ]](Images/Image%20021.png)
+    <img src="./Images/Image 072.png">
 
-![fd](IMages/Image%20022.png)
 
-*Schematic of USBR Type II Energy dessipating mechanism, showing longitudinal section and plan views respectively.*
-
-![sds](Images/Image%20023.png)
-
-![dasdasa](Images/Image%20024.png)
-
-*Schematic of USBR Type IV Energy dessipating mechanism, showing longitudinal section and transverse face-upstream view*
-
-## Changing Hydraulic and Location conditions
+## Technical Notes
 [Back to ToC](#table-of-contents)
 
-As design continues, it may be necesary to change the position of a structure, or the hydraulic conditions upstream or downstream. If such changes are made to the floating node, or to the canal segments upstream and downstream of the floating node, then these new changes must be applied to the saved data. To do this:
+The design of cross-regulator and head regulator structures is carried based on the following considerations:
 
-1. Select the node representing the strucrture
+Note: Crest heihgts for overflow section are set automatically as follows.
+- For Cross-regulator structures, *hc* is set to 0.0, retaining the CBL (Canal Bed Level) upstrem of the node locaiton.
+- For head regulators, *hc* is set to a minimum value of 0.05m.
 
-2. Go to `Workflow > Floating Nodes > Canal Structures...` 
 
-3. Simply hit `Apply`. This will update the currently existing poisiton and hydraulic conditions for the structure.
+        Q = C_dBH^{3/2}
+        Where:
+        C~d~ is the Coeficient of discharge
+        B is the available overflow length
+        H is the resulting overflow head above crest level
 
-Then, opening the structure in iCAD's *CanalStrucutreJET* module will come with the new set of conditions.
+The design of regulating structures is carried out ALWAYS to attain modular flow over broad crestd weir. Hence Cd value 1.70 is used.
 
-### Bridge Decks
-[Back to ToC](#table-of-contents)
+<u>Overflow Width Design</u>:
+The design process attempts to optimize available canal bottom width and set gate provission specifications to determine a feasible combination of gates and piers for the overflow section. This process also attempts to maintain the overflow head to closely match the existing normal flow depth in the incoming canal.
 
-The user has the option to provide a bridge deck for the strucure(s). To do this, go to `Workflow > Bridge Options...` 
+<img src="./Images/Image 051.png" style="width:5in">
 
-![ds](Images/Image%20014.png)
+<u>Modular Flow</u> The design iteration is carried out until a modular flow condition is ensured based on the following relation ship (See section figure above).
 
-This will start the Edit variables dialog, listing the following variables:
+$$ h~2~/h~1~<=0.75 $$
 
-<u>Number of Piers</u>: The number of supporting piers between the left and right abutment walls of the strucure. A value of 0 is acceptable for no piers.
+> Note: Modularity is checked and established for both the normal (Q) and reduced (Q*Q~minFac~)discharge rates passing through the regulating structure.
 
-<u>Type of Piers</u>: Specify one of four types of piers. The shape of the applied piers can be visualized in plan view.
+For head regultors, the overflow condition is matched with upstream hydraulics at the parent canal (both normal and factored flow rates.)
 
-![imd](Images/Image%20015.png)
+The following schematic shows considerations built in to the software for upstream flow hydraulics on a head regulator structure.
+    
+   <img src="./Images/Image 065.png">
 
-![imd](Images/Image%20017.png)
+   > **Note:** the software considers normal flow and minimum flow rates in the parent canal, and the crest height is designed for the minimum flow conditions antiticpated in the parent canal, while attempting to maintain modular flow for both flow conditions in parent canal.
 
-![imd](Images/Image%20016.png)
 
-![imd](Images/Image%20018.png)
+The above two considerations set the allowable headloss for the structure to operate optimally. Pre and post jump depths, y~1~ and y~2~ are then determined from energy conservation equations
 
-*Type I, II, III and IV pier sections used in the module.*
+Length of stilling pool is determined from 
 
-<u>Downstream Length</u>: The length of the pier walls extending in to the downstream flow area, measured after the end of the crest. The software calcualtes and suggests a value.
+L~pool~= 5(y~2~-y~1~)
 
-<u>Bridge Deck Thickness</u>: The desired thickness of the bridge deck.
+the length of the glacis is determined using glacis slope *m~glacis~*, crest height *h~c~*, depth of pool *d~p~* and the elevation difference between the entry and exit to the structure as follows:
 
-After hitting `Apply` all the changes will apply to both the longitudinal and transverse views.
+L~glacis~= m~glacis~*(h~c~+HL+d~p~)
 
-If no bridge is required after setting values, simply go to `Workflow > Clear Bridge Settings.` This will clear all information on bridge deck as well as from the views.
+The length of the overflow crest is determined to ensure broad crested weir flow using:
 
-### Plan View
-[Back to ToC](#table-of-contents)
+L~crest~= 2*h~1~, Lc>=0.50m
 
-The plan view tool provides a complete detaii of the components of the structure - e.g., abutment walls, overflow area, stilling pool - and their arrangements relative to each other. To generate plan view:
+<img src="./Images/Image 052.png" style="width:4in">
 
-1. Go to `Workflow > Plan VIew` When prompted review the default title and scale. 
-   
-   Lateral exageration Scale: is used to stretch the drawing in the lateral direction when creating the componens. This may be required for overlaying the drawing on existing canal route plans. (See sample drawing generated with LX=1.0 further below)
-   
-   Hit `Ok`, and this will generate the plan view, and prompt for orientation.
 
-![figureplan](Images/Image%20036.png)
+The overall length of the impervious floor is determined from khoslas set of relations.
 
-2. Choose desired orientation: 
+<img src="./Images/Image 053.png" style="width:2in"><br>
 
-![North](Images/Image%20037.png)
+<img src="./Images/Image 054.png" style="width:5in">
 
-North Free: aligns the centerline of the structure to the horizontal axis.
+The above relations allow determination of a safe overall length for the impervious floor. This in turn allows sizing of the upstream apron as follows:
 
-North Up: aligns the north symbol to the y vertical axis.
+Lu= L~total~-(L~glacis~+L~pool~), L~u~>=1.0m
 
-> Note: each view can be exported to AutoCAD for further editing and production as needed.
 
-![dsa](Images/Image%20022.png)
+Once the overall sizing of the structue is finished, protection works are sized as follows.
 
-![ytry](Images/Image%20025a.png)
+R= 1.35(q^2^/f)^1/3^, if h~1~<4.75q^1/2^, or<br>
+R= 0.473*(Q/f)^1/3^, otherwise.
 
-*Plan views generated showing for North-UP, and North-Free options of the same structure.*
+the, upstream and downstream cutoff depths (du, dd) are estimated from:
 
-The drawing below shows a snapshot from AutoCAD environment, where the parent canal is shown with an HR structure, whose plan is generated at the same lateral exageration scale as the route plan drawing.
+du= 1.25R-y~1~, and<br>
+dd= 1.5R-y~1~, dd>=d~Gexit~
 
-![imapln](Images/Image%20046.png)
 
-### Saving Design Work
-[Back to ToC](#table-of-contents)
 
-Design work can be saved at any stage during the design process. Simply go to `Session > Save`. This will display a progress dialog, and save the data to the host object. 
 
-![gdhd](Images/Image%2044.png)
-
-The next time the project is opened, the user has the option to continue from the existing design data, or start afresh.
-
-### Generating BoQ
-[Back to ToC](#table-of-contents)
-
-BoQ can be easily generated for all structures designed using this module CanalStrucrturesJET. The first task should be to review the BoQ generation settings from `Workflow > Edit BoQ Settings...`.
-
-
-
-
-
-![BoqSetting](Images/Image%20040.png)
-
-
-
-<u>Cut Slope</u>: The cut slope to be used in estimating excavation works
-
-<u>Height Buffer</u>: Height of buffer area to consider for volume calculation
-
-<u>Working Space</u>: Space to consider arround the structure, in addition to the true footprints of the structure.
-
-Once the settings are verified, then start the estiamtor from `Workflow > Estimate BoQ`. The BoQ is generated.
-
-A complete BoQ listing can be generated from `Workflow > Estimate BoQ...` menu command.
-
-![Figureboq](Images/Image%20039.png)
-
-This will extract and report the estiamated bill of works for the structure, similar to the one shown below.
-
-![htht](Images/Image%20027.png)
-
-Often, a number of structures are designed for different canal routes in the network, and the BoQ may be required in one report. To create BoQ all structures in a host, use `Session > BoM Extract`. When prompted, choose the network host object .
-
-![figbom](Images/Image%20041.png)
-
-This will generate the BoQ for all structuers in the host. Notice the difference in the header texts for multiple structures.
-
-
-
-
-![bom2](Images/Image%20045.png)
-
-
-
-> Note: 
-> 
-> * For this step to work, the BoQ for all the structures must have been extracted, and saved. 
-> 
-> * Remember the network host object points to the data set of the entire network, including the structures designed using CanalStructuresJET.
-> 
-> * The JET dialog will rememeber the last host selection. To change it, click on the value cell, and select a desired host object.
-
-### Generating Longitudinal Drawings
-[Back to ToC](#table-of-contents)
-
-The user can export the different views of the structure, and along with it the designed elevations, to AutoCAD. The procedures are documented in iCAD product documentation in detail.
-
-1. Change to the view you want to generate, either longitudinal, transverse or plan view. Zoom and Pan as desired to focus the output to the drawing area.
-
-2. Then go to `Workflow > Render to AutoCAD`. 
-   
-   ![ggh](Images/Image%20028.png)
-
-3. Choose *Copy BBox*, and hit `Ok`. 
-   
-   ![jjgh](Images/Image%20029.png)
-
-4. Choose *Plot to BBox* option, and hit `Continue`.
-   
-   ![lukjg](Images/Image%20030.png)
-
-5. Choose *Plot Extents* option, and set the desired plotting scale. Do not leave this to the default value of *All*, or the generated drawing may not be of equal scaling in x and y direction.
-   
-   This will generate the plot area corresponding to the positioning in iCAD interface view.
-   
-   ![iyt](Images/Image%20031.png)
-
-6. Repeat the step from `Workflow > Render to AutoCAD`, and this time select the elements you want to generate. You can also use the `Select All` button to select all components. Also make sure to check *Limit Plot to Range* box. Then hit `OK` button.
-   
-   ![yre](Images/Image%20032.png)
-
-7. AutoCAD will be in select mode. Pick the diagonal object created in step 6 as a reference object. The drawing will be recreated in AutoCAD environemnt.
-   
-   ![yert](Images/Image%20033.png)
+Note: m~galcis~=2.0 for all calcualtions.
 
 [Back to ToC](#table-of-contents)
-
 
 END.
+

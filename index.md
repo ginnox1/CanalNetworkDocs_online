@@ -1,6 +1,6 @@
 # CanalNETWORK software product
 
-Well come here.
+Well come,
 
 This is official site for documentation and guide of CanalNetwork software, and related products. This site is routinely maintained and updated by Quanomic ITES PLC.
 
@@ -8,14 +8,15 @@ We will continually update this site to provide information on progress and late
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
-### What's New in March 202!
+---
+### What's New in March 2024!
 <p style="color:blue"> <strong>
 We are thrilled to release  the Drain Network feature for CanalNETWORK software - making it the complete workspace for irrigation systems design.</strong>
 </p>
 
-Learn about the updates in the [Latest release of March 2024.](Updates/Update_Mar24/Update_Mar24.md)
+Learn about the updates in the [**Latest release of March 2024.**](Updates/Update_Mar24/Update_Mar24.md)
 
-
+---
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how the product is evolving.
