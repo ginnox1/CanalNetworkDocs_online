@@ -281,7 +281,9 @@ This parameter specifies how the formation level varies in the transverse direct
 
 *Figure showing a canal section in cut using double entry specification*
 
-> Note: The triplets in both Eatch and FIll shape specification must be of the same size. This means even if double triplet is needed ONLY for the cut shape, the fill shape must also be double triplet. In this case simply repeat the first triplet, then set w to slightly greater than the smallest allowable value (0.05m, say 0.051).
+<!-- No need for this, resolved.
+> Note: The triplets in both CUT and FILL shape specification must be of the same size. This means even if double triplet is needed ONLY for the cut shape, the fill shape must also be double triplet. In this case simply repeat the first triplet, then set w to slightly greater than the smallest allowable value (0.05m, say 0.051).
+-->
 
 #### Earth fill shape, Smf(-)
 [Back to ToC](#table-of-contents)

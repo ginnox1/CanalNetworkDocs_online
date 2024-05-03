@@ -5,7 +5,6 @@ Flow regulating strucrures are a key component of a canal network system. They a
 
 CanalNETWROKcurrently allow the design of Head Regulator Strucures and Cross-Regulator Strucrture. The design of these structures is handled with in the CanalNETWORK environment. Follow below links to navigate this page.
 
-## Table of Contents
 <!--TOC-->
   - [Defining the Structure](#defining-the-structure)
   - [Design Settings for HR/CR structures](#design-settings-for-hrcr-structures)
@@ -21,7 +20,7 @@ CanalNETWROKcurrently allow the design of Head Regulator Strucures and Cross-Reg
   - [Technical Notes](#technical-notes)
 <!--/TOC-->
 
- 
+
 ## Defining the Structure
 [Back to ToC](#table-of-contents)
 
@@ -29,14 +28,18 @@ The design of regulating and conveyance structures is carried out using floating
 
    <img src= "./Images/Image 073.png">
 
-**<u>Important Notes</u>**
-
+---
+ **<u>Important Notes</u>**
 Before defining and designing structues with in the CanalNETWORK environemnt, it is recommended to understand the following notes:
-1. Floating node positions are restrained by profile data available, and minSpacing project preference setting. 
+    
+1. Floating node positions can be created ONLY at stations in profile data, and hence are restrained by profile data available, and minSpacing project preference setting. It is important to consider this during profile extraction.
+
 1. CR can be placed on any canal, any segment.
-1. HR requires a regular (junction) node - connecting to a parent canal - just upstream of its location, and no drop strucrutes are allowed in between.
+1. HR requires a regular (junction) node - connecting to a parent canal - just upstream of its location that is labeled neither as **Turn Out** nor as **Division Box**.
 
+1. No drop strucrutes are allowed between the upstream node, and the floating node representing the structure.
 
+---
 To insert the floating node along a canal route:
 
 1. Select the route in layout view.

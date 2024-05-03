@@ -127,7 +127,9 @@ To Change the bed slope upstream of the control,
 
 Finally, to change the functions of the control:
 
-* By default, all controls are configured as Turnout structures. You can decide to change it to a division box struture or no structure at all. If HR/CR provissions are expected, then turning off both checkboxes ensure the control is treated as a simple junction (no structure associated to it). Such controls have no quantities associated with them.
+* By default, all controls are configured as Turnout structures. You can decide to change it to a division box struture or no structure at all. If HR/CR provissions are expected, then turning off both checkboxes ensure the control is treated as a simple junction (no structure associated to it, and no head losses applied to branch canals). Such controls have no quantities associated with them.
+
+    <img src="./Images/Image 076.png">
 
 * To change the function of the control to a division box structure, check the Division Box option. (Note: Division boxes are allowed on Parent Canals whose capacity is <=80 litres per second.)
 
@@ -269,7 +271,7 @@ The user can interact with the canal assembly informaiton in many ways. Select (
 
 To change the flow section, drop design or construction parameters:
 
-* click on `Edit Assembly` drop down menu, and choose the relevant design option. This will open up a dialog to edit corresponding variables fot the canal segment. See [Design Criteria Setting and Use]() for details on each variable and their design implication.
+* click on `Edit Assembly` drop down menu, and choose the relevant design option. This will open up a dialog to edit corresponding variables fot the canal segment. See [Design Criteria Setting and Use](../) for details on each variable and their design implication.
 
 ![](Images/Image%20022.png)
 
@@ -346,6 +348,10 @@ An other imporant annotation available is cut and fill volume annotator, shown a
 Note: If there are annotation markers in the profile view, then the partial volumes are automatically calculated and displayed. In such cases, all markers with in 100m of start and end station, or 100m distance between are ignored - i.e.,  do not affect the partial volumes calculated. The values are interpolated between succesive stations, and hence are accurate only at data stations. 
 
 ![figt](Images/Image%20057.png)
+
+> **Important Note:** Volume calculations are accurate when the markers are placed on data points. Results for intermediate points are interpolated and may not be accurate.
+
+
 
 Yet another helpful annotation is available from `Explore Solutions > Annotatiors > LSec Details`. This will display details of the longitudinal design including station range and flow section details for each segment of route. In addition it also annotates canal curve information if avaiilable.
 

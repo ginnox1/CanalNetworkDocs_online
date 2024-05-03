@@ -9,35 +9,26 @@ We will continually update this site to provide information on progress and late
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
 ---
-### What's New in March 2024!
+### What's New in May 2024!
 <p style="color:blue"> <strong>
 We are thrilled to release  the Drain Network feature for CanalNETWORK software - making it the complete workspace for irrigation systems design.</strong>
 </p>
 
-Learn about the updates in the [**Latest release of March 2024.**](Updates/Update_Mar24/Update_Mar24.md)
+Learn about the updates in the [**Latest release of May 2024.**](Updates/Update_May24/Update_May24.md)
 
----
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how the product is evolving.
 
-[Updates for Feb 2024.](Updates/Update_Feb24/Update_Feb24.md)
+ [Update for March 2024.](Updates/Update_Mar24/Update_Mar24.md)
+ 
+ [Updates for Feb 2024.](Updates/Update_Feb24/Update_Feb24.md)
 
 [Updates for Jan2024 Here](Updates/Update_Jan24/Update_Jan24.md)
 
+Go to [Older Updates here](#older-updates)
 
-[Updates for Nov 2023 here](Updates/Update_Nov23/Update_Nov23.md)
-
-[Updates for Jun-Sep 2023 here](Updates/Update_Jun23/Updates_Jun23.md)
-
-[Updates for Nov-Dec2022 here.](Updates/Updates_Dec22/updatenotesDec2022.md)
-
-[Updates for Aug-Nov 2022 here](Updates/Update_Sep22/Update_Sep22.md)
-
-[Updates for Jan22 to Jun22 (Partly)](Updates/Update_Jan22/Update_Jan22.md)
-
-
-
+---
 
 This page contains highlevel outline of avilable topics on this online documentation resource. 
 Click on the link to navigate to the topic.
@@ -126,12 +117,27 @@ Below you will find short articles that provide guidance to tackle specific desi
 
 Stay tuned for more content on techniques and tips to tackle complex design tasks with ease and efficiency using out products.
 
----------------------------------------------------------------------------------------
+## Older Updates
+
+Older update documentations are listed below.
+
+[Updates for Nov 2023 here](Updates/Update_Nov23/Update_Nov23.md)
+
+[Updates for Jun-Sep 2023 here](Updates/Update_Jun23/Updates_Jun23.md)
+
+[Updates for Nov-Dec2022 here.](Updates/Updates_Dec22/updatenotesDec2022.md)
+
+[Updates for Aug-Nov 2022 here](Updates/Update_Sep22/Update_Sep22.md)
+
+[Updates for Jan22 to Jun22 (Partly)](Updates/Update_Jan22/Update_Jan22.md)
+
+
+---
 
 Follow us on [**LinkedIn** ](https://www.linkedin.com/company/quanomic-ites/) in to get insights and news on our efforts.
 
-For information visit Our website at [www.quanomic.co](https://www.quanomic.co).
+For information visit Our website at [www.quanomic.et](https://www.quanomic.et).
 
 
 
-Copyright Quanomic Engineering Services &copy; 2020-2023
+Copyright Quanomic Engineering Services &copy; 2020-2024
