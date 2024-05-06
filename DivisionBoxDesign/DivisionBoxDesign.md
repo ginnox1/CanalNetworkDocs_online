@@ -2,13 +2,17 @@
 [Back to Home](..\index#online-documentation)
 
 ## Table of Contents
+
 <!--TOC-->
-- [Introduciton](#introduciton)
+  - [Introduciton](#introduciton)
   - [Design Approach to Division box](#design-approach-to-division-box)
+  - [Important Considerations](#important-considerations)
+  - [Design Outputs](#design-outputs)
   - [Generating Design Report](#generating-design-report)
-    - [BoQ generation](#boq-generation)
+  - [BoQ generation](#boq-generation)
 <!--/TOC-->
-# Introduciton
+
+## Introduciton
 [Back to ToC](#table-of-contents)
 
 CanalNETWORK software can handle the design and estimation of canal junction structures. By default, every canal junction is designed as a turnout structure. If any junction is required to be designed as, and function as, a division box structures, the user must indicate this by checking the *Div. Box* check box on the Node Edit panel.
@@ -38,7 +42,11 @@ Where:
 
 - B is the overflow length,  or the width of the Notch.
 
-The soution to this equaiton is determined based on the Modular Limit criteria. This means that, the flow over the weir is independent of variations in tail water level. For this to occur, the tail water energy level must not rise above a certain percentage of the upstream energy head over the weir crest. A limiting value of z= 1/3H is used.
+The soution to this equaiton is determined based on the Modular Limit criteria. In modular flow conditions, the flow over the weir is independent of variations in tail water level. For this to occur, the tail water level must not rise above a certain percentage of the overflow head over the weir crest. A limiting value of of 0.70 is used. (Note: max allowable submergence ratio in most litrature is 0.75)
+
+The design process is carried out based on the following schematic diagram.
+
+<img src= "./Images/divBox_template2.png" style="width:6in" align="">
 
 The steps implemented are summarized as below:
 
@@ -62,6 +70,7 @@ The steps implemented are summarized as below:
 
 4. Finally the CBL levels for each branch canal are fixed based on z, hSill and FSL values.
 
+## Important Considerations 
 The algorithm will not accept parent canal capacities exceeding 80litres per second, or the throws the following error message:
 
 ![gfh](Images/Image%20013.png)
@@ -86,9 +95,11 @@ b. The check mark assignment is reversed, and the junction is retained as a turn
 
 *Error message for unbalaned discharge condition.*
 
+## Design Outputs
+
 Upon succesful solution to the above iterative process, the algorith assigns dimensions to the corresponding branching canal as  follows:
 
-* Overflow Width, B= max (0.3, H1, Lc/5), where Lc= 2*H1
+* Overflow (notch) Width, B
 
 * Crest Height, ds= Crest Level - Parent Invert
 
@@ -96,13 +107,36 @@ Upon succesful solution to the above iterative process, the algorith assigns dim
 
 * L branch= 5*(H1-H2) 
 
-The actual dimension tables and designed invert levels for the parent and branch canals can be found from `Explore Solutions > Data Tables > Explore Division Boxes`.  A table similar to below content is displayed.
+The actual dimension tables and designed invert levels for the parent and branch canals can be found from `Explore Solutions > Data Tables > Explore Division Boxes`.  
+
+The following demonstrate possible set of design output for a sample control structure. The control is a two way division box on a secondary canal SC_2 of capacity 80lpsec, and 2 branch canals each offtaking 15 and 20lpsecs each.
+
+<img src="./Images/Image 016.png">
+
+After solution, the invert levels for the branch as well as the continuing canals is set as shown below.
+
+<img src="./Images/Image 014.png">
+
+
+The results of the report show simiar to below snapshot. Check the values presented as designed CBL values, and those annotated in the screenshot above.
+
+<img src="./Images/Image 015.png">
+
+
+The results of `Explore Outputs > Data Tables > Explore Division Box...` generate a 33 column table such as shown below. The data is presented in rotated format (in a spreadsheet application such as excel), and shown below.
+
+<img src="./Images/Image 017.png">
+
+<img src="./Images/Image 018.png">
+
+
+The complete table snapshot is shown below.
 
 ![[  ]](Images/Image%20005.png)
 
 ![[dsfs]](Images/Image%20006.png)
 
-*Typical table report generated for the design of a division box.*
+*Typical table report generated for the design of a one-way division box.*
 
 Where: 
 
@@ -137,7 +171,7 @@ Click on this button, a report of similar to the one shown below is generated.
 
 *Sample report for a division box design*
 
-### BoQ generation
+## BoQ generation
 [Back to ToC](#table-of-contents)
 
 BoQ is estimated using the dimensions generated in the preceeding table, and the standard drawings below.
