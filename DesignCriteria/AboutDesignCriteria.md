@@ -315,6 +315,10 @@ An other way to create complex cut and fill shapes is to use the `Canal Top Prov
 
 - Second two entries: height of cut or fill - respectively-from CTL at Centerline, used to control whether the above specified extra berm is provided or not. i.e., the cut and fill berms will only be applied if this value is exceeded. To Apply at all conditions set to 0, to apply at no condition use 99.
 
+    Note: Below figure, OGL-CTL is less than deirable depth (set to 0). Hence, berms are not provided.
+
+  <img src="./ImagesAbout/Image 029.png">
+
 - Although four entries are shown the user can input as follows:
   
   - single value: is considered taken as left side extra berm provission width, applied at all times.
@@ -322,6 +326,9 @@ An other way to create complex cut and fill shapes is to use the `Canal Top Prov
   - two values: left and side berm widths applied at no conditions (more like a place holder, to be edited at segment level.)
   
   - Four values: as explained above.
+
+      ![Images27](ImagesAbout/Image%20026.png)
+
   
   - A fifth value can be included to provide general orientation with respect to transverse grade line. This value dictates whether the first input (Left Width), is applied on the upgrade direction, or downgrade direction - irrespective of the orientation with respect to the FUS default convention. The value can be set as below:
     
@@ -331,9 +338,10 @@ An other way to create complex cut and fill shapes is to use the `Canal Top Prov
     
     - 5<value<10: Apply Left width on upgrade side, and Right width on downgrade side.
   
-  - NOTE: for the berm provission value to be considered, the height of cut and/or fill values (in third and fourth entries) must be provided explicitly. Hence inputs of one or two entries may not work as expects, and will depreciate soon.
+  > NOTE: for the berm provission value to be considered, the height of cut and/or fill values (in third and fourth entries) must be provided explicitly. Hence inputs of one or two entries may not work as expected, and will depreciate soon.
 
-![Images27](ImagesAbout/Image%20026.png)
+  > Note: Plan view for canal routes with berm provisions may not clearly show terrain changes at drop locations.
+
 
 ### Hydraulic Design
 [Back to ToC](#table-of-contents)

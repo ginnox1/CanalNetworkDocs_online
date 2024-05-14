@@ -56,6 +56,12 @@ Updated capabilities for this release are documented below.
 
 The CanalNETWORK product is updated to include the following reviews and modifications. Some of these are environemnt related settings, that are also applicatble while working on drainage network projects.
 
+1. Improved guidance on import of canal routes. Intersecting alignment routes will now guide precise issue resolution, indicating at least one vertex/segment where the issue is encounterd.
+
+    <img src="./media/Image 075.png" style="width:5in">
+
+
+
 1. Toolbar button added for quick access to network preferences and other project settings.
 
     <img src="./media/Image 1.png" style="width:5in">
@@ -69,11 +75,22 @@ The CanalNETWORK product is updated to include the following reviews and modific
 
     <img src="./media/Image 3.png" style="width:6in">
 
+1. Farm blocks are now better managed, thanks to streamlined data structure. Users can simply toggle on/off farm blocks.
+
+fig fig
+
+1. Farm blocks enhanced vertex editing - add/remove, trim to canal
+
+
 1. Variable Earth cut and shape fill is now acceptable for canal routes.
 
     <img src="./media/Image 013.png" style="width:4in">
 
 1. Modified and improved subroute filtering and selection algorithm implemented. The new algorithm works better leveraging connectivity relations from node hirarchy.
+
+1. Intercepto Drain
+
+1. Farm blocks
 
 
 
@@ -83,7 +100,10 @@ BugFixes:
 
     <img src="./media/Image 5.png" style="width:6in">
 
+
 1. Floating node edit tool for tag and station corrected.
+
+    <img src="./media/Image 074.png">
 
 
 
@@ -108,10 +128,14 @@ New updates and enhancements to the DrainNET product include the following:
 
 1. Reviewed `Explore Outputs > Batch Process > Explore Subroutes...` in line with improved subroute filtering algorithm.
 
+1. Improved plan view generation for drain networks, now showing corrected stations for control and drop structures.
+
+
 
 Bugfixes:
 1. Node inverts at canal begining of routes (connected to a DummyRoute) now responds to arthimatic input at node invert edit.
  
+ 2. Profile view variable (in project preferences) now displays correct settings. Previously, it was static.
 
 [Back to ToC](#table-of-contents)
 

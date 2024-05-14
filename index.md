@@ -42,7 +42,7 @@ Click on the link to navigate to the topic.
 
 ## Online documentation
 
-This online resource site is under continuous devekiopment and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most uptodate reference to our products by directly accessing this resource site.
+This online resource site is under continuous development and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most up-to-date reference to our products by directly accessing this resource site.
 
 Click on the topics to navigate to each section. To come back to this page, click on the [Back to Home]() link at the top of each section.
 

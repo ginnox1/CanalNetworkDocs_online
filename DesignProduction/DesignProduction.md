@@ -808,6 +808,16 @@ Notes on Colors:
    
    If only certain components of the drawing are needed, select those only, and continue. The desired elements are added to the drawing.
 
-   [Back to ToC](#table-of-contents)
 
-   END.
+## Known Limitations and Issues
+[Back to ToC](#table-of-contents)
+
+Below is a list of observed limitations that users can expect.
+
+1. Berm Provissions on Drop locations: Plan views do not show how terrain changes along side a canal drop.
+
+
+
+[Back to ToC](#table-of-contents)
+
+END.

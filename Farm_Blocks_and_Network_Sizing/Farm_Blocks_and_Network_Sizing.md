@@ -236,13 +236,28 @@ Such work saved in AutoCAD can be reloaded to the CanalNETWORK environment using
 
 FarmblocK creator is intergrated as a standard tool in Mar24, and no more an experimental tool. It is enhanced for vertice editing capability, host management, view/hide, and preferntial listing.
 
+1. Farm blocks create and explore features are now enabled for selected route. One  an generate farm blocks for a selected route and its sub routes.
+
+    <img src="./Images/Image 046.png" style="width:6in">
+
+    One can inquire area for the selected route (and its subroutes) only.
+
+    <img src="./Images/Image 047.png" style="width:6in">
+
+    One can clear block data for selected routes, by using `Edit > Select Routes > Select SubRoutes` and starting `Workflow > Farm Blocks > Clear Block Data...` menu command.
+
+    <img src="./Images/Image 048.png" style="width:6in">
+
+
 1. The farmblocks created (from a host object or imported items) are now retained, for visibility and continuing editing of Blocks. Show or hide from the context menu as shwon below.
 
     <img src="./Images/Image 001 (2).png" style="width:7in">
 
 2. Vertex editing tool is incorporated on the context menu of block objects. The vertices can be draged to a new position, or even deleted.
 
-    <img src="./Images/Image 002 (2).png" style="width:7in">
+    <img src="./Images/Image 002 (2).png" style="width:7in">{br}
+
+    > **Useful Tips:** While hovering with a gripped vertex, press `DELETE` key to remove it, or hit `ENTER` key to add a new vertex before it.
 
 3. Improved route sorting for Farm block area listing and tracking.
 3. Flexible visualization, and management of blocks and their areas, allowing to list blocks only for selected routes and subroutes.
@@ -261,14 +276,20 @@ Also, note that, if `Refresh Routes and Nodes` is selected, drawn farm blocks ar
 ### Suggested Workflow for Farm Block creation and Management
 This tool is no more an experimental tool. It is now enhanced to allow vertex editing and flexible source/host management. In the light of this new tools, the following workflow is recommened.
 
-1. **Create the blocks.** Start the work by auto creating the farm blocks from `Workflow > Farm Blocks > Auto Create/Redraw...`
-1. **Edit Blocks**. Delete unwanted blocks, and edit the vertices of those blocks whose extents overlap or need modification.
-1. **Link a Host.** Prepare a separate layer for farmblocks. Then prepare a host object for the farm blocks in AutoCAD, and link it to the CanalNETOWRK workspace from `Workflow > Farm Blocks > Host Object.`
-1. **Draw to AutoCAD.** Select all blocks in the project, and draw to autocad by right clicking on any block, then choosing `Draw to AutoCAD`. This will generate all to the newly created layer.
+1. **Create the blocks.** Start the work by auto creating the farm blocks from `Workflow > Farm Blocks > Auto Create/Redraw...` Add more objects from AutoCAD drawin if needed (by layer, or individually).
 
-At this stage, the bulk of the work is done. Editing in either AutoCAD or in CanalNETWORK environment can be updated easily.
+    > Tip: When **Auto Creating** make sure a host object is not linked to the workspace. Otherwise hosted farmblocks in AutoCAD will be imported.
 
-> Tip: **Recreate for Sub Routes.** If needed, subroutes can be selected/or displayed and the AutoCreator tool will draw the farm blocks for those canals only. Editing can also be done in this mode, and updated to AutoCAD.
+1. **Edit Blocks**. Delete unwanted blocks, and edit the vertices of those blocks whose extents overlap or need modification. Use available tools to create the best farm block collection.
+
+    > When advanced editing is needed, use Host objects to export to AutoCAD, edit blocks, and update them back in CanalNETWORK environment.
+
+    > Tip: **Recreate for Sub Routes.** If needed, subroutes can be selected/or displayed and the AutoCreator tool will draw the farm blocks for those canals only. Editing can also be done in this mode, and updated to AutoCAD. **Make sure layout views are NOT in sub-route mode.**
+
+
+1. **Explore and Cummulate Areas:** Explore areas by subroutes. Cummulate Farm Areas, or Rest to raw data, and cummulate again, as needed.
+
+1. **Size the network**, and continue to longitudinal design.
 
 
 ### Important Notes about Manual Farm blocks
@@ -301,7 +322,20 @@ If the AutoEstimate tool is used to create Farm Blocks, then it is key to note t
 
 - For the last supply canal in a group, the farm block is created by using information from previous supply canal, and the alignment of the route itself. This is especially true, if the irrigation method is considered to be single side.
 
-- The farm block creation can take one of two possible methods for a given parent route. Assuming a TC canal feeding to QC canals, a single side irrigation is assumed if the initial distance to the first QC canal is less than 30m. Other wise, a double side irrigation is assumed. This assumption is used when creating farmblocks for all the QC canals.
+- The farm block creation can take one of two possible methods for a given parent route. Assuming a TC canal feeding to QC canals, a single side irrigation is assumed if the initial distance to the first QC canal is **less than 30m.** Other wise, a double side irrigation is assumed. This assumption is used when creating farmblocks for all the QC canals.
+
+- Finally, **irregularly aligned routes** in network of canals could create unacceptable farmblocks. Consider the case show in below figure. The odd sized and shaped blocks are caused by the oddly positioned canal TC shown in red on the right (which does not have QCs, and hence needs a farm block.)
+
+     <img src="./Images/Image 049.png">
+
+     As can be seen below, clean farm blocks are generated if this route is removed.
+
+     <img src="./Images/Image 050.png">
+
+     Or, after creating QC canals for the TC as shown below.
+
+     <img src="./Images/Image 051.png">
+
 
 # Sizing Networks
 [Back to ToC](#table-of-contents)
