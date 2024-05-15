@@ -324,6 +324,8 @@ If the AutoEstimate tool is used to create Farm Blocks, then it is key to note t
 
 - The farm block creation can take one of two possible methods for a given parent route. Assuming a TC canal feeding to QC canals, a single side irrigation is assumed if the initial distance to the first QC canal is **less than 30m.** Other wise, a double side irrigation is assumed. This assumption is used when creating farmblocks for all the QC canals.
 
+- The farmblocks are anlytically derived from the overall geometry of the layout system. Hence, constructed block areas may be **more** or **less** than actual. Use available in-line editing tools, or workflows to import/edit from AutoCAD, to refine results.
+
 - Finally, **irregularly aligned routes** in network of canals could create unacceptable farmblocks. Consider the case show in below figure. The odd sized and shaped blocks are caused by the oddly positioned canal TC shown in red on the right (which does not have QCs, and hence needs a farm block.)
 
      <img src="./Images/Image 049.png">
