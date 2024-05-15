@@ -75,11 +75,14 @@ The CanalNETWORK product is updated to include the following reviews and modific
 
     <img src="./media/Image 3.png" style="width:6in">
 
-1. Farm blocks are now better managed, thanks to streamlined data structure. Users can simply toggle on/off farm blocks.
+1. Farm blocks are now better managed, thanks to streamlined data structure. Relevant data are now persistent (meaning, they are accessible accross sessions), and users need only toggle their visibility from the context menu on plan view axis.
 
-fig fig
+    <img src="./media/Image 077.png" style="width:6in">
 
-1. Farm blocks enhanced vertex editing - add/remove, trim to canal
+1. Farm blocks creator tool is further enhanced for increased capability in vertex editing - such as add/remove grip vertices, and advanced trim to canal function.
+
+    <img src="./media/Image 078.png" style="width:6in">
+
 
 
 1. Variable Earth cut and shape fill is now acceptable for canal routes.
@@ -88,9 +91,11 @@ fig fig
 
 1. Modified and improved subroute filtering and selection algorithm implemented. The new algorithm works better leveraging connectivity relations from node hirarchy.
 
-1. Intercepto Drain
+1. Interceptor Drain ditches can now be included to canal provissions using a new menu command `Workflow > Interceptor Ditch` and the options built there in. The outputs are automatically included in design products such as BoQ, and Plan View.
 
-1. Farm blocks
+    <img src="./media/Image 076.png" style="width:5in">
+
+
 
 
 
