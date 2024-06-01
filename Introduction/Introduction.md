@@ -12,6 +12,7 @@ The following topics are discussed:
 ## Table of Contents
 <!--TOC-->
   - [Uses and applicaiton of CanalNETWORK software](#uses-and-applicaiton-of-canalnetwork-software)
+  - [Limiting Capabilities](#limiting-capabilities)
   - [Important System Related Notes](#important-system-related-notes)
   - [Data and Software required for use with CanalNETWORK](#data-and-software-required-for-use-with-canalnetwork)
   - [Standard workflow](#standard-workflow)
@@ -19,7 +20,7 @@ The following topics are discussed:
 
 Refer to other sections of this documentation to learn more about specific usage and application of the software to tackle day to day design tasks.
 
-If you have any comments about this document, we will appreciate if you drop us an email at [docs@quanomic.co](info@quanomic.co)
+If you have any comments about this document, we will appreciate if you drop us an email at [info@quanomic.et](info@quanomic.et)
 
 ## Uses and applicaiton of CanalNETWORK software
 [Back to ToC](#table-of-contents)
@@ -43,6 +44,20 @@ CanalNETWORK software for use in:
 * Compact saving and sharing of design data
 
 * ... and more.
+
+## Limiting Capabilities
+[Back to ToC](#table-of-contents)
+
+CanalNETWORK software has the following operataing limits while in use for any network formulation and analyis.
+
+- Uses and applies manning's equation for flow analysis
+- Maximum of two branches to a node
+- Flattest slope possible 1/10,000
+- Steepest slope possible 1/100
+- Maximum allowable canal side slope 5H:1V
+- Two Types of Linings (Thin linings above 5cm Thk, Thick Linings up to 50Cm thick)
+- Maximum number of Canal Generations 10 Gens
+
 
 ## Important System Related Notes
 [Back to ToC](#table-of-contents)

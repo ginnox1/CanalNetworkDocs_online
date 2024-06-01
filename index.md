@@ -7,44 +7,49 @@ This is official site for documentation and guide of CanalNetwork software, and 
 We will continually update this site to provide information on progress and latest developments.
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
-
+<!--
+If Preview window is not working, disable any pulgins. Right click on any .md file, and choose Mark Down Editor, also choose Set to default.
+-->
 ---
 ### What's New in May 2024!
+
 <p style="color:blue"> <strong>
 We are thrilled to release  the Drain Network feature for CanalNETWORK software - making it the complete workspace for irrigation systems design.</strong>
 </p>
 
-Learn about the most recent updates for both CanalNET (supply and drain) in the [**Latest release of May 2024**](Updates/Update_May24/Update_May24.md) documentation.
+Learn about the most recent updates for both CanalNET (supply and drain) here.
+
+[**Latest Updates for Jun 2024**](Updates/Update_June24/Update_Jun24.md)
 
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how the product is evolving.
 
- [Update for March 2024.](Updates/Update_Mar24/Update_Mar24.md)
- 
- [Updates for Feb 2024.](Updates/Update_Feb24/Update_Feb24.md)
+[Update for May 2024](Updates/Update_May24/Update_May24.md)
 
-[Updates for Jan2024 Here](Updates/Update_Jan24/Update_Jan24.md)
+[Update for March 2024.](Updates/Update_Mar24/Update_Mar24.md)
+ 
+[Updates for Feb 2024.](Updates/Update_Feb24/Update_Feb24.md)
+
 
 Go to [Older Updates here](#older-updates)
 
 ---
 
-This page contains highlevel outline of avilable topics on this online documentation resource. 
+This page contains high level outline of avilable topics on this online documentation resource. 
 Click on the link to navigate to the topic.
 <!--TOC-->
- > [Online documentation](#online-documentation)
-
- > [Technical Information](#technical-information)
-
- > [How To Articles](#how-to-articles)
+  - [Online documentation](#online-documentation)
+  - [Technical Information](#technical-information)
+  - [How To Articles](#how-to-articles)
+  - [Older Updates](#older-updates)
 <!--/TOC-->
 
 ## Online documentation
 
 This online resource site is under continuous development and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most up-to-date reference to our products by directly accessing this resource site.
 
-Click on the topics to navigate to each section. To come back to this page, click on the [Back to Home]() link at the top of each section.
+Click on the topics to navigate to each section. To come back to this page, click on the [Back to Home](test) link at the top of each section.
 
 
 
@@ -81,7 +86,7 @@ Additional technical details are available in below list:
 
 [4. Design of Division Box Structures](DivisionBoxDesign/DivisionBoxDesign.md)
 
-[5. Hydraulic Jumps and Energy Dessipation Mechanisms (In progress)]()
+[5. Hydraulic Jumps and Energy Dessipation Mechanisms (In progress)](test)
 
 More technical documents will be posted soon.
 
@@ -120,6 +125,8 @@ Stay tuned for more content on techniques and tips to tackle complex design task
 ## Older Updates
 
 Older update documentations are listed below.
+
+[Updates for Jan2024 Here](Updates/Update_Jan24/Update_Jan24.md)
 
 [Updates for Nov 2023 here](Updates/Update_Nov23/Update_Nov23.md)
 
