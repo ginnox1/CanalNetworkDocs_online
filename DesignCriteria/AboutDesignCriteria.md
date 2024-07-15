@@ -303,7 +303,9 @@ This parameter serves the same function as *Earth Cut Shape* parameter above, bu
 
 There are a number of ways to create complex cut and fill shapes in canal segments. These can be applied to the design criteria content, or to the contents of each segment.
 
-For any segment, the number of entries for both Cut Shape and Fill shape variables must be equal.
+> **Important Note:** For any segment, the number of entries for both Cut Shape and Fill shape variables must be equal.
+
+Recent versions can handle varied data lengths, **but ONLY** during longitudinal design stage. Expect errors or stalled application response if this is not sorted out in design criteria. In case this happens, review design criteria settings, and resize the network. This should resolve the issue.
 
 ![image027](ImagesAbout/Image%20027.png)
 
@@ -435,6 +437,32 @@ Specifies the side slope of the wetted canal section (H:1V)
 [Back to ToC](#table-of-contents)
 
 Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1in 50 and the maximum (flattest) slope allowed is 1 in 10,000.
+
+## [NEW] Canal Bed Material
+
+Canal performance can be evaluated using tractive force methods of calculation. This can be achieved by setting the value for **Max. Allowable Shear** parameter to 0.0. This setting forces calculations to be conducted using Shield's method of critical mobility parameter.
+
+
+
+From accepted references in geotechnical references.
+
+
+
+| **Soil Type**   | **Mean Grain Size**        | **Angle of Repose (Dry)** | **Specific Gravity**  |
+|-----------------|----------------------------|---------------------------|-----------------------|
+| **Clay**        | < 0.002 mm                 | 15° to 25°                | 2.70 - 2.80           |
+| **Silt**        | 0.002 mm to 0.05 mm        | 25° to 35°                | 2.65 - 2.70           |
+| **Fine Sand**   | 0.05 mm to 0.25 mm         | 30° to 35°                | 2.65                  |
+| **Coarse Sand** | 0.25 mm to 2 mm            | 34° to 40°                | 2.65                  |
+| **Fine Gravel** | 2 mm to 20 mm              | 34° to 40°                | 2.65 - 2.70           |
+| **Coarse Gravel**| 20 mm to 75 mm            | 40° to 45°                | 2.65 - 2.70           |
+
+
+These refined values should be more accurate and reliable for typical soil types.
+
+
+<img src="./Images/shields_chart.png">
+
 
 # Default Criteria values for different canal Levels
 [Back to ToC](#table-of-contents)

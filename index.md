@@ -11,26 +11,24 @@ This site will also be the platform for online documentation. Contents relevant 
 If Preview window is not working, disable any pulgins. Right click on any .md file, and choose Mark Down Editor, also choose Set to default.
 -->
 ---
-### What's New in May 2024!
-
-<p style="color:blue"> <strong>
-We are thrilled to release  the Drain Network feature for CanalNETWORK software - making it the complete workspace for irrigation systems design.</strong>
-</p>
-
-Learn about the most recent updates for both CanalNET (supply and drain) here.
-
-[**Latest Updates for Jun 2024**](Updates/Update_June24/Update_Jun24.md)
+### Update Logs
 
 
 
-Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how the product is evolving.
+Learn about the most recent updates for CanalNET and DrainNET here.
+
+[**Latest Updates for July 2024**](Updates/Update_Jul24/Update_Jul24.md)
+
+
+
+Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how our product(s) are evolving.
+
+[Update for Jun 2024](Updates/Update_June24/Update_Jun24.md)
 
 [Update for May 2024](Updates/Update_May24/Update_May24.md)
 
-[Update for March 2024.](Updates/Update_Mar24/Update_Mar24.md)
+[Update for March 2024](Updates/Update_Mar24/Update_Mar24.md)
  
-[Updates for Feb 2024.](Updates/Update_Feb24/Update_Feb24.md)
-
 
 Go to [Older Updates here](#older-updates)
 
@@ -68,11 +66,13 @@ Click on the topics to navigate to each section. To come back to this page, clic
 
 [7. Design of Canal Structures using Floating Nodes.](DesignOfRegulatingStructures/DesignOfRegulatingStructures.md)
 
-[8. Design Production (**NEW**)](DesignProduction/DesignProduction.md)
+[8. Design Production](DesignProduction/DesignProduction.md)
 
 [9. Construction Tools **(NEW)**](ConstructionTools/Construction_Tools.md)
 
+<!---
 [10. Design Quality Assurance **(NEW)**](DesignQuality/Design_Quality_Assurance.md)
+--->
 
 ## Technical Information
 
@@ -126,15 +126,17 @@ Stay tuned for more content on techniques and tips to tackle complex design task
 
 Older update documentations are listed below.
 
-[Updates for Jan2024 Here](Updates/Update_Jan24/Update_Jan24.md)
+[Updates for Feb 2024](Updates/Update_Feb24/Update_Feb24.md)
 
-[Updates for Nov 2023 here](Updates/Update_Nov23/Update_Nov23.md)
+[Updates for Jan 2024](Updates/Update_Jan24/Update_Jan24.md)
 
-[Updates for Jun-Sep 2023 here](Updates/Update_Jun23/Updates_Jun23.md)
+[Updates for Nov 2023](Updates/Update_Nov23/Update_Nov23.md)
 
-[Updates for Nov-Dec2022 here.](Updates/Updates_Dec22/updatenotesDec2022.md)
+[Updates for Jun-Sep 2023](Updates/Update_Jun23/Updates_Jun23.md)
 
-[Updates for Aug-Nov 2022 here](Updates/Update_Sep22/Update_Sep22.md)
+[Updates for Nov-Dec2022](Updates/Updates_Dec22/updatenotesDec2022.md)
+
+[Updates for Aug-Nov 2022](Updates/Update_Sep22/Update_Sep22.md)
 
 [Updates for Jan22 to Jun22 (Partly)](Updates/Update_Jan22/Update_Jan22.md)
 

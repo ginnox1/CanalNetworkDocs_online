@@ -50,9 +50,15 @@ Longitudinal design stage requires that the below workflow tasks are completed a
 
 2. Established network
 
-3. Profile extracted
+3. Profile extracted (see note below.)
+
+Profile extraction can be handled in iCAD or CanalNET. In either case, the data must be brought to the CanalNET workspace from `Workflow > Routes > Soft Reload` menu command.
+
+> **Note**: For short canals (typically less than 100meters) we recomend taking a finer resolution of incremental distance (5m) to have enough data for longitudinal design. CanalNET does not load alignment routes shorter than 20 meters by default.
 
 Once the above stages are complete, and data from each is accessible (See here for available ways to manage different data and make them accessible for CanalNETWORK), longitudinal profile design can continue.
+
+
 
 ## Start Longitudinal Design
 [Back to ToC](#table-of-contents)
@@ -846,7 +852,8 @@ To start it, select a desired segment from the profile view. The `Performance In
 
 ![](Images/Image%20023.png)
 
-> Note: this interface starts with the hydraulic design parameters for the selected segement, and no data entry is required.
+> **Important Note:** Note that, the interface starts with the solution for the set design criteria. If changes are made to B or D (e.g., using the minPw solver), the intial display still correspond to the solution for the design criteria settings.
+
 
 The main purpose of this interface, among others, may be to anlyze the variation of the flow section as the slope varies. As the slope is varied, by dragging the vertical bar the flow section and corresponding flow velocity and sheat stress developed are computed and displayed. The colored scales on the gauge bars provide feedback on appropriateness of the slope.
 
