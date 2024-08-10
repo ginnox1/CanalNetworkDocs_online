@@ -1,4 +1,4 @@
-# CanalNETWORK 2.2 (Jun 2024)
+# CanalNETWORK 2.2 (Jul-Aug 2024)
 
 **Hello and Welcome Again,**
 
@@ -25,7 +25,7 @@ Big Thankyou, <strong> EEC  </strong> for your trust, contributions and support.
 Update your version of CanalNETWORK product as follows:
 1. Download the update resoruces from [Latest CanalNETWORK update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
 
-    The latest is **Version 2.2.xxxxxx**
+    The latest is **Version 2.5.0.4461**
 
     Accompanied by **Version V4.9.0** of iCAD Bridge Application.
 
@@ -41,22 +41,53 @@ Update your version of CanalNETWORK product as follows:
 ## What's New
 [Back to ToC](#table-of-contents)
 
-Since previous month, we have updates in documentation to capture use cases in detail, and help users better experience the software. These include updates for preview few months as well.
+Key improvements are made for the period that cover a range of topics identified by our team, as well as user.
 
-Improvements for the period include the following:
+1. Tractive force method of canal section design is included. This major enhancement allows users to investigate canal stability after design, as well as determine stable sections, using the widely accepted method of design.
 
-- Better and similar Data tips in plan view, profile view, and detail view axes.
+    <img src="./media/Image 2.png" style="width:6in">
+
+    A detail is included in documentation on the chapter [About Design Criteria]()
+  
+
+2. Additional relationship is included for B/D ratio determination for lined canals using B/D= 0.03 Q + 1. This relationship determines better suited canal shapes for lined canals.
+
+     <img src="./media/Image 10.png" style="width:4in">
+
+    The option is automatically enabled for all lining types, except no lining.
+
+2. Improvements to the CanalSection Design interface to use tractive force methods of design, as well as improved display that shows lining material.
+
+    <img src="./media/Image 11.png" style="width:6in">
+
+2. Floating node functions are enhanced better for better user interaction, removing unwanted behavior requesting to remove route. Better visualization is also included in plan view, and verified function to exclude BoQ in case of special segments.
+
+    <img src= "./media/Image 085.png" style="width:7in">
+    
+2. Additional menu is included for easy creation of side-roads only in cut conditions (As part of the new design criteria).
+
+    <img src= "./media/Image 086.png" style="width:7in">
+    
+    *Figure showing berms in fill conditions applied always.*
+
+    <img src= "./media/Image 087.png" style="width:7in">
+
+    *Figure showing berms applied only in cut conditions*
+
+2. Better data tip displays maintaining uniformity across plan view, profile view, and detail view axes.
 
     <img src="./media/Image 083.png" style="width:6in">
 
-- Included `Refresh Routes` menu for plan view axis. This allows to clear all objects, and recreate only route information in the view. Nodes are now recreated when using the `Show Nodes` context menu.
+2. Included `Refresh Routes` menu for plan view axis. This allows to clear all objects, and recreate only route information in the view. Nodes are now recreated when using the `Show Nodes` context menu.
 
     <img src="./media/Image 079.png" style="width:6in">
 
 
-- The Canal section design interface is updated to ensure designed values from solver are retained on completion. Previously, some solver solutions were volatile.
+2. The Canal section design interface is updated to ensure designed values from solver are retained on completion. Previously, some solver solutions were volatile (that means were not persistent after closing the interface).
 
     <img src="./media/Image 080.png" style="width:6in">
+
+
 
 The DrainNET product is also improved for the following:
 - Corrected display station in cross-section view

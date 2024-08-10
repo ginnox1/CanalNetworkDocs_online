@@ -17,7 +17,7 @@ If Preview window is not working, disable any pulgins. Right click on any .md fi
 
 Learn about the most recent updates for CanalNET and DrainNET here.
 
-[**Latest Updates for July 2024**](Updates/Update_Jul24/Update_Jul24.md)
+[**Latest Updates for July-Aug 2024**](Updates/Update_Jul24/Update_Jul24.md)
 
 
 

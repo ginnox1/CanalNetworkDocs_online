@@ -9,7 +9,6 @@ Design criteria in CanalNETWORK, specifically refer to a list of parameters that
 
 ## Table of Contents
 <!--TOC-->
-  - [Contents of Design Criteria Set](#contents-of-design-criteria-set)
   - [Detail Definition of Design Criteria Parameters](#detail-definition-of-design-criteria-parameters)
     - [CBL Design Settings](#cbl-design-settings)
       - [Prefered/ Max Drop Height(m):](#prefered-max-drop-heightm)
@@ -40,10 +39,10 @@ Design criteria in CanalNETWORK, specifically refer to a list of parameters that
       - [Freeboard, FB(m)](#freeboard-fbm)
       - [Canal Side Slope, m(-)](#canal-side-slope-m-)
       - [Bed Slope, So(m/m)](#bed-slope-somm)
+    - [[NEW] Canal Bed Material](#new-canal-bed-material)
 - [Default Criteria values for different canal Levels](#default-criteria-values-for-different-canal-levels)
-<!--/TOC-->
-
-## Contents of Design Criteria Set
+- [Technical Notes on Stable Canals Design](#technical-notes-on-stable-canals-design)
+<!--/TOC-->## Contents of Design Criteria Set
 [Back to ToC](#table-of-contents)
 
 The following groups of criteria set are defined and available in the software:
@@ -368,9 +367,16 @@ This setting determines the bottom width to depth ration to be used on the desig
 
 * *B/D>0:* indicates to use the specified value as the ratio for the design. A maximum value of 10 is allowed.
 
-* *B/D=0:* indicates to use the built in equation B/D= 1.76 Q ^0.75^ to determine the ratio for design. 
+* *B/D=0:* indicates to use built in table for determining the raio for design
 
-* *B/D=-1:* indicates to use built in table for determining the raio for design
+
+* *B/D=-1:* indicates to use the built in equations. The equations are as follows:
+
+    B/D= 1 for Q<=0.20 for both lined or unlined canals
+
+    B/D= 1.76 Q ^0.75^ for unlined canals
+
+    B/D= 0.03 Q +1.0 for lined canals
 
 
 
@@ -438,14 +444,15 @@ Specifies the side slope of the wetted canal section (H:1V)
 
 Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1in 50 and the maximum (flattest) slope allowed is 1 in 10,000.
 
-## [NEW] Canal Bed Material
+### Canal Bed Material **[NEW]**
 
 Canal performance can be evaluated using tractive force methods of calculation. This can be achieved by setting the value for **Max. Allowable Shear** parameter to 0.0. This setting forces calculations to be conducted using Shield's method of critical mobility parameter.
 
+See [Technical Notes below]() to learn more how this approach is implemented in CanalNET software.
 
 
-From accepted references in geotechnical references.
 
+The table below shows typical canal bed material properties built in to the software. They can be adjusted with in practical limites for design of projects.
 
 
 | **Soil Type**   | **Mean Grain Size**        | **Angle of Repose (Dry)** | **Specific Gravity**  |
@@ -458,10 +465,12 @@ From accepted references in geotechnical references.
 | **Coarse Gravel**| 20 mm to 75 mm            | 40° to 45°                | 2.65 - 2.70           |
 
 
-These refined values should be more accurate and reliable for typical soil types.
+> **Note:** Canal bed material properties set in the design criteria are used by the all canals of similar generations in the entire network. Hence it is advised to use the safest values expected in the project when assigning material property values. Failure to do so will not meet subsequent quality assurance work.
 
 
-<img src="./Images/shields_chart.png">
+> **Note:** The B/D based canal section design method is still working when the tractive force method is enabled (by setting max. value to 0). However, the max. allowable tractive force is calculated for the bed material, and the canal perfroamce panel shows the details. If stability criteria is not met, the user has to envoke the design interface, and use the Solver function.
+
+
 
 
 # Default Criteria values for different canal Levels
@@ -477,6 +486,10 @@ The following table summarizes default values set to different canal levels upon
 | Min Control spacing(m)         | 30                  | [15.000, 150.000]     | 10                  | 10                  |
 | Fit Height(m)                  | -99                 | -0.5                  | -0.4                | 0.3                 |
 | Fit Type (-)                   | last                | last                  | last                | last                |
+| **Canal_Bed_Material**         | <br>                | <br>                  | <br>                | <br>                |
+| Mean Dia of  Material, d50(mm) | 2.0                 | 2.0                   | 2.0                 | 2.0                 |
+| Angle of Repose, (deg)         | 35                  | 35                    | 35                  | 35                  |
+| Spec. Gravity, g/cm3           | 2.65                | 2.65                  | 2.65                | 2.65                |
 | **Command_Criteria**           | <br>                | <br>                  | <br>                | <br>                |
 | Canal Duty(l/s/ha)             | 2.2                 | 1.8                   | 1.75                | 1.7                 |
 | Min. FSL-OGL @ Controls(m)     | 0.2                 | 0.2                   | 0.15                | 0.15                |
@@ -500,6 +513,101 @@ The following table summarizes default values set to different canal levels upon
 | Freeboard, FB(m)               | -1                  | 0.3                   | 0.25                | 0.2                 |
 | Canal Side Slope, m(-)         | 1                   | 1                     | 1                   | 1                   |
 | Bed Slope, So(m/m)             | 5000                | 1000                  | 2000                | 750                 |
+
+
+
+# Technical Notes on Stable Canals Design
+
+[Back to ToC](#table-of-contents)
+
+There are a number of ways available for the design of stable channels. These include the incipient motion analysis, and correpsonding regimes of flow once motion of particles has commenced. 
+
+The incipient motion concept is implemented using the critical tractive force approach. This is based on the premise that the drag force exerted by the flowing water on the channel bed is responsible for the motion of the bed particles. Shield was the first investigator to give a semi-theoretical analysis of the problem of incipient motion, and has established the following relationships, that are also widely used in other software (e.g., HEC RAS)
+
+Re*= u<sub>*</sub>d/v
+
+where
+
+- d= d50 (which is the mean diameter of canal material)
+
+- v is the kinematic viscosity of water (taken as 10^-6m2/sec)
+
+u* is the shear velocity, whis is the representation of the inteityo f turbulent fluctuations in the boundary layer, and given by:
+
+
+u*= sqrt(gDS)
+
+where
+
+- g is gravitational acceleration, 9.801m/s2
+- D is the depth of flow
+- S is the bed slope of the canal
+
+
+Shield's chart shown below outlines the unique relationship between Tc* and Re* on plotting experimental data collected by differnet investigators.
+
+<img src="./Images/shields_chart.png" style="width:8in">
+
+A similar relationship that used large amounts of experimental data colleted in later years is developed (by Yalin and Karahan). The relationship is further modified to allow direct estimation of Tc* from a parameter Ro* (also refered to as Boundary Reynolds number) as shown below. This is relationship is considered better, and is adopted in CanalNET for calculating critical (limiting) shear stress values based on provided canal bed material properties.
+
+<img src="./Images/yalinKarahan_chart.png" style="width:8in">
+
+The above work is also available in equations as shown below.
+
+D= [(Gs-1)g/v^2]^(1/3) d50
+
+and
+
+T*= 0.24 D ^(-1) if D<=4
+T*= 0.14 D ^(0.64) if 4 < D <=10
+T*= 0.04 D ^(-0.1) for 10 < D <=20
+T*= 0.013 D ^(-0.29) for 20 < D < 150
+T*= 0.055 for D > 160
+
+In the software the following steps are taken to evaluate the performance of a canal section.
+
+1. Use the mean diameter size, specific gravity of the canal material to estimate determine the value of **D**
+1. Compute the critical mobility (shields) parameter.
+1. Compute the corresponding critical shear stress value from:
+
+        Tcr= T<sub>*</sub> (Gs-1) g d
+
+1. Caluclate the value of shear stress due to the flow from 
+    
+    To= c*Gs*g*R*S, where
+
+    R is the hydraulic radius of flow, 
+    S is the bed slope, and
+    c is the correction factor for variations oof B/D values given as
+
+    c= 0.77 e ^(0.065 B/D) for B/D<4, and
+    c= 1 for B/D>=4
+
+1. Report values.
+
+If the To>=Tc*, particle motion is eminent, and the text in the assembly panel will update accordingly.
+
+<img src="./ImagesAbout/Image 030.png">
+
+Figure showing critical shear stress values on segment view (left) and node view (right).
+
+When using the interactive canal section design environment, you can use the *Max Tau* solver option, to determine the dimensions of a stable canal section using the above method. This procedure ensures the critical shear stress (calculated according to the tractive force method) is not exceeded, when determining the canal depth and width - while maintaining all other parameters as is.
+
+Refeneces:
+
+- Mitsu Okamura, Yusuke Tsuyuguchi, Norihiro Izumi, Kenichi Maeda,
+Centrifuge modeling of scale effect on hydraulic gradient of backward erosion piping in uniform aquifer under river levees,
+Soils and Foundations,
+Volume 62, Issue 5,
+2022,
+101214,
+ISSN 0038-0806,
+https://doi.org/10.1016/j.sandf.2022.101214.
+
+- Stream Restoration Design National Engineering Handbook, United States Department of Agriculture, Natural Resources Conservation Service, Issued 2007.
+
+- Irrigation Engineering, G L Asawa, 
+
 
 
 
