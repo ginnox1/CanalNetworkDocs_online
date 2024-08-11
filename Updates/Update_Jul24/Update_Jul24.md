@@ -1,4 +1,4 @@
-# CanalNETWORK 2.2 (Jul-Aug 2024)
+# CanalNETWORK 2.5 (Jul-Aug 2024)
 
 **Hello and Welcome Again,**
 
