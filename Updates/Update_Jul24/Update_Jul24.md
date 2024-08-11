@@ -95,7 +95,9 @@ Key improvements are made for the period that cover a range of topics identified
 
     <img src="./media/Image 080.png" style="width:6in">
 
+1. A new menu tool is included to allow loading and viewing of data hosted on AutoCAD objects eaily. Previously, this task was only possible with iCAD software.
 
+   <img src="./media/Image 0.png" style="width:6in">
 
 The DrainNET product is also improved for the following:
 - Corrected display station in cross-section view
