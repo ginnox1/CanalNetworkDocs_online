@@ -43,6 +43,14 @@ Update your version of CanalNETWORK product as follows:
 
 Key improvements are made for the period that cover a range of topics identified by our team, as well as user.
 
+1. Special algorithm included to allow generation of LSec profile drawing for canals of exceptionall short lengths. The algorithm interpolates finer resolution data from existing points to create the drawing.
+ 
+    <img src="./media/Image 088.png" style="width:2in">
+
+1. Resolved issue when attempting to overaly profile data from Windows Clipboard.
+
+    <img src="./media/Image 089.png">
+
 1. Tractive force method of canal section design is included. This major enhancement allows users to investigate canal stability after design, as well as determine stable sections, using the widely accepted method of design.
 
     <img src="./media/Image 2.png" style="width:6in">

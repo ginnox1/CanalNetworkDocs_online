@@ -567,10 +567,23 @@ T*= 0.055 for D > 160
 In the software the following steps are taken to evaluate the performance of a canal section.
 
 1. Use the mean diameter size, specific gravity of the canal material to estimate determine the value of **D**
-1. Compute the critical mobility (shields) parameter.
+1. Compute the critical mobility (shields) parameter, T*.
+1. Compute the reduction factor K from below relation ship.
+    
+    K= cos(a) sqrt[1-(tan a)^2/(tan p)^2], p > a
+        
+    K= 0, p<=a;
+
+    where
+
+    a side slope of canal in degrees
+
+    p angle of repose of the canal side mateiral
+
+    
 1. Compute the corresponding critical shear stress value from:
 
-        Tcr= T<sub>*</sub> (Gs-1) g d
+        Tcr= K . T* . (Gs-1) . g . d
 
 1. Caluclate the value of shear stress due to the flow from 
     
@@ -585,11 +598,13 @@ In the software the following steps are taken to evaluate the performance of a c
 
 1. Report values.
 
+> **Note:** The case of p<=a will render calcualted Critical Shear stress values to be equal to 0. Make sure to use the right bed material paramters when using this method.
+
 If the To>=Tc*, particle motion is eminent, and the text in the assembly panel will update accordingly.
 
 <img src="./ImagesAbout/Image 030.png">
 
-Figure showing critical shear stress values on segment view (left) and node view (right).
+*Figure showing critical shear stress values on segment view (left) and node view (right).*
 
 When using the interactive canal section design environment, you can use the *Max Tau* solver option, to determine the dimensions of a stable canal section using the above method. This procedure ensures the critical shear stress (calculated according to the tractive force method) is not exceeded, when determining the canal depth and width - while maintaining all other parameters as is.
 

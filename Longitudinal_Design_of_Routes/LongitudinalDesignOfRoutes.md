@@ -866,9 +866,9 @@ To see how performance of the canal varies:
 The Solver function offers a convenient and automatic tool to determine the best fitting slope that respects the constraints for limiting velocity and shear stress set in the design criteria. The following Goal settings are available:
 
 * `Min So` to find the minimum (steepest) slope possible with above constraints
-* `Max So' to find the maximum (flattest) slope possible with above constraints
+* `Max So` to find the maximum (flattest) slope possible with above constraints
 * `Min Pw` to find the section with the minimum wetted perimeter
-* `Max Tau' to design the section with limiting shear stress value for the given canal bed material.
+* `Max Tau` to design the section with limiting shear stress value for the given canal bed material.
 
 Upon hitting the `Solve` button, results are generated accordingly. Note that the minimum (steepest) slope allowed is limited to 1/50 and the maxium (flattest) slope is limited to 1/10000.
 
@@ -878,7 +878,8 @@ Upon satisfactory design, close the dialog, and accept the Apply request in the 
 
    <img src="./Images/Image 027.png">
 
-> Note: The `Max Tau` options is availabe when tractive force method is enabled by setting Tau_max variable to 0.
+> Note: The `Max Tau` options is availabe when tractive force method is enabled by setting Tau_max variable (in design criteria) to 0.
+
 
 
 
