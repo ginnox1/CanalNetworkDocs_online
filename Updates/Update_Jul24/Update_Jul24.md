@@ -2,7 +2,7 @@
 
 **Hello and Welcome Again,**
 
-We are thrilled and excited to bring to you yet another enhanced version of <strong> Version 2.2 of CanalNETWORK and DrainNETOWRK</strong>, including major updates.
+We are thrilled and excited to bring to you yet another enhanced version of <strong> Version 2.5 of CanalNETWORK and DrainNETOWRK</strong>, including major updates.
 
 In this release we provide updates for better user experience, and bug fixes found while testing previous releases.
 
