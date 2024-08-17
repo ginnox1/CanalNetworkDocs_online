@@ -64,6 +64,9 @@ Key improvements are made for the period that cover a range of topics identified
 
     The option is automatically enabled for all lining types, except no lining.
 
+2. Similar to above, free board provissions for lined canals are now provided based on FB= 0.4*Q^0.25, regardless of settings for FB values. However, values can not be lower than 0.10m;
+
+
 2. Improvements to the CanalSection Design interface to use tractive force methods of design, as well as improved display that shows lining material.
 
     <img src="./media/Image 11.png" style="width:6in">

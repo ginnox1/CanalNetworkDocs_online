@@ -39,7 +39,7 @@ Design criteria in CanalNETWORK, specifically refer to a list of parameters that
       - [Freeboard, FB(m)](#freeboard-fbm)
       - [Canal Side Slope, m(-)](#canal-side-slope-m-)
       - [Bed Slope, So(m/m)](#bed-slope-somm)
-    - [[NEW] Canal Bed Material](#new-canal-bed-material)
+    - [Canal Bed Material **[NEW]**](#canal-bed-material-new)
 - [Default Criteria values for different canal Levels](#default-criteria-values-for-different-canal-levels)
 - [Technical Notes on Stable Canals Design](#technical-notes-on-stable-canals-design)
 <!--/TOC-->## Contents of Design Criteria Set
@@ -428,7 +428,8 @@ Specifies the free board provision for flow section design in one of two ways:
 
 * *FB>0:* indicates to use specified value for free board provission
 
-* *FB=0:*  Indicates to use built in table for estimating freeboard.
+* *FB=0:*  Indicates to use built in table for estimating freeboard. For lined canals, the freeboard is provided using the equation 0.4*Q^0.25, and not less than 0.10m.
+
 
 The table of values for free board estimation are as follows:
 
