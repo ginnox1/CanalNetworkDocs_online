@@ -31,15 +31,18 @@ Longitudinal design of routes is the stage where the engineer spends significant
   - [Inteceptor Ditch provission](#inteceptor-ditch-provission)
     - [Insert Interceptor Drains](#insert-interceptor-drains)
     - [Clear Interceptor drain provissions](#clear-interceptor-drain-provissions)
-  - [AutoDesign](#autodesign)
-  - [Solving for optimal flow section for individual segments](#solving-for-optimal-flow-section-for-individual-segments)
+  - [AutoDesign a Canal Segment](#autodesign-a-canal-segment)
   - [AutoDesign for Route](#autodesign-for-route)
+  - [Solving for optimal flow section for individual segments](#solving-for-optimal-flow-section-for-individual-segments)
   - [Reset Design Criteria to Default](#reset-design-criteria-to-default)
   - [Override design criteria (Exception)](#override-design-criteria-exception)
   - [AutoDesigning a Selection of Routes](#autodesigning-a-selection-of-routes)
+  - [Alternate Routes Design](#alternate-routes-design)
+  - [Place holders for Special Structures](#place-holders-for-special-structures)
+    - [Spot Space holders](#spot-space-holders)
+    - [Span Space holders](#span-space-holders)
   - [Working with large networks](#working-with-large-networks)
 <!--/TOC-->
-
 
 ## Pre-requisits
 [Back to ToC](#table-of-contents)
@@ -808,7 +811,7 @@ There are two ways to clear interceptor ditch data on control nodes.
 
 **Known Limitations:** Ditches may not be applied near the begining or end stations of station range in cut, where berm provissions could not be met. Read the [Chapter: About Design Criteria]() to learn more on conditions governing berm provissions. 
 
-## AutoDesign
+## AutoDesign a Canal Segment
 [Back to ToC](#table-of-contents)
 
 By default, the software generates a tentaive longitudinal profile for the route upon refreshing the profile view. Characteristics of this tentaive design include, bur are not limited to, the following:
@@ -832,6 +835,27 @@ Auto Design tool implements a sophisticated algorithm to factor all the above re
 * variation of ground level in the entire reach of the route
 
 Once again, the careful selection and setting of design criteria for canal routes can not be overemphasized. It affects the outputs of the automatic design, and hence directly impacts the time an engineer spends to complete the design of a single route.
+
+## AutoDesign for Route
+[Back to ToC](#table-of-contents)
+
+The above procedure used for designing a single segment of a given route can be applied for an entire length of a route. To do so
+
+* Go to `Workflow > Design and Analysis > Auto Design Current Route ` 
+
+* The process will continue in the background (with out invoking the *Canal Section Design* interface), but applying the changes to the segments.
+
+Note the following added functionalities in this use-case:
+
+1. Automatically considers the available slope from the OGL. Note here that the ground slope is calculated from invert levels of the upstream and downstream nodes of each segment, and hence assumed to be straight line.
+
+2. Automatic positioning of inverts attempting to respect minimum FSL-OGL value in the design criteria set, where possible.
+
+To see the viability of the result from this auto-design process, the user can create and manage annotations - especially:
+
+* Drop heights: looking out for non-standard drops that may have been created, and adjusting if necessary. (see below [Design Aids Available for Completing Design of Routes]() below.)
+
+* minFSL-OGL: looking out for red-colored texts, indicating the desired criteria value is not met on those controls, and adjusting the inverts manually if needed. (See [Adjust Control Inverts]() above.)
 
 ## Solving for optimal flow section for individual segments
 [Back to ToC](#table-of-contents)
@@ -881,31 +905,6 @@ Upon satisfactory design, close the dialog, and accept the Apply request in the 
 > Note: The `Max Tau` options is availabe when tractive force method is enabled by setting Tau_max variable (in design criteria) to 0.
 
 
-
-
-## AutoDesign for Route
-[Back to ToC](#table-of-contents)
-
-The above procedure used for designing a single segment of a given route can be applied for an entire length of a route. To do so
-
-* Go to `Workflow > Design and Analysis > Auto Design Current Route ` 
-
-* The process will continue in the background (with out invoking the *Canal Section Design* interface), but applying the changes to the segments.
-
-Note the following added functionalities in this use-case:
-
-1. Automatically considers the available slope from the OGL. Note here that the ground slope is calculated from invert levels of the upstream and downstream nodes of each segment, and hence assumed to be straight line.
-
-2. Automatic positioning of inverts attempting to respect minimum FSL-OGL value in the design criteria set, where possible.
-
-To see the viability of the result from this auto-design process, the user can create and manage annotations - especially:
-
-* Drop heights: looking out for non-standard drops that may have been created, and adjusting if necessary. (see below [Design Aids Available for Completing Design of Routes]() below.)
-
-* minFSL-OGL: looking out for red-colored texts, indicating the desired criteria value is not met on those controls, and adjusting the inverts manually if needed. (See [Adjust Control Inverts]() above.)
-
-
-
 ## Reset Design Criteria to Default
 [Back to ToC](#table-of-contents)
 
@@ -924,7 +923,6 @@ To reset the design criteria for a route:
    ![fsds](Images/Image%20071.png)
 
 This will extract default design criteria and apply the current route. To review, start the menu command again and proceed.
-
 
 
 ## Override design criteria (Exception)
@@ -966,6 +964,68 @@ This will start the process for all selected routes sequentially.
 Important: It is important to revisit the designs for each route designed with the Auto tool, and make any adjustments before production.
 
 *Note: AutoDesign task can not be undone. To reset to original tentative settings, select the route, apply Resize. Design parameters are reapplied. To view the updated view, click on the route in plan view, which will refresh the view in Profile View Axis.*
+
+## Alternate Routes Design
+
+Alternative route analysis is a powerful way to formulate cost effective canal routes and their provissions. The command is available from `Workflow > Routes > ALternate Routes ...`
+
+All canal routes are established using one alignment object from the AutoCAD ennvironment. To use this tool, an alternate alignment object must be prepared along with the existing alignment. Alternate routes are best prepared using the `Gradient Search` tool from `Workflow > Inquire 3D > Inquire Points` menu command. The following figures show alignments created using the tool for a teritiary drain and supply canal respectively.
+
+
+<img src="./Images/Image 084.png" style="width:6in">
+
+*Fig: Alternate routes for drainage Routes, starting and ending with the same constraints*
+
+<img src="./Images/Image 085.png" style="width:6in">
+
+*Fig: Alternate Route for a supply canal, slightlt longer than the original route, and beyond (extension of) the last branch canal route*
+
+> **Note:** To use the tool, the original canal must be fully defined for flow cnditions.
+
+To do alternatre route anlysis for a given route,
+1. Click on the route in plan view to display its longitudinal profile view. Assuming volume comparison is the objective for the alternate route analysis, annotate for earth volume as shown below.
+    
+    <img src="./Images/Image 086.png" style="width:6in">
+
+1. Go to `Workflow > Routes > ALternate Route...`. Click on `Create`.
+
+    <img src="./Images/Image 088.png">
+
+2. In AutoCAD, pick the alignment for the alternate route. The CanalNET interface will update both in plan and profile views, to show the alternate alignment.
+
+    <img src="./Images/Image 090.png">
+
+    Choose `Cancel`, and work on the longitudinal design as needed. When done, redo annotation to compare values.
+
+1. To revert, to original design, start the menu command again, and choose `Revert'.
+1. To test a variation of the alternate alognment, simply edit the AutoCAD object for the alternate route. Start the menu command, and choose `Update`.
+
+1. To remove the alternate route information, start the menu command, and choose `Delete`.
+
+> **Note:** Designs on Alternate routes are only available until `Update` button is used - whixh causes all Nodes to loose DBL data and force redraw.
+
+
+## Place holders for Special Structures
+CanalNET has a number of built in structures which can be placed along any canal route. These include drops, turnouts, division boxes, Outfalls, Head and Cross Regulators, and more. If your version of the application does not have the structure you need to model your network, you can opt to put a place-holder. Using place holders, any hydraulic condition (headloss and span) can be modelled.
+
+### Spot Space holders
+
+To represent structures that do not have significant span, you can use one floating node. The floating node can have:
+- Name
+- Head Loss
+
+<img src="./Images/Image 092.png">
+
+*Fig: Example of a spot spaceholder for a simple structure, representing a headloss of 20cms along the Main Canal route*
+
+### Span Space holders
+If the strcture can take a significant span length, then two floating nodes can be used to represent it. The length between the two floating nodes is set as a special (X) segment. Such segments are not considered in BoQ, Plan and LSec generation.
+
+<img src="./Images/Image 091.png">
+
+*Fig: Example of a span spaceholder for a flume structure along a main canal rotue. Note, the X-Segment checkbox on the Node Control Setting Panel*
+
+THe floating nodes can be labeled for annotation purposes, and rich drawing generation.
 
 ## Working with large networks
 [Back to ToC](#table-of-contents)
