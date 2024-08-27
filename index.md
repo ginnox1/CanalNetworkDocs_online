@@ -37,10 +37,12 @@ Go to [Older Updates here](#older-updates)
 This page contains high level outline of avilable topics on this online documentation resource. 
 Click on the link to navigate to the topic.
 <!--TOC-->
-  - [Online documentation](#online-documentation)
-  - [Technical Information](#technical-information)
-  - [How To Articles](#how-to-articles)
-  - [Older Updates](#older-updates)
+  - [t Plans and Netowrk Resoluti](#t-plans-and-netowrk-resoluti)
+  - [al Information
+
+Additional tech](#al-information-additional-tech)
+  - [ing Capability of iCAD Modules](https://drive.google.co](#ing-capability-of-icad-moduleshttpsdrive.google.co)
+  - [OM4w5A8nQOjCGKqE/edi](#om4w5a8nqojcgkqeedi)
 <!--/TOC-->
 
 ## Online documentation
@@ -52,7 +54,7 @@ Click on the topics to navigate to each section. To come back to this page, clic
 
 
 
-[1. Introducing CanalNETWORK software](Introduction/Introduction.md)
+[1. Introducing CanalNET and Its Capabilities](Introduction/Introduction.md)
 
 [2. About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
 

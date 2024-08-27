@@ -1,4 +1,4 @@
-# Introduction to CanalNETWORK software
+# Introduction to CanalNET Software and Its Capabilities
 
 [Back to Home](..\Index#online-documentation)
 
@@ -9,10 +9,11 @@ CanalNETWORK is a software product that offers targeted solution to the design, 
 This introcution is intended to give basic knowledge about the key problems that the software solves, and different tools available to solve them. It focuses on key features of the software, and is NOT a comprhensive document containing all the details. 
 
 The following topics are discussed:
+
 ## Table of Contents
 <!--TOC-->
   - [Uses and applicaiton of CanalNETWORK software](#uses-and-applicaiton-of-canalnetwork-software)
-  - [Limiting Capabilities](#limiting-capabilities)
+  - [Software Operating Limits](#software-operating-limits)
   - [Important System Related Notes](#important-system-related-notes)
   - [Data and Software required for use with CanalNETWORK](#data-and-software-required-for-use-with-canalnetwork)
   - [Standard workflow](#standard-workflow)
@@ -45,24 +46,25 @@ CanalNETWORK software for use in:
 
 * ... and more.
 
-## Limiting Capabilities
+## Software Operating Limits
 [Back to ToC](#table-of-contents)
 
-CanalNETWORK software has the following operataing limits while in use for any network formulation and analyis.
+CanalNETWORK software has the following operating limits while in use for any network formulation and analysis.
 
-- Uses and applies manning's equation for flow analysis
-- Maximum of two branches to a node
+- Manning's equation, and the Critical Tractive Force method of analysis are available for flow analysis and canal sizing
+- Maximum of two branches to a node are allowed
 - Flattest slope possible 1/10,000
 - Steepest slope possible 1/100
 - Maximum allowable canal side slope 5H:1V
-- Two Types of Linings (Thin linings above 5cm Thk, Thick Linings up to 50Cm thick)
+- Thineest canal lining 0.001M, Thickest Canal Lining allowed 50Cm thick
 - Maximum number of Canal Generations 10 Gens
-
+- Minimum length of canal routes acceptable is 25m.
+- Minimum acceptable curve radius is 20m.
 
 ## Important System Related Notes
 [Back to ToC](#table-of-contents)
 
-CanalNETWORK application has the following minimum system requitements.
+CanalNETWORK application has the following minimum system requirements.
 
 - Machine: Core i7, 9th Gen, X64 (SSD highly Recommended) 
 
