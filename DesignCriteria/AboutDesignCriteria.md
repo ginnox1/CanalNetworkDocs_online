@@ -257,10 +257,12 @@ Specifies if a canal segment is provided with lining, and the type of lining:
 
 *Figure showing capped thin lining and how it is sized*
 
+> **Important Note:** If an equation is used for B/D ratio, and a canal linning provision (Thin or Thick) will redesign the cross-section using a B/D= 0.03*Q+1;
+
 #### Lining Thickness, Thk(m)
 [Back to ToC](#table-of-contents)
 
-This parameter sets the value representing the thickness of lining to be applied (See above for *Canal Lining Type*). A minimum value of 0.05m and a maxiumum value of 0.30 is allowed.
+This parameter sets the value representing the thickness of lining to be applied (See above for *Canal Lining Type*). A minimum value of 0.001m and a maxiumum value of 0.50 is allowed.
 
 #### Foundation Thickness, THK(m)
 [Back to ToC](#table-of-contents)

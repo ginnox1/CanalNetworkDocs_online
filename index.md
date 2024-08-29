@@ -37,14 +37,11 @@ Go to [Older Updates here](#older-updates)
 This page contains high level outline of avilable topics on this online documentation resource. 
 Click on the link to navigate to the topic.
 <!--TOC-->
-  - [t Plans and Netowrk Resoluti](#t-plans-and-netowrk-resoluti)
-  - [al Information
-
-Additional tech](#al-information-additional-tech)
-  - [ing Capability of iCAD Modules](https://drive.google.co](#ing-capability-of-icad-moduleshttpsdrive.google.co)
-  - [OM4w5A8nQOjCGKqE/edi](#om4w5a8nqojcgkqeedi)
+  - [Online documentation](#online-documentation)
+  - [Technical Information](#technical-information)
+  - [How To Articles](#how-to-articles)
+  - [Older Updates](#older-updates)
 <!--/TOC-->
-
 ## Online documentation
 
 This online resource site is under continuous development and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most up-to-date reference to our products by directly accessing this resource site.
