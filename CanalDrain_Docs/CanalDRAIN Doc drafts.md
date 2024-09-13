@@ -79,6 +79,20 @@ Mode 1
 
 Mode 2
 
+<img src="./Images/Image 001.png">
+
+<img src="./Images/Image 2.png">
+
+
+
+*Figure: Describing values*
+
+## Longitudinal Design of Drain Canals
+- Change mode to Mode 2
+- Resize all routes, this will clear Outfall height and node invert level data. Allowing fresh handling.
+- Begin with the last generation of feeder drains in the network. This will reset invert levels of their respective collector canal.
+- Continue with the next generation, until the primary generation canal is completed.
+- If beginig inverts are misplaced, follow the procedures described in the section [below]();
 
 ## Understanding OutFall Heights at Nodes
 Note: only one outfall height can be set, and is applied to both branched. 
@@ -86,6 +100,16 @@ Note: only one outfall height can be set, and is applied to both branched.
 Single feeder
 
 Two feeders: Outfall height is set for both left and right feeders, representing the differnce of water surface levels with the recieving drain canal. Hence, the invert levels of each feeder is set by subtracting the FDD (Full Drain Depth) from respectice water surface levels, and hence may vary.
+
+
+Override Outfall Hts
+
+helpful when triuble shooting begining canal inverts.
+
+- Show the colleector drain, and click on the concerned node.
+- in outfall edit box, clear the value and press enter. this will clear any lingering values from the data set.
+- show the feeder drain with the issue, which will now show the proper begining invert. measure the outfall height at the junction from the feeder canal (shown with asterixk in outfall height box)
+- Show the collector drain, and click on the node, then replace the value.
 
 
 
@@ -97,13 +121,16 @@ D->SD...
 
 Invert changes at controls in recieving canals impact hydraulics at juction with feeder canals, particularly the inlet invert. DBL drawing for branch drains may show oddly positioned bed levels, because existing data relects previous invert locations. 
 
-![fig1](Images/Image%201.png)
+
 
 This can be easily corrected by clicking on the node, and using `Ctrl+R` or redraw. To reduce/avoid this step deesign/explore from downstream to upstream.
 
-![fig2](Images/Image%202.png)
+
 
 , especially near segments close to the recieving canal. Accordingly prev
+
+
+
 
 ## Using Dummy Routes
 
