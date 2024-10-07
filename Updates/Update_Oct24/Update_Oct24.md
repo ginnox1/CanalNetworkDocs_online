@@ -63,6 +63,8 @@ Key improvements are made for the period that cover a range of topics identified
 
 1. Improved algorithm for identifying top level canal generation.
 
+1. Canal Exception name now checks for duplicate naming, and alerts the user to review input.
+
 
 
 ## Bug Fixes
