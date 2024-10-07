@@ -104,10 +104,19 @@ Two feeders: Outfall height is set for both left and right feeders, representing
 
 Override Outfall Hts
 
-helpful when triuble shooting begining canal inverts.
+helpful when trouble shooting begining canal inverts.
 
-- Show the colleector drain, and click on the concerned node.
-- in outfall edit box, clear the value and press enter. this will clear any lingering values from the data set.
+- Show the collector drain, and click on the concerned node.
+- in outfall edit box, insert a value larger than expected outfall height
+- go back to the feeder drain, redraw bed level if needed. The above step should help remove any drops at entry to the collector.
+- measure the FDL at inlet to the collector.
+- Back in the collector drain, click on the node. Measure the FDL at the collector drain (in detail view.)
+- In the outfall height edit box subtract the two values and hit enter. This should resolve the issue
+
+An other way (less practical after edit)
+- Show the collector drain, and click on the concerned node.
+- in outfall edit box,
+- the value and press enter. this will clear any lingering values from the data set.
 - show the feeder drain with the issue, which will now show the proper begining invert. measure the outfall height at the junction from the feeder canal (shown with asterixk in outfall height box)
 - Show the collector drain, and click on the node, then replace the value.
 
@@ -127,7 +136,7 @@ This can be easily corrected by clicking on the node, and using `Ctrl+R` or redr
 
 
 
-, especially near segments close to the recieving canal. Accordingly prev
+Especially near segments close to the recieving canal. Accordingly previous
 
 
 
