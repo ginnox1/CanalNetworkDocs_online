@@ -163,7 +163,7 @@ Excavation Cut Slope: Slope of vertical excavation from surface to foundation le
 
 Working space: desired space to maintain for working space, set by default to 0.30m
 
-Compacted fill Ht: Height of compacted back filll material required on excavated bottom, and below the foundation block. The compacted fill volume reported considers 0.10m width application in excess of the foot print of structures on all sides.
+Compacted fill Ht: Height of compacted back filll material required on excavated bottom, and below the foundation block. The compacted ***fill area*** reported considers 0.10m width application in excess of the foot print of structures on all sides.
 
 The calculation of quantities is carried out based on the following schematic diagrams:
 

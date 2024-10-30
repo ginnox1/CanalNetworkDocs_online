@@ -71,6 +71,8 @@ Click on the topics to navigate to each section. To come back to this page, clic
 
 [9. Construction Tools **(NEW)**](ConstructionTools/Construction_Tools.md)
 
+[10. DrainNET Product Use](CanalDrain_Docs/CanalDrain_doc.md)
+
 <!---
 [10. Design Quality Assurance **(NEW)**](DesignQuality/Design_Quality_Assurance.md)
 --->
