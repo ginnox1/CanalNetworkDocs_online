@@ -17,22 +17,24 @@ If Preview window is not working, disable any pulgins. Right click on any .md fi
 
 Learn about the most recent updates for CanalNET and DrainNET here.
 
-[**Latest Updates for Oct 2024**](Updates/Update_Oct24/Update_Oct24.md)
+[**Latest Updates for Nov 2024**](Updates/Update_Nov24/Update_Nov24.md)
 
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how our product(s) are evolving.
 
-[Updates for Sep 2024](Updates/Update_Sep24/Update_Sep24.md)
+- [Updates for Oct 2024](Updates/Update_Oct24/Update_Oct24.md)
 
-[Updates for July-Aug 2024](Updates/Update_Jul24/Update_Jul24.md)
+- [Updates for Sep 2024](Updates/Update_Sep24/Update_Sep24.md)
 
-[Update for Jun 2024](Updates/Update_June24/Update_Jun24.md)
+- [Updates for July-Aug 2024](Updates/Update_Jul24/Update_Jul24.md)
+
+- [Update for Jun 2024](Updates/Update_June24/Update_Jun24.md)
 
 
  
 
-Go to [Older Updates here](#older-updates)
+- Go to [Older Updates here](#older-updates)
 
 ---
 
