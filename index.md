@@ -17,11 +17,13 @@ If Preview window is not working, disable any pulgins. Right click on any .md fi
 
 Learn about the most recent updates for CanalNET and DrainNET here.
 
-[**Latest Updates for Nov 2024**](Updates/Update_Nov24/Update_Nov24.md)
+[**Latest Updates for Dec 2024**](Updates/Update_Dec24/Update_Dec24.md)
 
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how our product(s) are evolving.
+
+- [Updates for Nov 2024](Updates/Update_Nov24/Update_Nov24.md)
 
 - [Updates for Oct 2024](Updates/Update_Oct24/Update_Oct24.md)
 
@@ -29,12 +31,11 @@ Rich documentation of previous updates is maintained below for ease of reference
 
 - [Updates for July-Aug 2024](Updates/Update_Jul24/Update_Jul24.md)
 
-- [Update for Jun 2024](Updates/Update_June24/Update_Jun24.md)
 
 
  
 
-- Go to [Older Updates here](#older-updates)
+Go to [Older Updates here](#older-updates)
 
 ---
 
@@ -131,23 +132,26 @@ Stay tuned for more content on techniques and tips to tackle complex design task
 
 Older update documentations are listed below.
 
-[Update for May 2024](Updates/Update_May24/Update_May24.md)
+- [Update for Jun 2024](Updates/Update_June24/Update_Jun24.md)
 
-[Update for March 2024](Updates/Update_Mar24/Update_Mar24.md)
 
-[Updates for Feb 2024](Updates/Update_Feb24/Update_Feb24.md)
+- [Update for May 2024](Updates/Update_May24/Update_May24.md)
 
-[Updates for Jan 2024](Updates/Update_Jan24/Update_Jan24.md)
+- [Update for March 2024](Updates/Update_Mar24/Update_Mar24.md)
 
-[Updates for Nov 2023](Updates/Update_Nov23/Update_Nov23.md)
+- [Updates for Feb 2024](Updates/Update_Feb24/Update_Feb24.md)
 
-[Updates for Jun-Sep 2023](Updates/Update_Jun23/Updates_Jun23.md)
+- [Updates for Jan 2024](Updates/Update_Jan24/Update_Jan24.md)
 
-[Updates for Nov-Dec2022](Updates/Updates_Dec22/updatenotesDec2022.md)
+- [Updates for Nov 2023](Updates/Update_Nov23/Update_Nov23.md)
 
-[Updates for Aug-Nov 2022](Updates/Update_Sep22/Update_Sep22.md)
+- [Updates for Jun-Sep 2023](Updates/Update_Jun23/Updates_Jun23.md)
 
-[Updates for Jan22 to Jun22 (Partly)](Updates/Update_Jan22/Update_Jan22.md)
+- [Updates for Nov-Dec2022](Updates/Updates_Dec22/updatenotesDec2022.md)
+
+- [Updates for Aug-Nov 2022](Updates/Update_Sep22/Update_Sep22.md)
+
+- [Updates for Jan22 to Jun22 (Partly)](Updates/Update_Jan22/Update_Jan22.md)
 
 
 ---

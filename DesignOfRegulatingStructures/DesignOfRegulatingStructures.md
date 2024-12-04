@@ -13,13 +13,13 @@ CanalNETWROKcurrently allow the design of Head Regulator Strucures and Cross-Reg
   - [Designing the Canal Structure](#designing-the-canal-structure)
     - [Design of Cross Regulator Structures](#design-of-cross-regulator-structures)
     - [Design of Head Regulator Structures](#design-of-head-regulator-structures)
+    - [Design of Inclined Drop Structures](#design-of-inclined-drop-structures)
   - [Exploring Solutions](#exploring-solutions)
     - [Dimension Tables](#dimension-tables)
     - [Detailed Drawing Views](#detailed-drawing-views)
     - [Bill-of-Quantity](#bill-of-quantity)
   - [Technical Notes](#technical-notes)
 <!--/TOC-->
-
 
 ## Defining the Structure
 [Back to ToC](#table-of-contents)
@@ -216,6 +216,63 @@ The following workflow is implemented.
     <img src="./Images/Image 067.png">
 
 Different solutions for the design can be explored as detailed in the following section.
+
+### Design of Inclined Drop Structures
+Introduced Dec,2024.
+
+The design of inclined drops is handles by use of floating nodes, like many other structures in irrigation systems. This include Head and cross regulator structures. The properties and various settings are managed from the floating node, once the node is defined as a structure.
+
+
+<img src="./Images/Image 103.png">
+
+
+#### Assumptions
+The following are the key assumptions and limitations of the current release.
+
+- The chute length is hydraulically short. This means, there is no enough length in the glacis for significant head loss to affect the pre-jump flow depth. If this condition is not met, the designed energy desssipation pool will be conservative.
+
+- The canal section upstream and downstream of the drop location are identical in all respects (roughness, side slope, bed slope, discharge, etc...)
+
+- Thickness of various components at Thk= 0.40;
+
+- No Transvverse variation og ground level is considered.
+
+
+The following features will be included in upcoming versions.
+- Quantity estimation
+- Type III and Type IV energy dessipators
+
+#### Design Procedure
+
+After the floating node is defined as an inclined drop Type, the design is automatically carries out. There are two specific design tasks as follows:
+
+- Notch Width:
+    The first step is to determine a notch width required at entry to the drop, in order to mainatin the water surface elevation in the incoming canal. 
+
+    This is determined by solving the following known conditions at entry to the drop.
+
+    yn= 1.5Yc --- (1)
+
+    yc= (q^2^/9.801)^(1/3)^
+
+    > Note: If notch width below 0.40m results, the design will not continue.
+
+     <img src="./Images/Image 101.png">
+
+
+- Stilling Pool depth
+    The stilling pool is desinged in such a way that depressed floor provision can sufficiently reduce sequent jump depth to be less than or equal to the existing tail water depth. 
+
+    yn+dht+dFloor= y1+v1^2^/2/9.801) --- (1)
+
+    y2= y1/2 + (sqrt(1+8F^2)-1)    ---- (2)
+
+
+
+    > Note: If depressed flood depth exceeds 1.0m, the design will not resume. This is typically applicable in Type I jump mechanism provissions.
+
+    <img src="./Images/Image 102.png">
+
 
 
 ## Exploring Solutions
