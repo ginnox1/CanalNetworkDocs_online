@@ -459,6 +459,10 @@ Specifies the side slope of the wetted canal section (H:1V)
 
 Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1in 50 and the maximum (flattest) slope allowed is 1 in 10,000.
 
+<!---
+-----------------------------------------------------------------------
+Dec24 below content is suppreseed, after effectively integrating Kenedy's and Lacey's method, and the decision to use reference values for critical shearstress values (instead of Shields method.
+------------------------------------------------------------------------
 ### Canal Bed Material **[NEW]**
 
 Canal performance can be evaluated using tractive force methods of calculation. This can be achieved by setting the value for **Max. Allowable Shear** parameter to 0.0. This setting forces calculations to be conducted using Shield's method of critical mobility parameter.
@@ -484,8 +488,7 @@ The table below shows typical canal bed material properties built in to the soft
 
 
 > **Note:** The B/D based canal section design method is still working when the tractive force method is enabled (by setting max. value to 0). However, the max. allowable tractive force is calculated for the bed material, and the canal perfroamce panel shows the details. If stability criteria is not met, the user has to envoke the design interface, and use the Solver function.
-
-
+-->
 
 
 # Default Criteria values for different canal Levels
@@ -530,7 +533,7 @@ The following table summarizes default values set to different canal levels upon
 | Bed Slope, So(m/m)             | 5000                | 1000                  | 2000                | 750                 |
 
 
-
+<!---
 # Technical Notes on Stable Canals Design
 
 [Back to ToC](#table-of-contents)
@@ -638,7 +641,7 @@ https://doi.org/10.1016/j.sandf.2022.101214.
 
 - Irrigation Engineering, G L Asawa, 
 
-
+-->
 
 
 [Back to ToC](#table-of-contents)
