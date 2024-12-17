@@ -237,7 +237,19 @@ Specifies if a canal segment is provided with lining, and the type of lining:
 
 * *=0:* The canal segment is lined with a thin lining provision. The canal lining thickness value (below) is taken in to account to form the geometry of the lining.
 
+   <img src="./ImagesAbout/Lining0.jpg" style="width:5in">
+
 * *=1:* The canal is Lined with thick structure. Here both the lining and foundation thickness value(below) are taken in to account to form the shape of the lining.
+
+    <img src="./ImagesAbout/Lining2.jpg" style="width:5in">
+
+    *Figure: Shows types of thick sections that can be defined using Ltype=1 setting. Left side and right side show conditions where side slope is large enough and not so large, respectively.* 
+
+    The shape of the resulting lining section is also impacted by the proportion of values used for *Thk* and *THK* variables in the design criteria. The following image describes the conditions.
+    
+    <img src="./ImagesAbout/Lining3.jpg" style="width:5in">
+    
+    *Figure: A lined canal sectoin for m=0 value, showing the resulting flow section for THK>Thk (Left) and Thk>THK (Right) conditions.*
 
 * =2: Capped Thin lining. Here a thin lining is provided using Thk as a thickness. The capping length equals THK, and can not be less than Thk. The lined freeboard provission, hc, is calculated as 1/4th of the normal flow depth, and can not be less than 0.10m. The lined freeboard can not also exceed the FB provided.
 

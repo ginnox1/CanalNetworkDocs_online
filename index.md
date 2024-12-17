@@ -60,11 +60,11 @@ Click on the topics to navigate to each section. To come back to this page, clic
 
 [2. About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
 
-[3. Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
+[3. Creating & Managing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
-[4. Layout Plans and Netowrk Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution.md)
+[4. Layout Plans and Network Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution.md)
 
-[5. Farm Blocks and Netowrk Sizing](Farm_Blocks_and_Network_Sizing/Farm_Blocks_and_Network_Sizing.md)
+[5. Farm Blocks and Network Sizing](Farm_Blocks_and_Network_Sizing/Farm_Blocks_and_Network_Sizing.md)
 
 [6. Longitudinal Design of Canals](Longitudinal_Design_of_Routes/LongitudinalDesignOfRoutes.md)
 
@@ -84,7 +84,7 @@ Click on the topics to navigate to each section. To come back to this page, clic
 
 Additional technical details are available in below list:
 
-[1. Surface Modelling and Profile Calauctions in iCAD](Surface_Modelling/Surface_modelling_and_interpolation.md)
+[1. Surface Modelling and Profile Calculations in iCAD](Surface_Modelling/Surface_modelling_and_interpolation.md)
 
 [2. Flow section design in CanalNETWORK](Flow_section_design/Flow_section_Design.md)
 
