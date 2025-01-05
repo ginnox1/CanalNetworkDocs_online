@@ -3,7 +3,7 @@
 
 
 <div style="text-align: center;">
-    <h1 style="font-size: 3em; color: white;">🎉 Happy New Year 2025! 🎉</h1>
+    <h1 style="font-size: 3em; color: black; text-shadow: 0 0 5px gold;">🎉 Happy New Year 2025! 🎉</h1>
     <div style="font-size: 1.5em; color: gold; text-shadow: 0 0 5px gold;">Wishing you joy, health, and prosperity!</div>
 </div>
 
@@ -58,7 +58,9 @@ Update your version of CanalNETWORK product as follows:
 1. New interface included for detailed views (currently for special structures inlduing inclined drops, HR/CRs). The same interaction functions are available in this interface, including production to AutoCAD.
 
 
-2. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window.
+2. New Inclined Drop structure integrated. Current version is only for Type I (simple energy dissipater only).
+
+1. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window.
 
 1. Improved and reorganized menu commands for managing project preferences and design criteria.
 
