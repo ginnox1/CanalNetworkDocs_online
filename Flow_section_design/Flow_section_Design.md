@@ -1,11 +1,12 @@
 # Design of Canal Flow Sections
 [Back to Home](..\index#online-documentation)
 
+<!---
 [ ] Supress Vcrt for lined canals in canal performance text, and hover tooltip
 [  ] Change Kenedy slope on image below.
 [  ] Supress Solve for Tau in uiCanalSectionDesign interface (Solver option)
 [ x ] Comment out (DO not remove) shields criteria from manual
-
+--->
 
 ## Table of Contents
 
