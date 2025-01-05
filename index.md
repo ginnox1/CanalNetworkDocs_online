@@ -1,5 +1,12 @@
 # CanalNETWORK software product
 
+<!--- Work on these as you get time.
+
+[  ] DOC: When updating, start from CanalNET. Proper message if from drainNET
+[  ] DOC Resize fcn recalculate discharge, canal section by reapplying design criteria. Hence most node info are reset (CBL, drops, ioInvts(1), ioInvts(2),...)
+--->
+
+
 Well come,
 
 This is official site for documentation and guide of CanalNetwork software, and related products. This site is routinely maintained and updated by Quanomic ITES PLC.
@@ -17,11 +24,13 @@ If Preview window is not working, disable any pulgins. Right click on any .md fi
 
 Learn about the most recent updates for CanalNET and DrainNET here.
 
-[**Latest Updates for Dec 2024**](Updates/Update_Dec24/Update_Dec24.md)
+[**Latest Updates for Jan 2025**](Updates/Update_Jan25/Update_Jan25.md)
 
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how our product(s) are evolving.
+
+- [Updates for Dec 2024](Updates/Update_Dec24/Update_Dec24.md)
 
 - [Updates for Nov 2024](Updates/Update_Nov24/Update_Nov24.md)
 
@@ -29,7 +38,6 @@ Rich documentation of previous updates is maintained below for ease of reference
 
 - [Updates for Sep 2024](Updates/Update_Sep24/Update_Sep24.md)
 
-- [Updates for July-Aug 2024](Updates/Update_Jul24/Update_Jul24.md)
 
 
 
@@ -131,6 +139,8 @@ Stay tuned for more content on techniques and tips to tackle complex design task
 ## Older Updates
 
 Older update documentations are listed below.
+
+- [Updates for July-Aug 2024](Updates/Update_Jul24/Update_Jul24.md)
 
 - [Update for Jun 2024](Updates/Update_June24/Update_Jun24.md)
 
