@@ -60,7 +60,8 @@ Update your version of CanalNETWORK product as follows:
 
 2. New Inclined Drop structure integrated. Current version is only for Type I (simple energy dissipater only).
 
-1. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window.
+1. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window. Note: This drop is not yet integrated for Turn Out with drop structure features.
+
 
 1. Improved and reorganized menu commands for managing project preferences and design criteria.
 
