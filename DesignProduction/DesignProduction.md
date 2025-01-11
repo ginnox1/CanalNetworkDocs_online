@@ -279,7 +279,7 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
 
 
 
-## Creating and Editing Axes
+## AutoCAD Creating and Editing Axes
 [Back to ToC](#table-of-contents)
 
 Often times one may need to create axes and edit the information displayed depending on the data ploted. 
@@ -351,7 +351,7 @@ Upon completion, the axis will be redrawn in AutoCAD with the new changes.
 
 
 
-## Edit or Create Alignment Markers
+## AutoCAD Edit or Create Alignment Markers
 [Back to ToC](#table-of-contents)
 
 To create markers along an alignment use below steps:
@@ -807,6 +807,26 @@ Notes on Colors:
    *Fig AutoCAD drawing, after few edits on line colors, and text annotation creation.*
    
    If only certain components of the drawing are needed, select those only, and continue. The desired elements are added to the drawing.
+
+
+## Exporting build in drawings
+[Back to ToC](#table-of-contents)
+
+CanalNET software has implemented standard structures as can be applied in different conditions in the entire network.
+These standard structures include drops, turnouts, division boxes, and outlet structures. For these strucures,
+a standaridized drawing are built in to the software.
+Users can generate built in drawings from the installed resources as follows.
+
+1. Make the desired autocad drawing to contain the imported drawings the current drawing.
+1. Go to `Explore Outputs > Plot to AutoCAD > Plot Built_in Drawings...` menu command.  This will start the `Select Drawing` dialo as shown below.
+    
+    <img src= "./Images/Image 131.png" style="width:7in">
+
+1. Choose the desired drawing to import, and click `Ok`.
+1. Back in AutoCAD, select an insertion point. The desired drawing is imported.
+
+    <img src="./Images/Image 132.png" style= "Width:5in">
+
 
 
 ## Known Limitations and Issues

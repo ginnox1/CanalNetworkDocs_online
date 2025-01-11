@@ -6,8 +6,9 @@
   - [Introduciton](#introduciton)
   - [Upstream Crest Design](#upstream-crest-design)
   - [Design of Energy Dessipator](#design-of-energy-dessipator)
+  - [Dimension Tables](#dimension-tables)
   - [Drop Design Settings](#drop-design-settings)
-  - [BoQ calaculation for drops](#boq-calaculation-for-drops)
+  - [BoQ calaculation for drops (Chow I)](#boq-calaculation-for-drops-chow-i)
 <!--/TOC-->
 
 ## Introduciton
@@ -21,19 +22,30 @@ CanalNETWORK software can design drop structures using different methods. The so
 
 While the approaches commonly used for crest design are fairly similar, there are a number of established approaches to work out the energy dessipator design. CanalNETWORK currently has the following methods incorporated.
 
-- Straight Drop (USBR)
+- Chows (TYpe I)
 
-- Vertical Drops (Guarg)
+- Chows (Type II)
 
-- Sadra (Glass, Dyas, Ethchevery', UPRI)
+The hydraulic design and sizing for both types uses Chow's method. The differeces for both methods are shown below:
 
-- Simple (FAO 24)
+- approach and exit canals
 
-- French (ECDSWCo)
+    <img src="./Images/Image 11.png" style= "width:4in">
 
-- Chows (ECDSWCo)
+    *Figure: Inlet and exit canal forms for Type I (left) and Type II (right) structures*
 
-- Ankun (ECDSWCo)
+- Stilling Basin wall 
+
+    <img src="./Images/Image 13.png" style="width:4in">
+
+    *Figure: Stilling basin wall forms for Type I (left) and Type II (right) structures*
+
+- Notch wall and stilling basin floor provissions
+
+    <img src="./Images/Image 12.png" style="width:4in">
+
+    *Figure: Stilling basin floor and d/s notchwall forms for Type I (left) and Type II (right) structures*
+
 
 > The reference sources used in developing the algorithms for each method are indicated in brackets.
 
@@ -125,17 +137,24 @@ Nominal downstream and upstream cutoff depths are provided as follows.
 
 d~u~= d~d~=  0.30
 
-Upstream and downstream protection lengths are provided usinhg
+Length of approach and exit canals are provided usinhg
 
 L<sub>p</sub>=  1.2 + 1.5 q^1/2^.
 
 > All dimensions for basin length, basin width, appron thickness, and protection length are finally rounded to 0.05 meters.
 
+## Dimension Tables
+[Back to ToC](#table-of-contents)
+
 A typical output table for drop design data is extracted from `Explore Solutions > Data Tables > Explore Drops` as shown below.
 
-![c](Images/Image%20006.png)
+<img src="./Images/Image%20006.png">
 
-*Typical output of drop design data*
+*Figure: Typical output of drop design data for Chow Type I drop*
+
+<img src="./Images/Image 10.png" style="width:6in">
+
+*Figure: Typical output of drop design data and dimension table for Chow Type II drop*
 
 ## Drop Design Settings
 [Back to ToC](#table-of-contents)
@@ -146,7 +165,7 @@ Many of the design tasks carried out to size the different components of the dro
 
 > Note: These settings apply for the entire network of canals.
 
-## BoQ calaculation for drops
+## BoQ calaculation for drops (Chow I)
 [Back to ToC](#table-of-contents)
 
 For the calcualtion of volumes of work for drops, the following procedures are implemented. The starting points are user provided values for Control BoQ Settings in `Workspace > Edit Preferences`. 
@@ -167,13 +186,13 @@ Compacted fill Ht: Height of compacted back filll material required on excavated
 
 The calculation of quantities is carried out based on the following schematic diagrams:
 
-![fd](Images/photo_2022-02-03_10-31-13.jpg)
+<Img src="./Images/photo_2022-02-03_10-31-13.jpg" style="Width:4in">
 
-*Isometric view of a drop structure as used for estimation of quantities in CanalNETWORK product.*
+*Isometric view of a Chow TYpe I drop structure as used for estimation of quantities in CanalNETWORK product.*
 
-![dsds](Images/photo_2022-02-03_10-31-38.jpg)
+<img src="./Images/photo_2022-02-03_10-31-38.jpg" style= "Width:4in">
 
-*Section view of a drop structure for quantity estimation.*
+*Section view of a Chow Type I drop structure for quantity estimation.*
 
 Where:
 
@@ -186,6 +205,10 @@ Then:
 w~Total~= 2*(W~Thk~ + mxh)+b
 
 Wb= b+2xmxh + 2xThk or Wb+2xWThk, which ever is maximum
+
+<img src="./Images/Image 14.png" style="width:5in">
+
+*Figure: Earth work cut profile for Type II drop structure*
 
 The structural volumes are estimated for:
 

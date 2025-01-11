@@ -4,7 +4,7 @@
 
 <div style="text-align: center;">
     <h1 style="font-size: 3em; color: black; text-shadow: 0 0 5px gold;">🎉 Happy New Year 2025! 🎉</h1>
-    <div style="font-size: 1.5em; color: gold; text-shadow: 0 0 5px gold;">Wishing you joy, health, and prosperity!</div>
+    <div style="font-size: 1.5em; color: gold; text-shadow: 0 0 5px gold;">Wishing you joy, health, and growth!</div>
 </div>
 
 
@@ -33,7 +33,7 @@ Big Thankyou, <strong> EEC  </strong> for your trust, contributions and support.
 Update your version of CanalNETWORK product as follows:
 1. Download the update resoruces from [Latest CanalNETWORK update resources](https://drive.google.com/uc?export=download&id=1Ov_tptZDHdrvIf7o1ogrlfpb_iWiBgvD)
 
-    The latest is **Version 2.5.0.4719**
+    The latest is **Version 2.5.0.4623**
 
     Accompanied by **Version V4.9.5** of iCAD Bridge Application.
 
@@ -57,39 +57,18 @@ Update your version of CanalNETWORK product as follows:
 
 1. New interface included for detailed views (currently for special structures inlduing inclined drops, HR/CRs). The same interaction functions are available in this interface, including production to AutoCAD.
 
-    <img src="./media/Image 3.png" style="width:5in">
 
+2. New Inclined Drop structure integrated. Current version is only for Type I (simple energy dissipater only).
 
-    <img src="./media/Image 2.png" style="width:5in">
-
-
-2. New Inclined Drop structure integrated. Current version is only for Type I (simple energy dissipater only). More features are expected in upcoming updates.
-
-    <img src="./media/Image 5.png" style="width:6in">
-
-    The design is carried out using the same tools available for canal structures (e.g., HR/CR)
-
-
-1. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window. 
-
-    <img src="./media/Image 7.png" style="width:4in">{br}
-
-    > Note: Note: This drop is not yet integrated for Turn Out with drop structure features.
-
-    <img src="./media/Image 9.png" style="width:6in">
+1. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window. Note: This drop is not yet integrated for Turn Out with drop structure features.
 
 
 1. Improved and reorganized menu commands for managing project preferences and design criteria.
 
-    <img src="./media/Image 8.png" style="width:4in">
-
 1. Design of canal sections using regime methods fully scrapped and developed to meet current practice needs.
 
-    <img src="./media/Image 10.png" style="width:6in">
+1. Improved management of canal structures in a network.
 
 
-
-
-[Back to ToC](#table-of-contents) 
 
 END.
