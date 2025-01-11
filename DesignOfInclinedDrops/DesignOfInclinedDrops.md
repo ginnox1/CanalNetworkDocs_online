@@ -191,11 +191,33 @@ The following are key hydraulic analysis and desired outputs for the design and 
 
 1. Width of Drop
 
+    The width of the verflow section for the inclined drop is determined by using relationships for critical flow conditions.
+
+    1.5Yc= yn
+
+    yc= (q^2/g)^(1/3)
+
+    Combining the two equations gives
+
+    yn= 1.5 ((Q/Wb)^2/g)^(1/3)
+
+    which is solved to give the deired overflow width.
+
+
 2. Pre-jump Flow depth
+
+    The prejump flow depth is determined from the solutoin of energy conservation equation, between the upstream section and the toe of the glacis.
+
+    <img src="./media/Image 22.png" style= "width:6in">
 
 2. Type I Dessipator: Post Jump Flow Depth
 
-2. Type A Jump Length
+
+    The post jump flow depth is calcualted by using the below relationship:
+
+    y2=0.5y1(sqrt(1+8F^2)+1);
+
+2. For Type I energy desipator, the length of the stilling pool is detemined as the maximum of the following:
 
     Lj/y1= 9.75(F1-1)^1.01
 
@@ -220,7 +242,7 @@ The following are key hydraulic analysis and desired outputs for the design and 
  
 
 
-2. Downstream appron length 
+2. Downstream appron length and flow profile.
 
     This is decided based on the jump type, especially if the jump roller begins not on the toe but some where upstream on the glacis slope. This is true for jump types B, C and D. 
     
@@ -233,14 +255,16 @@ The following are key hydraulic analysis and desired outputs for the design and 
 
    With this resuts, the downstream appron length is determiend from Lds= Lj-xj.
 
+     <Img src="./media/Image 23.png" style= "width:5in">
+
 
 
 2. Thickness of apron
 
-    The subsurface hydraulic pressure are estiamted using khosla's method.
+    [To be included soon]
+    
+    
 
 
-
-[To Be Included Soon.]
 
 END.
