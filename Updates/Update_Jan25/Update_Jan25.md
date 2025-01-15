@@ -57,17 +57,38 @@ Update your version of CanalNETWORK product as follows:
 
 1. New interface included for detailed views (currently for special structures inlduing inclined drops, HR/CRs). The same interaction functions are available in this interface, including production to AutoCAD.
 
+    <img src="./media/Image 12.png" style="width:6in">
 
 2. New Inclined Drop structure integrated. Current version is only for Type I (simple energy dissipater only).
+
+    <img src="./media/Image 1.png" style="width:5in">
+
+
+    Thw corresponding verificaiton document is [available here](https://docs.google.com/document/d/1OtW92gVfCIp012_vWF3PcGqMG9S_PQHkUf31sZXdm-M/edit?usp=sharing)
 
 1. New TypeII vertical drop integrated based on guiding template from EEC. The option to use this drop is selected from the project preferences window. Note: This drop is not yet integrated for Turn Out with drop structure features.
 
 
+    <img src="./media/Image 9_1.png" style="width:7in">
+
+    The corresponding verification document is [available here](https://docs.google.com/document/d/1Z45xISvhO14Q7P0xIDSraGNRg305NQ9QZES2FA9hGf4/edit?usp=sharing).
+
+
 1. Improved and reorganized menu commands for managing project preferences and design criteria.
+
+
+
+
 
 1. Design of canal sections using regime methods fully scrapped and developed to meet current practice needs.
 
-1. Improved management of canal structures in a network.
+    <img src="./media/Image 10.png" style="width:5in">
+
+
+1. Improved management of canal structures in a network, now alows deleting and exploring structures more flexibly.
+
+
+    <img src="./media/Image 9.png">
 
 
 

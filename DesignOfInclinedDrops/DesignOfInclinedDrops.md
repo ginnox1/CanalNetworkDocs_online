@@ -8,14 +8,9 @@ The design of inclined drops is handles by use of floating nodes, like many othe
 
 
 <!--TOC-->
-  - [Key considerations](#key-considerations)
-  - [Usage](#usage)
-  - [Exploring Views](#exploring-views)
-  - [Explorting Dimension Tables](#explorting-dimension-tables)
-  - [Generating Bill of Quantity](#generating-bill-of-quantity)
-  - [Hydraulic Design](#hydraulic-design)
-  - [Future Work](#future-work)
-  - [Technical Notes](#technical-notes)
+  - [re-jump flow depth.](#re-jump-flow-depth.)
+  - [ting Nodes >](#ting-nodes-)
+    - [l Structures...`. Se](#l-structures....-se)
 <!--/TOC-->
 
 ## Key considerations
@@ -258,12 +253,12 @@ The following are key hydraulic analysis and desired outputs for the design and 
      <Img src="./media/Image 23.png" style= "width:5in">
 
 
-
+<!---
 2. Thickness of apron
 
     [To be included soon]
     
-    
+ --->
 
 
 
