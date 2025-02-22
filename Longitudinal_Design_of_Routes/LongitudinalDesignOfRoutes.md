@@ -598,6 +598,8 @@ It is possible to extract the drops of a number of canal routes in one go. To do
 ### Exploring Turnouts
 [Back to ToC](#table-of-contents)
 
+**Since Feb2025, a new type of turnout is implemented
+
 This option specifically lists the relevant construction dimensions for each turnout structure found on the route. 
 
 ![s](Images/Image%20074.png)
@@ -639,6 +641,64 @@ Thus:
 Vcut= dFloor x (LTotal+mxdFloor) x (BTotal + mxdFloor)  
 
 > **TURNOUTS with DROPS**: Tunrouts can be combined with drops. The outputs will use combined drops ONLY if the exit drop provided is > 0.10m. In such cases, the stilling basing structure will be sized and provided following the set drop design method (Chow's method is default). The results are included in BoQ quantity.
+
+### Exploring Turnouts (New)
+Since Feb2025, we have introduced a new type of Turnout structure, with piped offtake to branch canals. The hydraulic design principles for this turnout is similar to the previous ones, i.e., based on minimum driving head specifications in the design criteria. 
+
+<img src="./Images/Image 100.png">
+
+
+The following are key considerations:
+
+- Outlet elevations are fixed by using minimum diving head specified in Design Criteria
+- Pipes are laid at the same slope as the (first segment of) the branch canal.
+- Pipe inverts for a branch canal are determined as the minimum of wither the CBL, or the expected normal flow level in the pipe(s). 
+- Flow depths in pipe can not exceed 80% of the pipe diameter. If encountered, more number of pipes are provided automatically.
+- Turnputs combined with drops are allowed. The drop fall is applied after the box.
+- The width of the gate to the continuing canal, if exists, is equal to the bottom width of the canal.
+
+
+Limitations:
+
+The following limitations are part of the current release. These will be improved in future releases.
+
+- the quantity reported for all components is calculated based on one pipe outlet design. If more than one pipe is provided, the pipe quantity is reported accordingly, but other componetes remain the same.
+- BoQ estimates do not include reinforcmenet bar that may be necessary for concrete components.
+
+
+
+Conventions
+-	First node corresponds to the left in drawing, reordering can be used to change this. This will also govern the BoQ calculation (multiplied by two to determine the right side)
+
+<img src="./Images/Image 101.png">{br}
+
+
+
+<img src="./Images/Image 102.png">{br}
+
+*Fig: Plan and section view of the turnout strucrure, obtained from EEC.*
+
+Note that the following are hard coded constants:
+
+- Pipe Diameter 300
+- Pipe Length 9m
+- N for concrete 0.014
+
+THK_box= 0.40;
+      THK_canal=0.30;
+      depth_concrete= 0.30;
+      Thk_conc= 0.20;
+
+      % Assumed dimensions
+      dia_pipe= 0.30; thk_pipe= 0.05;
+      width_concreteBed= 0.30; % assumed equal to pipe dia
+      depth_stillPool= 0.10; %depth of stilling
+
+
+Exploring the drops now gives an extended table of results, with 25 columns. A typical output is shown below (transposed for ease of presentation)
+
+ 
+
 
 ### Exploring Division Boxes
 [Back to ToC](#table-of-contents)

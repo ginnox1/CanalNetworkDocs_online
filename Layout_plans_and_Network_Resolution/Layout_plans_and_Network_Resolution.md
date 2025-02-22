@@ -523,13 +523,17 @@ To manually override the naming for a canal route:
    
    - The first letter has always to be an alphabet
    
-   - No brackets, hyphens, or special characters are allowe, except the under-score symbol.
+   - No brackets, hyphens, or special characters are allowe, except the under-score character.
    
    - The name must be formatted as [prefx]GEN[suffix]_numbering1_numbering2 ... 
    
-   - GEN must be an exact match to one of the generations defined in the naming style for the project.
+   - Do not use numbers before the first underscore. Eg. RTC1_1_2 (This will impact quality of generated text to AutoCAD)
+   
+   - GEN must be an exact match to one of the generations defined in the naming style for the project. Do not use multiple GENs in one exception, Eg RTC_MC_1.
    
    - Prefix OR suffix are optional. If provided, they must match the prefix or suffix settings defined in the naming style for the project.
+
+   > Recommended: It is best to use alphabets for the first nubering, although not mandatoru. For instance, TC_2_A is better than TC_2_1, becuase subsequent naming for the next TC will continue from TC_2_1. This results in two canals of the same name.
 
 4. Click on `OK` to confirm manual override. The naming is applied to the route selected. 
 
@@ -540,6 +544,8 @@ To manually override the naming for a canal route:
 This completes the exception definition process. Note that canal routes named with exceptions have their names (in the profile view) displayed with an *(EX)* suffix, as shown in below example.
 
 ![img62](Images/Image%20062.png)
+
+> **Tip:** Since Feb2025, you can create exception names for multiple routes at a time. Just select the canal routes, and start the naming process. Put the character or number you want to change in square braackets, and the names are applied sequentially based on their location along the parent canal.
 
 ### Managing Exceptions
 [Back to ToC](#table-of-contents)

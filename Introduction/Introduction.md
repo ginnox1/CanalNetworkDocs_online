@@ -170,6 +170,21 @@ Note in the above figure that:
 
 Refer to relevant guide lines on how to proceed with each of the above stages, or final production of construction drawings.
 
+## Download and Install The Software
+
+To download the software, click on the link below.
+
+
+Once the download is complete, 
+
+1. Double click on the downloaded file, and allow to run.
+
+    Note: Because you are executing a downloaded file directly, your antivirus protection software may alert you to allow the process. Click yes to continue.
+
+2. Follow the instructions on the screen to complete installation.
+
+3. Set up your AutoCAD for use with iCAD, following [the procedure outlined on this link.]()
+
 
 [Back to ToC](#table-of-contents)
 

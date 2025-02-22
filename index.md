@@ -24,26 +24,19 @@ If Preview window is not working, disable any pulgins. Right click on any .md fi
 
 Learn about the most recent updates for CanalNET and DrainNET here.
 
-[**Latest Updates for Jan 2025**](Updates/Update_Jan25/Update_Jan25.md)
+[**Latest Updates for Feb 2025**](Updates/Update_Feb25/Update_Feb25.md)
 
 
 
 Rich documentation of previous updates is maintained below for ease of reference. Feel free to explore and learn more, how our product(s) are evolving.
 
+- [Updates for Jan 2025](Updates/Update_Jan25/Update_Jan25.md)
+
 - [Updates for Dec 2024](Updates/Update_Dec24/Update_Dec24.md)
 
-- [Updates for Nov 2024](Updates/Update_Nov24/Update_Nov24.md)
-
-- [Updates for Oct 2024](Updates/Update_Oct24/Update_Oct24.md)
-
-- [Updates for Sep 2024](Updates/Update_Sep24/Update_Sep24.md)
 
 
-
-
- 
-
-Go to [Older Updates here](#older-updates)
+If you want to learn more, you can also [go to older Updates here](#older-updates)
 
 ---
 
@@ -139,6 +132,12 @@ Stay tuned for more content on techniques and tips to tackle complex design task
 ## Older Updates
 
 Older update documentations are listed below.
+
+- [Updates for Nov 2024](Updates/Update_Nov24/Update_Nov24.md)
+
+- [Updates for Oct 2024](Updates/Update_Oct24/Update_Oct24.md)
+
+- [Updates for Sep 2024](Updates/Update_Sep24/Update_Sep24.md)
 
 - [Updates for July-Aug 2024](Updates/Update_Jul24/Update_Jul24.md)
 
