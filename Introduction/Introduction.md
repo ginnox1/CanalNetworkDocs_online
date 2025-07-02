@@ -3,7 +3,16 @@
 [Back to Home](..\Index#online-documentation)
 
 Well come!
+<!--
+If Preview window is not working, disable any pulgins. Right click on any .md file, and choose Mark Down Editor, also choose Set to default.
+-->
 
+<!--- Work on these as you get time.
+
+[  ] DOC: When updating, start from CanalNET. Proper message if from drainNET
+[  ] DOC Resize fcn recalculate discharge, canal section by reapplying design criteria. Hence most node info are reset (CBL, drops, ioInvts(1), ioInvts(2),...)
+--->
+---
 CanalNETWORK is a software product that offers targeted solution to the design, analysis and documentation of a system of gravity canal networks. It is a product of a committed work to understand the practice of irrigation systems design in the local context, as well as governing theory in open channel hydraulics. 
 
 This introcution is intended to give basic knowledge about the key problems that the software solves, and different tools available to solve them. It focuses on key features of the software, and is NOT a comprhensive document containing all the details. 
@@ -17,6 +26,7 @@ The following topics are discussed:
   - [Important System Related Notes](#important-system-related-notes)
   - [Data and Software required for use with CanalNETWORK](#data-and-software-required-for-use-with-canalnetwork)
   - [Standard workflow](#standard-workflow)
+  - [Download and Install The Software](#download-and-install-the-software)
 <!--/TOC-->
 
 Refer to other sections of this documentation to learn more about specific usage and application of the software to tackle day to day design tasks.

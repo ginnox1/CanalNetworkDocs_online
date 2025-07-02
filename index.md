@@ -10,16 +10,7 @@ This is official site for documentation and guide of CanalNetwork software, and 
 We will continually update this site to provide information on progress and latest developments.
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
-<!--
-If Preview window is not working, disable any pulgins. Right click on any .md file, and choose Mark Down Editor, also choose Set to default.
--->
 
-<!--- Work on these as you get time.
-
-[  ] DOC: When updating, start from CanalNET. Proper message if from drainNET
-[  ] DOC Resize fcn recalculate discharge, canal section by reapplying design criteria. Hence most node info are reset (CBL, drops, ioInvts(1), ioInvts(2),...)
---->
----
 ### Update Logs
 
 
