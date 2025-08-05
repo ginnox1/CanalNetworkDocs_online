@@ -52,25 +52,25 @@ Click on the topics to navigate to each section. To come back to this page, clic
 
 
 
-[1. Introducing CanalNET and Its Capabilities](Introduction/Introduction.md)
+[1. Introducing CanalNET and Its Capabilities](/Introduction/Introduction.md)
 
-[2. About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
+[2. About Design Criteria](/DesignCriteria/AboutDesignCriteria.md)
 
-[3. Creating & Managing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
+[3. Creating & Managing Design Criteria](/DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
 [4. Layout Plans and Network Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution.md)
 
-[5. Farm Blocks and Network Sizing](Farm_Blocks_and_Network_Sizing/Farm_Blocks_and_Network_Sizing.md)
+[5. Farm Blocks and Network Sizing](/Farm_Blocks_and_Network_Sizing/Farm_Blocks_and_Network_Sizing.md)
 
-[6. Longitudinal Design of Canals](Longitudinal_Design_of_Routes/LongitudinalDesignOfRoutes.md)
+[6. Longitudinal Design of Canals](/Longitudinal_Design_of_Routes/LongitudinalDesignOfRoutes.md)
 
-[7. Design of Canal Structures using Floating Nodes.](DesignOfRegulatingStructures/DesignOfRegulatingStructures.md)
+[7. Design of Canal Structures using Floating Nodes.](/DesignOfRegulatingStructures/DesignOfRegulatingStructures.md)
 
-[8. Design Production](DesignProduction/DesignProduction.md)
+[8. Design Production](/DesignProduction/DesignProduction.md)
 
-[9. Construction Tools **(NEW)**](ConstructionTools/Construction_Tools.md)
+[9. Construction Tools **(NEW)**](/ConstructionTools/Construction_Tools.md)
 
-[10. DrainNET Product Use](CanalDrain_Docs/CanalDrain_doc.md)
+[10. DrainNET Product Use](/CanalDrain_Docs/CanalDrain_doc.md)
 
 <!---
 [10. Design Quality Assurance **(NEW)**](DesignQuality/Design_Quality_Assurance.md)
